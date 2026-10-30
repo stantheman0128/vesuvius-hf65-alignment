@@ -1,0 +1,30 @@
+[
+ {
+  "y0": 15872,
+  "x0": 25600,
+  "size": 1024,
+  "tifxyz_valid": 1.0,
+  "img_nonzero_l5": 1.0
+ },
+ {
+  "y0": 1536,
+  "x0": 49664,
+  "size": 1024,
+  "tifxyz_valid": 1.0,
+  "img_nonzero_l5": 0.998046875
+ },
+ {
+  "y0": 29184,
+  "x0": 1024,
+  "size": 1024,
+  "tifxyz_valid": 1.0,
+  "img_nonzero_l5": 1.0
+ },
+ {
+  "y0": 29184,
+  "x0": 47616,
+  "size": 1024,
+  "tifxyz_valid": 1.0,
+  "img_nonzero_l5": 1.0
+ }
+]
