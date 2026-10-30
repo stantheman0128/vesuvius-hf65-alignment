@@ -1,0 +1,16 @@
+{
+ "key": "t043",
+ "supmask_min": 0.0,
+ "n_candidates": 2283,
+ "rule": "reg2.regions scan with lowered supervision-mask threshold, farthest from the fit regions",
+ "regions": [
+  {
+   "y0": 512,
+   "x0": 1024,
+   "size": 1024,
+   "tifxyz_valid": 1.0,
+   "supmask": 0.0,
+   "min_dist_to_fit_px": 26272.13641864704
+  }
+ ]
+}

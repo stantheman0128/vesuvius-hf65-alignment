@@ -1,0 +1,1546 @@
+{
+ "description": "Per-segment canvas -> tifxyz offsets for the ink training segments of hf://buckets/scrollprize/datasets/ink/ (villa#2370 and the 2026-10-30 ink bucket audit)",
+ "convention": {
+  "units": "level-0 canvas pixels; slopes are pixels per pixel",
+  "canvas": "(y, x) = level-0 pixel of <segment>.zarr in hf://buckets/scrollprize/datasets/ink/<scroll>/<segment>/; the ink labels and supervision masks there share this grid; pixel centres at integers",
+  "tifxyz": "(ty, tx) = full-resolution cell of the tifxyz (x.tif, y.tif, z.tif, meta.json) in the same folder, villa convention: full-res cell (r, c) is stored cell (r * scale_y, c * scale_x), bilinear (vesuvius tifxyz/types.py:153-154)",
+  "model": "canvas content at (y, x) lies at tifxyz cell (y + dy, x + dx), with dy = dy_a + dy_per_y * y + dy_per_x * x and dx = dx_a + dx_per_y * y + dx_per_x * x, evaluated at canvas coordinates (same sign and form as correct/apply_fit.py)",
+  "full_3d": "villa full_3d pairs label pixel (y, x) with tifxyz cell (y, x); the label value that belongs to tifxyz cell (ty, tx) is the canvas/label value at inv(ty, tx)",
+  "measurement_offset": "the same measurement reads +0.4 to +0.5 px on both axes on the five aligned segments; the parameters are the measured values and do not remove it (as in apply_fit.py)"
+ },
+ "segments": [
+  {
+   "key": "c013",
+   "scroll": "1667",
+   "segment": "w013_20240304141531_2um",
+   "bucket_path": "ink/1667/w013_20240304141531_2um",
+   "group": "one_cell",
+   "model": "constant",
+   "dy_a": -19.6756,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -19.6744,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_c013.jsonl",
+   "fit_regions": [
+    "c013 r0 (y0 16896, x0 11776)",
+    "c013 r1 (y0 3072, x0 10752)"
+   ],
+   "n_fit_regions": 2,
+   "fit_resid_max_dy": 0.026,
+   "fit_resid_max_dx": 0.015,
+   "ncc_min": 0.88,
+   "ncc_max": 0.915,
+   "canvas_hw": [
+    42567,
+    80157
+   ],
+   "tifxyz_full_hw": [
+    42567,
+    80157
+   ],
+   "tifxyz_scale_xy": [
+    0.049915,
+    0.049898
+   ],
+   "ct_volume": "PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -19.68,
+     -19.67
+    ],
+    [
+     -19.68,
+     -19.67
+    ],
+    [
+     -19.68,
+     -19.67
+    ],
+    [
+     -19.68,
+     -19.67
+    ]
+   ]
+  },
+  {
+   "key": "c018",
+   "scroll": "1667",
+   "segment": "w018_20240304144031_2um",
+   "bucket_path": "ink/1667/w018_20240304144031_2um",
+   "group": "one_cell",
+   "model": "constant",
+   "dy_a": -19.64,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -19.64,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "correct/apply_fit.py FITS['c018'] (fit to results/results_c018.jsonl)",
+   "fit_regions": [
+    "c018 r0 (y0 16896, x0 36352)",
+    "c018 r1 (y0 25600, x0 95232)",
+    "c018 r2 (y0 25600, x0 1536)",
+    "c018 r3 (y0 5120, x0 68096)",
+    "c018 r4 (y0 27648, x0 72192)",
+    "c018 r5 (y0 5632, x0 5120)"
+   ],
+   "n_fit_regions": 6,
+   "fit_resid_max_dy": 0.045,
+   "fit_resid_max_dx": 0.06,
+   "ncc_min": 0.905,
+   "ncc_max": 0.925,
+   "canvas_hw": [
+    42632,
+    98362
+   ],
+   "tifxyz_full_hw": [
+    42632,
+    98362
+   ],
+   "tifxyz_scale_xy": [
+    0.049968,
+    0.049962
+   ],
+   "ct_volume": "PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -19.64,
+     -19.64
+    ],
+    [
+     -19.64,
+     -19.64
+    ],
+    [
+     -19.64,
+     -19.64
+    ],
+    [
+     -19.64,
+     -19.64
+    ]
+   ]
+  },
+  {
+   "key": "c023",
+   "scroll": "1667",
+   "segment": "w023_20240304161941_2um",
+   "bucket_path": "ink/1667/w023_20240304161941_2um",
+   "group": "one_cell",
+   "model": "constant",
+   "dy_a": -19.6449,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -19.6183,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_c023.jsonl",
+   "fit_regions": [
+    "c023 r0 (y0 16384, x0 71680)"
+   ],
+   "n_fit_regions": 1,
+   "fit_resid_max_dy": null,
+   "fit_resid_max_dx": null,
+   "ncc_min": 0.918,
+   "ncc_max": 0.918,
+   "canvas_hw": [
+    41977,
+    102619
+   ],
+   "tifxyz_full_hw": [
+    41977,
+    102619
+   ],
+   "tifxyz_scale_xy": [
+    0.049981,
+    0.04998
+   ],
+   "ct_volume": "PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -19.64,
+     -19.62
+    ],
+    [
+     -19.64,
+     -19.62
+    ],
+    [
+     -19.64,
+     -19.62
+    ],
+    [
+     -19.64,
+     -19.62
+    ]
+   ]
+  },
+  {
+   "key": "c028",
+   "scroll": "1667",
+   "segment": "w028_20251208130119156_2um",
+   "bucket_path": "ink/1667/w028_20251208130119156_2um",
+   "group": "one_cell",
+   "model": "constant",
+   "dy_a": -19.6489,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -19.6137,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_c028.jsonl",
+   "fit_regions": [
+    "c028 r0 (y0 9728, x0 22528)",
+    "c028 r1 (y0 9728, x0 23040)"
+   ],
+   "n_fit_regions": 2,
+   "fit_resid_max_dy": 0.011,
+   "fit_resid_max_dx": 0.001,
+   "ncc_min": 0.928,
+   "ncc_max": 0.93,
+   "canvas_hw": [
+    37852,
+    30583
+   ],
+   "tifxyz_full_hw": [
+    37852,
+    30583
+   ],
+   "tifxyz_scale_xy": [
+    0.049864,
+    0.049852
+   ],
+   "ct_volume": "PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -19.65,
+     -19.61
+    ],
+    [
+     -19.65,
+     -19.61
+    ],
+    [
+     -19.65,
+     -19.61
+    ],
+    [
+     -19.65,
+     -19.61
+    ]
+   ]
+  },
+  {
+   "key": "c029v",
+   "scroll": "1667",
+   "segment": "w029_20251212185248662_2um",
+   "bucket_path": "ink/1667/w029_20251212185248662_2um",
+   "group": "one_cell",
+   "model": "constant",
+   "dy_a": -19.7097,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -19.6583,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_c029v.jsonl",
+   "fit_regions": [
+    "c029v r0 (y0 18432, x0 20480)"
+   ],
+   "n_fit_regions": 1,
+   "fit_resid_max_dy": null,
+   "fit_resid_max_dx": null,
+   "ncc_min": 0.912,
+   "ncc_max": 0.912,
+   "canvas_hw": [
+    38310,
+    31630
+   ],
+   "tifxyz_full_hw": [
+    38310,
+    31630
+   ],
+   "tifxyz_scale_xy": [
+    0.049794,
+    0.049778
+   ],
+   "ct_volume": "PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -19.71,
+     -19.66
+    ],
+    [
+     -19.71,
+     -19.66
+    ],
+    [
+     -19.71,
+     -19.66
+    ],
+    [
+     -19.71,
+     -19.66
+    ]
+   ]
+  },
+  {
+   "key": "c031",
+   "scroll": "1667",
+   "segment": "w031_2025122323_2um",
+   "bucket_path": "ink/1667/w031_2025122323_2um",
+   "group": "one_cell",
+   "model": "constant",
+   "dy_a": -19.6903,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -19.7011,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_c031.jsonl",
+   "fit_regions": [
+    "c031 r0 (y0 24576, x0 12288)"
+   ],
+   "n_fit_regions": 1,
+   "fit_resid_max_dy": null,
+   "fit_resid_max_dx": null,
+   "ncc_min": 0.934,
+   "ncc_max": 0.934,
+   "canvas_hw": [
+    39031,
+    31696
+   ],
+   "tifxyz_full_hw": [
+    39031,
+    31696
+   ],
+   "tifxyz_scale_xy": [
+    0.049659,
+    0.049678
+   ],
+   "ct_volume": "PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -19.69,
+     -19.7
+    ],
+    [
+     -19.69,
+     -19.7
+    ],
+    [
+     -19.69,
+     -19.7
+    ],
+    [
+     -19.69,
+     -19.7
+    ]
+   ]
+  },
+  {
+   "key": "b0009",
+   "scroll": "0009b",
+   "segment": "auto_grown_20250919055754487_inp_hr_2um",
+   "bucket_path": "ink/0009b/auto_grown_20250919055754487_inp_hr_2um",
+   "group": "one_cell",
+   "model": "constant",
+   "dy_a": -19.5378,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -19.5641,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_b0009.jsonl",
+   "fit_regions": [
+    "b0009 r0 (y0 19456, x0 10752)",
+    "b0009 r1 (y0 19456, x0 15872)"
+   ],
+   "n_fit_regions": 2,
+   "fit_resid_max_dy": 0.034,
+   "fit_resid_max_dx": 0.032,
+   "ncc_min": 0.92,
+   "ncc_max": 0.929,
+   "canvas_hw": [
+    25984,
+    21248
+   ],
+   "tifxyz_full_hw": [
+    25984,
+    21248
+   ],
+   "tifxyz_scale_xy": [
+    0.050122,
+    0.050185
+   ],
+   "ct_volume": "PHerc0009B/volumes/20250820154339-2.401um-0.3m-77keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -19.54,
+     -19.56
+    ],
+    [
+     -19.54,
+     -19.56
+    ],
+    [
+     -19.54,
+     -19.56
+    ],
+    [
+     -19.54,
+     -19.56
+    ]
+   ]
+  },
+  {
+   "key": "t016",
+   "scroll": "0139",
+   "segment": "w016_2025010815",
+   "bucket_path": "ink/0139/w016_2025010815",
+   "group": "one_cell",
+   "model": "constant",
+   "dy_a": -19.6006,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -19.6272,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_t016.jsonl",
+   "fit_regions": [
+    "t016 r0 (y0 20992, x0 9728)",
+    "t016 r1 (y0 20480, x0 6144)"
+   ],
+   "n_fit_regions": 2,
+   "fit_resid_max_dy": 0.005,
+   "fit_resid_max_dx": 0.013,
+   "ncc_min": 0.92,
+   "ncc_max": 0.924,
+   "canvas_hw": [
+    28940,
+    27228
+   ],
+   "tifxyz_full_hw": [
+    28940,
+    27228
+   ],
+   "tifxyz_scale_xy": [
+    0.050095,
+    0.050104
+   ],
+   "ct_volume": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -19.6,
+     -19.63
+    ],
+    [
+     -19.6,
+     -19.63
+    ],
+    [
+     -19.6,
+     -19.63
+    ],
+    [
+     -19.6,
+     -19.63
+    ]
+   ]
+  },
+  {
+   "key": "t017",
+   "scroll": "0139",
+   "segment": "w017_2025010815",
+   "bucket_path": "ink/0139/w017_2025010815",
+   "group": "one_cell",
+   "model": "constant",
+   "dy_a": -19.6242,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -19.5979,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_t017.jsonl",
+   "fit_regions": [
+    "t017 r0 (y0 12288, x0 15360)"
+   ],
+   "n_fit_regions": 1,
+   "fit_resid_max_dy": null,
+   "fit_resid_max_dx": null,
+   "ncc_min": 0.931,
+   "ncc_max": 0.931,
+   "canvas_hw": [
+    28784,
+    27460
+   ],
+   "tifxyz_full_hw": [
+    28784,
+    27460
+   ],
+   "tifxyz_scale_xy": [
+    0.05,
+    0.049993
+   ],
+   "ct_volume": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -19.62,
+     -19.6
+    ],
+    [
+     -19.62,
+     -19.6
+    ],
+    [
+     -19.62,
+     -19.6
+    ],
+    [
+     -19.62,
+     -19.6
+    ]
+   ]
+  },
+  {
+   "key": "t028",
+   "scroll": "0139",
+   "segment": "w028_20260115221",
+   "bucket_path": "ink/0139/w028_20260115221",
+   "group": "one_cell",
+   "model": "constant",
+   "dy_a": -19.6949,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -19.643,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_t028.jsonl",
+   "fit_regions": [
+    "t028 r0 (y0 13312, x0 17408)"
+   ],
+   "n_fit_regions": 1,
+   "fit_resid_max_dy": null,
+   "fit_resid_max_dx": null,
+   "ncc_min": 0.901,
+   "ncc_max": 0.901,
+   "canvas_hw": [
+    23680,
+    31744
+   ],
+   "tifxyz_full_hw": [
+    23680,
+    31744
+   ],
+   "tifxyz_scale_xy": [
+    0.049994,
+    0.049747
+   ],
+   "ct_volume": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -19.69,
+     -19.64
+    ],
+    [
+     -19.69,
+     -19.64
+    ],
+    [
+     -19.69,
+     -19.64
+    ],
+    [
+     -19.69,
+     -19.64
+    ]
+   ]
+  },
+  {
+   "key": "t029",
+   "scroll": "0139",
+   "segment": "w029_202601261946",
+   "bucket_path": "ink/0139/w029_202601261946",
+   "group": "one_cell",
+   "model": "constant",
+   "dy_a": -19.6171,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -19.6265,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_t029.jsonl",
+   "fit_regions": [
+    "t029 r0 (y0 14848, x0 10752)"
+   ],
+   "n_fit_regions": 1,
+   "fit_resid_max_dy": null,
+   "fit_resid_max_dx": null,
+   "ncc_min": 0.913,
+   "ncc_max": 0.913,
+   "canvas_hw": [
+    23339,
+    31896
+   ],
+   "tifxyz_full_hw": [
+    23339,
+    31896
+   ],
+   "tifxyz_scale_xy": [
+    0.049944,
+    0.049959
+   ],
+   "ct_volume": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -19.62,
+     -19.63
+    ],
+    [
+     -19.62,
+     -19.63
+    ],
+    [
+     -19.62,
+     -19.63
+    ],
+    [
+     -19.62,
+     -19.63
+    ]
+   ]
+  },
+  {
+   "key": "t030",
+   "scroll": "0139",
+   "segment": "w030_202601301912",
+   "bucket_path": "ink/0139/w030_202601301912",
+   "group": "one_cell",
+   "model": "constant",
+   "dy_a": -19.6099,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -19.6138,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_t030.jsonl",
+   "fit_regions": [
+    "t030 r0 (y0 1536, x0 8192)"
+   ],
+   "n_fit_regions": 1,
+   "fit_resid_max_dy": null,
+   "fit_resid_max_dx": null,
+   "ncc_min": 0.909,
+   "ncc_max": 0.909,
+   "canvas_hw": [
+    23105,
+    32363
+   ],
+   "tifxyz_full_hw": [
+    23105,
+    32363
+   ],
+   "tifxyz_scale_xy": [
+    0.049995,
+    0.049989
+   ],
+   "ct_volume": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -19.61,
+     -19.61
+    ],
+    [
+     -19.61,
+     -19.61
+    ],
+    [
+     -19.61,
+     -19.61
+    ],
+    [
+     -19.61,
+     -19.61
+    ]
+   ]
+  },
+  {
+   "key": "t035",
+   "scroll": "0139",
+   "segment": "w035_2026031718",
+   "bucket_path": "ink/0139/w035_2026031718",
+   "group": "second_shift",
+   "model": "constant",
+   "dy_a": 30.837,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -49.1208,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_t035.jsonl",
+   "fit_regions": [
+    "t035 r0 (y0 3584, x0 5632)"
+   ],
+   "n_fit_regions": 1,
+   "fit_resid_max_dy": null,
+   "fit_resid_max_dx": null,
+   "ncc_min": 0.841,
+   "ncc_max": 0.841,
+   "canvas_hw": [
+    22640,
+    20000
+   ],
+   "tifxyz_full_hw": [
+    22640,
+    20000
+   ],
+   "tifxyz_scale_xy": [
+    0.05,
+    0.05
+   ],
+   "ct_volume": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     30.84,
+     -49.12
+    ],
+    [
+     30.84,
+     -49.12
+    ],
+    [
+     30.84,
+     -49.12
+    ],
+    [
+     30.84,
+     -49.12
+    ]
+   ]
+  },
+  {
+   "key": "t039",
+   "scroll": "0139",
+   "segment": "w039_2026030210",
+   "bucket_path": "ink/0139/w039_2026030210",
+   "group": "second_shift",
+   "model": "constant",
+   "dy_a": 30.7287,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -49.2584,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_t039.jsonl",
+   "fit_regions": [
+    "t039 r0 (y0 15360, x0 15872)"
+   ],
+   "n_fit_regions": 1,
+   "fit_resid_max_dy": null,
+   "fit_resid_max_dx": null,
+   "ncc_min": 0.815,
+   "ncc_max": 0.815,
+   "canvas_hw": [
+    33040,
+    30080
+   ],
+   "tifxyz_full_hw": [
+    33040,
+    30080
+   ],
+   "tifxyz_scale_xy": [
+    0.05,
+    0.05
+   ],
+   "ct_volume": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     30.73,
+     -49.26
+    ],
+    [
+     30.73,
+     -49.26
+    ],
+    [
+     30.73,
+     -49.26
+    ],
+    [
+     30.73,
+     -49.26
+    ]
+   ]
+  },
+  {
+   "key": "t040",
+   "scroll": "0139",
+   "segment": "w040_2025083102",
+   "bucket_path": "ink/0139/w040_2025083102",
+   "group": "second_shift",
+   "model": "constant",
+   "dy_a": 30.659,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -49.2966,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_t040.jsonl",
+   "fit_regions": [
+    "t040 r0 (y0 2560, x0 26112)",
+    "t040 r1 (y0 22016, x0 11264)"
+   ],
+   "n_fit_regions": 2,
+   "fit_resid_max_dy": 0.029,
+   "fit_resid_max_dx": 0.021,
+   "ncc_min": 0.817,
+   "ncc_max": 0.829,
+   "canvas_hw": [
+    24880,
+    31040
+   ],
+   "tifxyz_full_hw": [
+    24880,
+    31040
+   ],
+   "tifxyz_scale_xy": [
+    0.05,
+    0.05
+   ],
+   "ct_volume": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     30.66,
+     -49.3
+    ],
+    [
+     30.66,
+     -49.3
+    ],
+    [
+     30.66,
+     -49.3
+    ],
+    [
+     30.66,
+     -49.3
+    ]
+   ]
+  },
+  {
+   "key": "t041",
+   "scroll": "0139",
+   "segment": "w041_2026010816",
+   "bucket_path": "ink/0139/w041_2026010816",
+   "group": "second_shift",
+   "model": "constant",
+   "dy_a": 30.5899,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -49.3177,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_t041.jsonl",
+   "fit_regions": [
+    "t041 r0 (y0 7680, x0 7680)"
+   ],
+   "n_fit_regions": 1,
+   "fit_resid_max_dy": null,
+   "fit_resid_max_dx": null,
+   "ncc_min": 0.814,
+   "ncc_max": 0.814,
+   "canvas_hw": [
+    24080,
+    31360
+   ],
+   "tifxyz_full_hw": [
+    24080,
+    31360
+   ],
+   "tifxyz_scale_xy": [
+    0.05,
+    0.05
+   ],
+   "ct_volume": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     30.59,
+     -49.32
+    ],
+    [
+     30.59,
+     -49.32
+    ],
+    [
+     30.59,
+     -49.32
+    ],
+    [
+     30.59,
+     -49.32
+    ]
+   ]
+  },
+  {
+   "key": "t043",
+   "scroll": "0139",
+   "segment": "w043_2026011217",
+   "bucket_path": "ink/0139/w043_2026011217",
+   "group": "second_shift",
+   "model": "constant",
+   "dy_a": 30.7266,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -49.1685,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_t043.jsonl",
+   "fit_regions": [
+    "t043 r0 (y0 14848, x0 23040)"
+   ],
+   "n_fit_regions": 1,
+   "fit_resid_max_dy": null,
+   "fit_resid_max_dx": null,
+   "ncc_min": 0.839,
+   "ncc_max": 0.839,
+   "canvas_hw": [
+    23760,
+    31680
+   ],
+   "tifxyz_full_hw": [
+    23760,
+    31680
+   ],
+   "tifxyz_scale_xy": [
+    0.05,
+    0.05
+   ],
+   "ct_volume": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     30.73,
+     -49.17
+    ],
+    [
+     30.73,
+     -49.17
+    ],
+    [
+     30.73,
+     -49.17
+    ],
+    [
+     30.73,
+     -49.17
+    ]
+   ]
+  },
+  {
+   "key": "t044",
+   "scroll": "0139",
+   "segment": "w044_2026011522",
+   "bucket_path": "ink/0139/w044_2026011522",
+   "group": "second_shift",
+   "model": "constant",
+   "dy_a": 30.6867,
+   "dy_per_y": 0.0,
+   "dy_per_x": 0.0,
+   "dx_a": -49.2978,
+   "dx_per_y": 0.0,
+   "dx_per_x": 0.0,
+   "slope_source": "constant",
+   "params_from": "audit/results/phase2/reg_t044.jsonl",
+   "fit_regions": [
+    "t044 r0 (y0 15360, x0 13312)"
+   ],
+   "n_fit_regions": 1,
+   "fit_resid_max_dy": null,
+   "fit_resid_max_dx": null,
+   "ncc_min": 0.811,
+   "ncc_max": 0.811,
+   "canvas_hw": [
+    23520,
+    31760
+   ],
+   "tifxyz_full_hw": [
+    23520,
+    31760
+   ],
+   "tifxyz_scale_xy": [
+    0.05,
+    0.05
+   ],
+   "ct_volume": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     30.69,
+     -49.3
+    ],
+    [
+     30.69,
+     -49.3
+    ],
+    [
+     30.69,
+     -49.3
+    ],
+    [
+     30.69,
+     -49.3
+    ]
+   ]
+  },
+  {
+   "key": "w00",
+   "scroll": "phercparis4",
+   "segment": "w00_20231016151002",
+   "bucket_path": "ink/phercparis4/w00_20231016151002",
+   "group": "paris4_size_ratio",
+   "model": "linear",
+   "dy_a": -20.7,
+   "dy_per_y": 0.000993,
+   "dy_per_x": 0.0,
+   "dx_a": 11.09,
+   "dx_per_y": 0.0,
+   "dx_per_x": -0.000663,
+   "slope_source": "fitted slopes of the published fit",
+   "params_from": "correct/apply_fit.py FITS['w00'] (fit to results/results_w00.jsonl)",
+   "fit_regions": [
+    "w00 r0 (y0 10752, x0 20992)",
+    "w00 r1 (y0 17408, x0 2048)",
+    "w00 r2 (y0 6656, x0 36864)",
+    "w00 r3 (y0 16384, x0 30720)",
+    "w00 r4 (y0 3584, x0 27136)",
+    "w00 r5 (y0 13824, x0 14336)"
+   ],
+   "n_fit_regions": 6,
+   "fit_resid_max_dy": 0.193,
+   "fit_resid_max_dx": 0.466,
+   "ncc_min": 0.821,
+   "ncc_max": 0.882,
+   "canvas_hw": [
+    32249,
+    51380
+   ],
+   "tifxyz_full_hw": [
+    32281,
+    51345
+   ],
+   "tifxyz_scale_xy": [
+    0.100165,
+    0.100398
+   ],
+   "ct_volume": "PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -20.7,
+     11.09
+    ],
+    [
+     -20.7,
+     -22.97
+    ],
+    [
+     11.32,
+     11.09
+    ],
+    [
+     11.32,
+     -22.97
+    ]
+   ]
+  },
+  {
+   "key": "w01",
+   "scroll": "phercparis4",
+   "segment": "w01_20230702185753_r15",
+   "bucket_path": "ink/phercparis4/w01_20230702185753_r15",
+   "group": "paris4_size_ratio",
+   "model": "linear",
+   "dy_a": 11.51,
+   "dy_per_y": 0.004263,
+   "dy_per_x": 0.0,
+   "dx_a": 11.82,
+   "dx_per_y": 0.0,
+   "dx_per_x": -0.003876,
+   "slope_source": "fitted slopes of the published fit",
+   "params_from": "correct/apply_fit.py FITS['w01'] (fit to results/results_w01.jsonl)",
+   "fit_regions": [
+    "w01 r0 (y0 27648, x0 27136)",
+    "w01 r1 (y0 56320, x0 17920)",
+    "w01 r2 (y0 9216, x0 42496)",
+    "w01 r3 (y0 55808, x0 37376)",
+    "w01 r4 (y0 13824, x0 15872)",
+    "w01 r5 (y0 40448, x0 35840)"
+   ],
+   "n_fit_regions": 6,
+   "fit_resid_max_dy": 0.292,
+   "fit_resid_max_dx": 0.45,
+   "ncc_min": 0.794,
+   "ncc_max": 0.868,
+   "canvas_hw": [
+    65419,
+    56889
+   ],
+   "tifxyz_full_hw": [
+    65698,
+    56669
+   ],
+   "tifxyz_scale_xy": [
+    0.100478,
+    0.100141
+   ],
+   "ct_volume": "PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     11.51,
+     11.82
+    ],
+    [
+     11.51,
+     -208.68
+    ],
+    [
+     290.39,
+     11.82
+    ],
+    [
+     290.39,
+     -208.68
+    ]
+   ]
+  },
+  {
+   "key": "p4w02",
+   "scroll": "phercparis4",
+   "segment": "w02_20231031143852",
+   "bucket_path": "ink/phercparis4/w02_20231031143852",
+   "group": "paris4_size_ratio",
+   "model": "linear",
+   "dy_a": -20.6917,
+   "dy_per_y": 0.0009637,
+   "dy_per_x": 0.0,
+   "dx_a": 11.8889,
+   "dx_per_y": 0.0,
+   "dx_per_x": -0.0005224,
+   "slope_source": "metadata: tifxyz full / canvas - 1",
+   "params_from": "audit/results/phase2/reg_p4w02.jsonl",
+   "fit_regions": [
+    "p4w02 r0 (y0 27648, x0 22016)",
+    "p4w02 r1 (y0 3072, x0 11264)"
+   ],
+   "n_fit_regions": 2,
+   "fit_resid_max_dy": 0.119,
+   "fit_resid_max_dx": 0.004,
+   "ncc_min": 0.846,
+   "ncc_max": 0.868,
+   "canvas_hw": [
+    34244,
+    44028
+   ],
+   "tifxyz_full_hw": [
+    34277,
+    44005
+   ],
+   "tifxyz_scale_xy": [
+    0.10017,
+    0.100447
+   ],
+   "ct_volume": "PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -20.69,
+     11.89
+    ],
+    [
+     -20.69,
+     -11.11
+    ],
+    [
+     12.31,
+     11.89
+    ],
+    [
+     12.31,
+     -11.11
+    ]
+   ]
+  },
+  {
+   "key": "p4w03",
+   "scroll": "phercparis4",
+   "segment": "w03_20231106155351",
+   "bucket_path": "ink/phercparis4/w03_20231106155351",
+   "group": "paris4_size_ratio",
+   "model": "linear",
+   "dy_a": -20.8265,
+   "dy_per_y": 0.0010229,
+   "dy_per_x": 0.0,
+   "dx_a": 11.7504,
+   "dx_per_y": 0.0,
+   "dx_per_x": -0.0005696,
+   "slope_source": "metadata: tifxyz full / canvas - 1",
+   "params_from": "audit/results/phase2/reg_p4w03.jsonl",
+   "fit_regions": [
+    "p4w03 r0 (y0 17408, x0 24576)",
+    "p4w03 r1 (y0 8704, x0 7168)"
+   ],
+   "n_fit_regions": 2,
+   "fit_resid_max_dy": 0.072,
+   "fit_resid_max_dx": 0.086,
+   "ncc_min": 0.854,
+   "ncc_max": 0.899,
+   "canvas_hw": [
+    34215,
+    50917
+   ],
+   "tifxyz_full_hw": [
+    34250,
+    50888
+   ],
+   "tifxyz_scale_xy": [
+    0.10018,
+    0.100437
+   ],
+   "ct_volume": "PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -20.83,
+     11.75
+    ],
+    [
+     -20.83,
+     -17.25
+    ],
+    [
+     14.17,
+     11.75
+    ],
+    [
+     14.17,
+     -17.25
+    ]
+   ]
+  },
+  {
+   "key": "w05",
+   "scroll": "phercparis4",
+   "segment": "w05_4424",
+   "bucket_path": "ink/phercparis4/w05_4424",
+   "group": "paris4_size_ratio",
+   "model": "linear",
+   "dy_a": -42.39,
+   "dy_per_y": 0.000789,
+   "dy_per_x": 0.0,
+   "dx_a": 22.93,
+   "dx_per_y": 0.0,
+   "dx_per_x": -0.000454,
+   "slope_source": "fitted slopes of the published fit",
+   "params_from": "correct/apply_fit.py FITS['w05'] (fit to results/results_w05.jsonl)",
+   "fit_regions": [
+    "w05 r0 (y0 17920, x0 39424)",
+    "w05 r1 (y0 47616, x0 66048)",
+    "w05 r2 (y0 46080, x0 13312)",
+    "w05 r3 (y0 10240, x0 71680)",
+    "w05 r4 (y0 19968, x0 13824)",
+    "w05 r5 (y0 28160, x0 57856)"
+   ],
+   "n_fit_regions": 6,
+   "fit_resid_max_dy": 0.14,
+   "fit_resid_max_dx": 0.225,
+   "ncc_min": 0.825,
+   "ncc_max": 0.918,
+   "canvas_hw": [
+    51400,
+    76155
+   ],
+   "tifxyz_full_hw": [
+    51440,
+    76120
+   ],
+   "tifxyz_scale_xy": [
+    0.05,
+    0.05
+   ],
+   "ct_volume": "PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -42.39,
+     22.93
+    ],
+    [
+     -42.39,
+     -11.64
+    ],
+    [
+     -1.84,
+     22.93
+    ],
+    [
+     -1.84,
+     -11.64
+    ]
+   ]
+  },
+  {
+   "key": "p4w06",
+   "scroll": "phercparis4",
+   "segment": "w06_1321",
+   "bucket_path": "ink/phercparis4/w06_1321",
+   "group": "paris4_size_ratio",
+   "model": "linear",
+   "dy_a": -21.2128,
+   "dy_per_y": 0.0010593,
+   "dy_per_x": 0.0,
+   "dx_a": 11.9266,
+   "dx_per_y": 0.0,
+   "dx_per_x": -0.0006414,
+   "slope_source": "metadata: tifxyz full / canvas - 1",
+   "params_from": "audit/results/phase2/reg_p4w06.jsonl",
+   "fit_regions": [
+    "p4w06 r0 (y0 25088, x0 22016)",
+    "p4w06 r1 (y0 47104, x0 8192)"
+   ],
+   "n_fit_regions": 2,
+   "fit_resid_max_dy": 0.394,
+   "fit_resid_max_dx": 0.122,
+   "ncc_min": 0.811,
+   "ncc_max": 0.852,
+   "canvas_hw": [
+    50978,
+    40538
+   ],
+   "tifxyz_full_hw": [
+    51032,
+    40512
+   ],
+   "tifxyz_scale_xy": [
+    0.100117,
+    0.100506
+   ],
+   "ct_volume": "PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -21.21,
+     11.93
+    ],
+    [
+     -21.21,
+     -14.07
+    ],
+    [
+     32.79,
+     11.93
+    ],
+    [
+     32.79,
+     -14.07
+    ]
+   ]
+  },
+  {
+   "key": "p4w07",
+   "scroll": "phercparis4",
+   "segment": "w07_1619",
+   "bucket_path": "ink/phercparis4/w07_1619",
+   "group": "paris4_size_ratio",
+   "model": "linear",
+   "dy_a": -42.2128,
+   "dy_per_y": 0.0008169,
+   "dy_per_x": 0.0,
+   "dx_a": 23.2259,
+   "dx_per_y": 0.0,
+   "dx_per_x": -0.0004333,
+   "slope_source": "metadata: tifxyz full / canvas - 1",
+   "params_from": "audit/results/phase2/reg_p4w07.jsonl",
+   "fit_regions": [
+    "p4w07 r0 (y0 17920, x0 45056)",
+    "p4w07 r1 (y0 7680, x0 99328)"
+   ],
+   "n_fit_regions": 2,
+   "fit_resid_max_dy": 0.024,
+   "fit_resid_max_dx": 0.033,
+   "ncc_min": 0.898,
+   "ncc_max": 0.917,
+   "canvas_hw": [
+    52637,
+    108467
+   ],
+   "tifxyz_full_hw": [
+    52680,
+    108420
+   ],
+   "tifxyz_scale_xy": [
+    0.05,
+    0.05
+   ],
+   "ct_volume": "PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -42.21,
+     23.23
+    ],
+    [
+     -42.21,
+     -23.77
+    ],
+    [
+     0.79,
+     23.23
+    ],
+    [
+     0.79,
+     -23.77
+    ]
+   ]
+  },
+  {
+   "key": "p4w09",
+   "scroll": "phercparis4",
+   "segment": "w09_20230929220926",
+   "bucket_path": "ink/phercparis4/w09_20230929220926",
+   "group": "paris4_size_ratio",
+   "model": "linear",
+   "dy_a": -20.6509,
+   "dy_per_y": 0.0007191,
+   "dy_per_x": 0.0,
+   "dx_a": 11.9885,
+   "dx_per_y": 0.0,
+   "dx_per_x": -0.0005547,
+   "slope_source": "metadata: tifxyz full / canvas - 1",
+   "params_from": "audit/results/phase2/reg_p4w09.jsonl",
+   "fit_regions": [
+    "p4w09 r0 (y0 12800, x0 59392)",
+    "p4w09 r1 (y0 11264, x0 28160)"
+   ],
+   "n_fit_regions": 2,
+   "fit_resid_max_dy": 0.104,
+   "fit_resid_max_dx": 0.221,
+   "ncc_min": 0.873,
+   "ncc_max": 0.912,
+   "canvas_hw": [
+    31986,
+    75710
+   ],
+   "tifxyz_full_hw": [
+    32009,
+    75668
+   ],
+   "tifxyz_scale_xy": [
+    0.100201,
+    0.100408
+   ],
+   "ct_volume": "PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr",
+   "offset_at_canvas_corners": [
+    [
+     -20.65,
+     11.99
+    ],
+    [
+     -20.65,
+     -30.01
+    ],
+    [
+     2.35,
+     11.99
+    ],
+    [
+     2.35,
+     -30.01
+    ]
+   ]
+  }
+ ],
+ "aligned_no_correction": [
+  {
+   "key": "p500",
+   "bucket_path": "ink/0500p2/-1",
+   "measured": [
+    [
+     0.49,
+     0.52
+    ]
+   ],
+   "regions": [
+    "p500 r0 (y0 14336, x0 5632)"
+   ]
+  },
+  {
+   "key": "n841",
+   "bucket_path": "ink/841/w00",
+   "measured": [
+    [
+     0.46,
+     0.44
+    ]
+   ],
+   "regions": [
+    "n841 r0 (y0 9216, x0 12288)"
+   ]
+  },
+  {
+   "key": "n841a",
+   "bucket_path": "ink/841/auto_grown_20260220144552896",
+   "measured": [
+    [
+     0.47,
+     0.44
+    ]
+   ],
+   "regions": [
+    "n841a r0 (y0 3584, x0 10752)"
+   ]
+  },
+  {
+   "key": "n841b",
+   "bucket_path": "ink/841/auto_grown_20260220174252405",
+   "measured": [
+    [
+     0.43,
+     0.39
+    ]
+   ],
+   "regions": [
+    "n841b r0 (y0 5632, x0 10240)"
+   ]
+  },
+  {
+   "key": "man5",
+   "bucket_path": "ink/man5/MAN5_outer_3",
+   "measured": [
+    [
+     0.37,
+     0.41
+    ]
+   ],
+   "regions": [
+    "man5 r0 (y0 7168, x0 12288)"
+   ]
+  }
+ ],
+ "not_measured": [
+  {
+   "bucket_path": "ink/814/814_46527_2um_try2",
+   "reason": "canvas came from a 20250717 2.403um TA2 scan of 814 that is not on public S3"
+  }
+ ]
+}
