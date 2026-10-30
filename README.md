@@ -1,6 +1,6 @@
 # HF65 canvas vs tifxyz offset (2026-10-30)
 
-Measurements behind a ScrollPrize/villa issue: on the segments below, pixel (y, x) of the 65-slice HF surface volume ("HF65 canvas") in `scrollprize/datasets` `ink/<scroll>/<segment>/` does not show the CT at tifxyz full-res cell (y, x) of the tifxyz in the same folder.
+Measurements behind [ScrollPrize/villa#2370](https://github.com/ScrollPrize/villa/issues/2370), which answers question 1 of [#2346](https://github.com/ScrollPrize/villa/issues/2346): on the segments below, pixel (y, x) of the 65-slice HF surface volume ("HF65 canvas") in `scrollprize/datasets` `ink/<scroll>/<segment>/` does not show the CT at tifxyz full-res cell (y, x) of the tifxyz in the same folder.
 
 ## Result
 
