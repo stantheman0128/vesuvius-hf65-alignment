@@ -1,0 +1,22 @@
+[
+ {
+  "y0": 35840,
+  "x0": 28160,
+  "size": 1024,
+  "tifxyz_valid": 1.0,
+  "tifxyz_valid_shifted": 1.0,
+  "supmask": 0.912109375,
+  "pick": 7,
+  "min_dist_to_published_px": 18036.64891269994
+ },
+ {
+  "y0": 7680,
+  "x0": 25600,
+  "size": 1024,
+  "tifxyz_valid": 1.0,
+  "tifxyz_valid_shifted": 1.0,
+  "supmask": 1.0,
+  "pick": 8,
+  "min_dist_to_published_px": 17019.668621920933
+ }
+]

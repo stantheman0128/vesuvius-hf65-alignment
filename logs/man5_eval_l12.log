@@ -1,0 +1,28 @@
+
+## level 1: grid (12060, 14950), MAN5 label (12031, 14921); front ink 2341009 px, MAN5 ink 1083591 px (0.46 of front); table 29^2 shifts in 25 s; chunks {'local': 494, 'remote': 0, 'missing': 21619}
+   best integer level-1 shift (15, 16) = level-0 (30, 32): IoU 0.3925
+   best level-0 offset with level-1 data (upsampled, interpolated table): (30, 32) IoU 0.3925
+   IoU vs dy at dx=32: 24:0.3917 26:0.3921 28:0.3924 30:0.3925 32:0.3925 34:0.3924 36:0.3921
+   IoU vs dx at dy=30: 26:0.3921 28:0.3923 30:0.3925 32:0.3925 34:0.3925 36:0.3924 38:0.3923
+   no shift                           level-0 ( 0,  0) level-1 (0, 0): IoU 0.3618, MAN5 ink on front ink 0.8396, front ink on MAN5 ink 0.3886 (inter 909760.0, MAN5 1083591.0, front 2341009) place.py: inter 909760 placed 1083591 (same)
+   centred crop                       level-0 (29, 29) level-1 (14.5, 14.5): IoU 0.3923, MAN5 ink on front ink 0.8905, front ink on MAN5 ink 0.4122 (inter 964935.8, MAN5 1083591.0, front 2341009) 
+   centred crop                       level-0 (29, 30) level-1 (14.5, 15): IoU 0.3924, MAN5 ink on front ink 0.8906, front ink on MAN5 ink 0.4122 (inter 965075.5, MAN5 1083591.0, front 2341009) 
+   centred crop                       level-0 (30, 29) level-1 (15, 14.5): IoU 0.3924, MAN5 ink on front ink 0.8907, front ink on MAN5 ink 0.4123 (inter 965132.0, MAN5 1083591.0, front 2341009) 
+   centred crop                       level-0 (30, 30) level-1 (15, 15): IoU 0.3925, MAN5 ink on front ink 0.8908, front ink on MAN5 ink 0.4123 (inter 965248.0, MAN5 1083591.0, front 2341009) place.py: inter 965248 placed 1083591 (same)
+   offset.py best (level-1 15, 17)    level-0 (30, 34) level-1 (15, 17): IoU 0.3925, MAN5 ink on front ink 0.8908, front ink on MAN5 ink 0.4123 (inter 965313.0, MAN5 1083591.0, front 2341009) place.py: inter 965313 placed 1083591 (same)
+   best at level 1                    level-0 (30, 32) level-1 (15, 16): IoU 0.3925, MAN5 ink on front ink 0.8909, front ink on MAN5 ink 0.4124 (inter 965343.0, MAN5 1083591.0, front 2341009) place.py: inter 965343 placed 1083591 (same)
+
+## level 2: grid (6030, 7475), MAN5 label (6016, 7461); front ink 584994 px, MAN5 ink 270947 px (0.46 of front); table 15^2 shifts in 2 s; chunks {'local': 1354, 'remote': 0, 'missing': 70356}
+   best integer level-2 shift (8, 8) = level-0 (32, 32): IoU 0.3924
+   best level-0 offset with level-2 data (upsampled, interpolated table): (32, 32) IoU 0.3924
+   IoU vs dy at dx=32: 26:0.3920 28:0.3923 30:0.3923 32:0.3924 34:0.3922 36:0.3919 38:0.3914
+   IoU vs dx at dy=32: 26:0.3921 28:0.3923 30:0.3924 32:0.3924 34:0.3923 36:0.3922 38:0.3920
+   no shift                           level-0 ( 0,  0) level-2 (0, 0): IoU 0.3616, MAN5 ink on front ink 0.8389, front ink on MAN5 ink 0.3886 (inter 227308.0, MAN5 270947.0, front 584994) place.py: inter 227308 placed 270947 (same)
+   centred crop                       level-0 (29, 29) level-2 (7.25, 7.25): IoU 0.3921, MAN5 ink on front ink 0.8898, front ink on MAN5 ink 0.4121 (inter 241092.4, MAN5 270947.0, front 584994) 
+   centred crop                       level-0 (29, 30) level-2 (7.25, 7.5): IoU 0.3922, MAN5 ink on front ink 0.8899, front ink on MAN5 ink 0.4122 (inter 241121.6, MAN5 270947.0, front 584994) 
+   centred crop                       level-0 (30, 29) level-2 (7.5, 7.25): IoU 0.3922, MAN5 ink on front ink 0.8899, front ink on MAN5 ink 0.4122 (inter 241123.4, MAN5 270947.0, front 584994) 
+   centred crop                       level-0 (30, 30) level-2 (7.5, 7.5): IoU 0.3922, MAN5 ink on front ink 0.8900, front ink on MAN5 ink 0.4122 (inter 241146.2, MAN5 270947.0, front 584994) 
+   offset.py best (level-1 15, 17)    level-0 (30, 34) level-2 (7.5, 8.5): IoU 0.3923, MAN5 ink on front ink 0.8901, front ink on MAN5 ink 0.4123 (inter 241171.5, MAN5 270947.0, front 584994) 
+   best at level 2                    level-0 (32, 32) level-2 (8, 8): IoU 0.3924, MAN5 ink on front ink 0.8903, front ink on MAN5 ink 0.4123 (inter 241216.0, MAN5 270947.0, front 584994) place.py: inter 241216 placed 270947 (same)
+
+chunks read {'local': 1482, 'remote': 0, 'missing': 75774}

@@ -2,18 +2,35 @@
 
 Measurements behind [ScrollPrize/villa#2370](https://github.com/ScrollPrize/villa/issues/2370), which answers question 1 of [#2346](https://github.com/ScrollPrize/villa/issues/2346): on the segments below, pixel (y, x) of the 65-slice HF surface volume ("HF65 canvas") in `scrollprize/datasets` `ink/<scroll>/<segment>/` does not show the CT at tifxyz full-res cell (y, x) of the tifxyz in the same folder.
 
+## Correction
+
+Sampling the CT at tifxyz cell (y + dy, x + dx), with dy and dx from the fits under "Result", lines HF65 slice 32 up with the CT to within 0.4 px on both axes, in all 32 regions tested: the 24 the fits were made from and 8 they never saw (two new regions per Paris4 segment, one on w018, and the held-out w01 region). Before the correction the same regions were off by up to 254 px on one axis. After it the NCC peak is at zero shift in every region.
+
+`correct/apply_fit.py` maps canvas pixels to tifxyz cells and back and resamples a canvas or label tile into the tifxyz frame, which is the grid `full_3d` training reads. `correct/RESULTS.md` has the full before/after table, a second check of the inverse map, and what is not shown. It also covers the MAN5_outer_3 label frame from [villa#2369](https://github.com/ScrollPrize/villa/issues/2369) (`man5/`).
+
+![w01_r15, out-of-sample region: checkerboard of HF65 slice 32 and the CT on the tifxyz, before (left) and after (right) the correction](png/w01_before_after.png)
+
 ## Result
 
 Offset convention: canvas content at (y, x) lies at tifxyz cell (y + dy, x + dx), in level-0 px. Six 1024 px regions per segment, inside the supervision mask.
 
-| segment | dy range | dx range | fit (per axis, d = a + b*y + c*x) | peak NCC | best other peak |
-|---|---|---|---|---|---|
-| phercparis4 w00_20231016151002 | -16.6 to -3.0 | -13.5 to +9.9 | dy -20.70 + 0.000993*y, dx +11.09 - 0.000663*x | 0.82 to 0.88 | 0.12 or less |
-| phercparis4 w01_20230702185753_r15 | +53.2 to +253.9 | -155.0 to -51.5 | dy +11.51 + 0.004263*y, dx +11.82 - 0.003876*x | 0.79 to 0.87 | 0.15 or less |
-| phercparis4 w05_4424 | -33.8 to -4.4 | -9.8 to +16.5 | dy -42.39 + 0.000789*y, dx +22.93 - 0.000454*x | 0.82 to 0.92 | 0.17 or less |
-| 1667 w018_20240304144031_2um | -19.7 to -19.6 | -19.7 to -19.6 | constant (sd 0.03) | 0.91 to 0.93 | 0.10 or less |
+| segment | dy range | dx range | peak NCC | best other peak |
+|---|---|---|---|---|
+| phercparis4 w00_20231016151002 | -16.6 to -3.0 | -13.5 to +9.9 | 0.82 to 0.88 | 0.12 or less |
+| phercparis4 w01_20230702185753_r15 | +53.2 to +253.9 | -155.0 to -51.5 | 0.79 to 0.87 | 0.15 or less |
+| phercparis4 w05_4424 | -33.8 to -4.4 | -9.8 to +16.5 | 0.82 to 0.92 | 0.17 or less |
+| 1667 w018_20240304144031_2um | -19.7 to -19.6 | -19.7 to -19.6 | 0.91 to 0.93 | 0.10 or less |
 
-Fit residuals are 0.35 px or less. The Paris4 slopes equal (tifxyz full-res size / canvas size - 1) on each axis, which comes from the metadata alone:
+Per-axis fits d = a + b*y + c*x, in level-0 canvas px (`correct/apply_fit.py` model "affine3"):
+
+| segment | dy | dx |
+|---|---|---|
+| w00 | -20.6991 + 0.0009926*y + 0.0000013*x | +11.0864 + 0.0000224*y - 0.0006630*x |
+| w01_r15 | +11.5100 + 0.0042631*y + 0.0000060*x | +11.8180 + 0.0000025*y - 0.0038761*x |
+| w05_4424 | -42.3946 + 0.0007890*y + 0.0000008*x | +22.9348 - 0.0000042*y - 0.0004539*x |
+| w018 | -19.64 (constant, sd 0.03) | -19.64 (constant, sd 0.03) |
+
+Fit residuals are 0.35 px or less. The first version of this README printed only the larger slope per axis; that shorter form leaves up to 0.47 px (w00 dx) and is the model `correct/` was tested with. The Paris4 slopes equal (tifxyz full-res size / canvas size - 1) on each axis, which comes from the metadata alone:
 
 | segment | rows: tifxyz / canvas | cols: tifxyz / canvas |
 |---|---|---|
@@ -47,8 +64,8 @@ python -I measure/reg.py w01             # all regions of a segment
 python -I measure/summarize.py w00 w01 w05 c018
 ```
 
-`measure/regions_<key>.json` holds the regions and `results/results_<key>.jsonl` the outputs used above. Running `measure/reg.py c018 0` from this folder against the cache gave the same numbers to the last digit.
+`measure/regions_<key>.json` holds the regions and `results/results_<key>.jsonl` the outputs used above. The correction runs are described under "Rerun" in `correct/RESULTS.md`; their outputs are `results/before_<key>.jsonl` and `results/after_<key>.jsonl`, and their logs are in `logs/`. Running `measure/reg.py c018 0` from this folder against the cache gave the same numbers to the last digit.
 
 ## Not checked
 
-The other Paris4 and 1667 segments, areas outside the supervision masks, where the Paris4 intercepts come from, villa's own loader end to end (the index convention was reimplemented), and whether the labels sit exactly on the canvas pixels (assumed).
+The other Paris4 and 1667 segments, areas outside the supervision masks (except the held-out region in the independent check, which lies outside the w01 mask), where the Paris4 intercepts come from, villa's own loader end to end (the index convention was reimplemented), and whether the labels sit exactly on the canvas pixels (assumed).

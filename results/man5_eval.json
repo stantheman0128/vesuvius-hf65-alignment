@@ -1,0 +1,367 @@
+{
+ "levels": {
+  "1": {
+   "front_px": 2341009,
+   "man5_px": 1083591,
+   "rows": [
+    {
+     "name": "no shift",
+     "dy": 0,
+     "dx": 0,
+     "levelk_shift": [
+      0.0,
+      0.0
+     ],
+     "iou": 0.3617566127467354,
+     "share_man5_on_front": 0.8395787709569386,
+     "share_front_on_man5": 0.3886187537083369,
+     "inter": 909760.0,
+     "man5_px": 1083591.0,
+     "front_px": 2341009,
+     "iou_box": 0.44253741035645333,
+     "check": "place.py: inter 909760 placed 1083591 (same)"
+    },
+    {
+     "name": "centred crop",
+     "dy": 29,
+     "dx": 29,
+     "levelk_shift": [
+      14.5,
+      14.5
+     ],
+     "iou": 0.3923038479743729,
+     "share_man5_on_front": 0.8904981215237114,
+     "share_front_on_man5": 0.41218797108426325,
+     "inter": 964935.75,
+     "man5_px": 1083591.0,
+     "front_px": 2341009,
+     "iou_box": 0.48232191233128074,
+     "check": ""
+    },
+    {
+     "name": "centred crop",
+     "dy": 29,
+     "dx": 30,
+     "levelk_shift": [
+      14.5,
+      15.0
+     ],
+     "iou": 0.39238295857593614,
+     "share_man5_on_front": 0.8906270908488535,
+     "share_front_on_man5": 0.4122476675655668,
+     "inter": 965075.5,
+     "man5_px": 1083591.0,
+     "front_px": 2341009,
+     "iou_box": 0.48242546547291115,
+     "check": ""
+    },
+    {
+     "name": "centred crop",
+     "dy": 30,
+     "dx": 29,
+     "levelk_shift": [
+      15.0,
+      14.5
+     ],
+     "iou": 0.39241494502063046,
+     "share_man5_on_front": 0.8906792322933653,
+     "share_front_on_man5": 0.4122718024578291,
+     "inter": 965132.0,
+     "man5_px": 1083591.0,
+     "front_px": 2341009,
+     "iou_box": 0.4824673354299046,
+     "check": ""
+    },
+    {
+     "name": "centred crop",
+     "dy": 30,
+     "dx": 30,
+     "levelk_shift": [
+      15.0,
+      15.0
+     ],
+     "iou": 0.39248062091152464,
+     "share_man5_on_front": 0.8907862837546638,
+     "share_front_on_man5": 0.41232135374105783,
+     "inter": 965248.0,
+     "man5_px": 1083591.0,
+     "front_px": 2341009,
+     "iou_box": 0.4825533059406797,
+     "check": "place.py: inter 965248 placed 1083591 (same)"
+    },
+    {
+     "name": "offset.py best (level-1 15, 17)",
+     "dy": 30,
+     "dx": 34,
+     "levelk_shift": [
+      15.0,
+      17.0
+     ],
+     "iou": 0.39251742476579593,
+     "share_man5_on_front": 0.8908462694872881,
+     "share_front_on_man5": 0.4123491195463153,
+     "inter": 965313.0,
+     "man5_px": 1083591.0,
+     "front_px": 2341009,
+     "iou_box": 0.4826014834308889,
+     "check": "place.py: inter 965313 placed 1083591 (same)"
+    },
+    {
+     "name": "best at level 1",
+     "dy": 30,
+     "dx": 32,
+     "levelk_shift": [
+      15.0,
+      16.0
+     ],
+     "iou": 0.3925344118162518,
+     "share_man5_on_front": 0.8908739552100378,
+     "share_front_on_man5": 0.4123619345333572,
+     "inter": 965343.0,
+     "man5_px": 1083591.0,
+     "front_px": 2341009,
+     "iou_box": 0.4826237202516951,
+     "check": "place.py: inter 965343 placed 1083591 (same)"
+    }
+   ],
+   "best_levelk_integer": [
+    15,
+    16,
+    0.3925344118162518
+   ],
+   "best_level0": [
+    0.3925344118162518,
+    30,
+    32
+   ]
+  },
+  "2": {
+   "front_px": 584994,
+   "man5_px": 270947,
+   "rows": [
+    {
+     "name": "no shift",
+     "dy": 0,
+     "dx": 0,
+     "levelk_shift": [
+      0.0,
+      0.0
+     ],
+     "iou": 0.361590944159788,
+     "share_man5_on_front": 0.8389389806862597,
+     "share_front_on_man5": 0.38856466903934056,
+     "inter": 227308.0,
+     "man5_px": 270947.0,
+     "front_px": 584994,
+     "iou_box": 0.4421895881926112,
+     "check": "place.py: inter 227308 placed 270947 (same)"
+    },
+    {
+     "name": "centred crop",
+     "dy": 29,
+     "dx": 29,
+     "levelk_shift": [
+      7.25,
+      7.25
+     ],
+     "iou": 0.3921167783489776,
+     "share_man5_on_front": 0.8898140134417433,
+     "share_front_on_man5": 0.4121280517407016,
+     "inter": 241092.4375,
+     "man5_px": 270947.0,
+     "front_px": 584994,
+     "iou_box": 0.4819279471631686,
+     "check": ""
+    },
+    {
+     "name": "centred crop",
+     "dy": 29,
+     "dx": 30,
+     "levelk_shift": [
+      7.25,
+      7.5
+     ],
+     "iou": 0.3921828667159359,
+     "share_man5_on_front": 0.88992173746157,
+     "share_front_on_man5": 0.4121779454148248,
+     "inter": 241121.625,
+     "man5_px": 270947.0,
+     "front_px": 584994,
+     "iou_box": 0.4820144136571163,
+     "check": ""
+    },
+    {
+     "name": "centred crop",
+     "dy": 30,
+     "dx": 29,
+     "levelk_shift": [
+      7.5,
+      7.25
+     ],
+     "iou": 0.3921868293870072,
+     "share_man5_on_front": 0.8899281962893112,
+     "share_front_on_man5": 0.4121809368984981,
+     "inter": 241123.375,
+     "man5_px": 270947.0,
+     "front_px": 584994,
+     "iou_box": 0.48201959826431795,
+     "check": ""
+    },
+    {
+     "name": "centred crop",
+     "dy": 30,
+     "dx": 30,
+     "levelk_shift": [
+      7.5,
+      7.5
+     ],
+     "iou": 0.39223862923357755,
+     "share_man5_on_front": 0.8900126223947857,
+     "share_front_on_man5": 0.41222003986365674,
+     "inter": 241146.25,
+     "man5_px": 270947.0,
+     "front_px": 584994,
+     "iou_box": 0.4820873718232892,
+     "check": ""
+    },
+    {
+     "name": "offset.py best (level-1 15, 17)",
+     "dy": 30,
+     "dx": 34,
+     "levelk_shift": [
+      7.5,
+      8.5
+     ],
+     "iou": 0.39229581168226463,
+     "share_man5_on_front": 0.8901058140521947,
+     "share_front_on_man5": 0.4122632026995149,
+     "inter": 241171.5,
+     "man5_px": 270947.0,
+     "front_px": 584994,
+     "iou_box": 0.48216218917905784,
+     "check": ""
+    },
+    {
+     "name": "best at level 2",
+     "dy": 32,
+     "dx": 32,
+     "levelk_shift": [
+      8.0,
+      8.0
+     ],
+     "iou": 0.39239660010573835,
+     "share_man5_on_front": 0.8902700528147571,
+     "share_front_on_man5": 0.41233927185577973,
+     "inter": 241216.0,
+     "man5_px": 270947.0,
+     "front_px": 584994,
+     "iou_box": 0.4822940638977253,
+     "check": "place.py: inter 241216 placed 270947 (same)"
+    }
+   ],
+   "best_levelk_integer": [
+    8,
+    8,
+    0.39239660010573835
+   ],
+   "best_level0": [
+    0.39239660010573835,
+    32,
+    32
+   ]
+  }
+ },
+ "level0": {
+  "window": [
+   6462.0,
+   8510.0,
+   12512.0,
+   14560.0
+  ],
+  "best": [
+   35,
+   57,
+   0.8031665675251077
+  ],
+  "rows": [
+   {
+    "name": "no shift",
+    "dy": 0,
+    "dx": 0,
+    "iou": 0.7055926650643068,
+    "share_man5_on_front": 0.8190729056705088,
+    "share_front_on_man5": 0.835871769225081,
+    "inter": 1073857,
+    "man5_px": 1311064,
+    "front_px": 1284715
+   },
+   {
+    "name": "centred crop",
+    "dy": 29,
+    "dx": 29,
+    "iou": 0.781345703970328,
+    "share_man5_on_front": 0.8666753262340073,
+    "share_front_on_man5": 0.8880926898183644,
+    "inter": 1140946,
+    "man5_px": 1316463,
+    "front_px": 1284715
+   },
+   {
+    "name": "centred crop",
+    "dy": 29,
+    "dx": 30,
+    "iou": 0.7823587452549643,
+    "share_man5_on_front": 0.8672953562299894,
+    "share_front_on_man5": 0.8887496448628684,
+    "inter": 1141790,
+    "man5_px": 1316495,
+    "front_px": 1284715
+   },
+   {
+    "name": "centred crop",
+    "dy": 30,
+    "dx": 29,
+    "iou": 0.7827202256654726,
+    "share_man5_on_front": 0.8675045175129107,
+    "share_front_on_man5": 0.8889963921959345,
+    "inter": 1142107,
+    "man5_px": 1316543,
+    "front_px": 1284715
+   },
+   {
+    "name": "centred crop",
+    "dy": 30,
+    "dx": 30,
+    "iou": 0.7837391383055756,
+    "share_man5_on_front": 0.8681268684830955,
+    "share_front_on_man5": 0.8896564607714551,
+    "inter": 1142955,
+    "man5_px": 1316576,
+    "front_px": 1284715
+   },
+   {
+    "name": "offset.py best (level-1 15, 17)",
+    "dy": 30,
+    "dx": 34,
+    "iou": 0.7877151484581055,
+    "share_man5_on_front": 0.8705522092089804,
+    "share_front_on_man5": 0.892221231946385,
+    "inter": 1146250,
+    "man5_px": 1316693,
+    "front_px": 1284715
+   },
+   {
+    "name": "best in window",
+    "dy": 35,
+    "dx": 57,
+    "iou": 0.8031665675251077,
+    "share_man5_on_front": 0.880204993389761,
+    "share_front_on_man5": 0.9017354043503812,
+    "inter": 1158473,
+    "man5_px": 1316140,
+    "front_px": 1284715
+   }
+  ],
+  "new_bytes": 2014
+ }
+}

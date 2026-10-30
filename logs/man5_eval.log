@@ -1,0 +1,42 @@
+
+## level 1: grid (12060, 14950), MAN5 label (12031, 14921); front ink 2341009 px, MAN5 ink 1083591 px (0.46 of front); table 29^2 shifts in 18 s; chunks {'local': 494, 'remote': 0, 'missing': 21619}
+   box for iou_box (level-1 px): y 1942..7279, x 5208..7426; front ink inside 1881950 px (0.804 of all)
+   best integer level-1 shift (15, 16) = level-0 (30, 32): IoU 0.3925
+   best level-0 offset with level-1 data (upsampled, interpolated table): (30, 32) IoU 0.3925
+   IoU vs dy at dx=32: 24:0.3917 26:0.3921 28:0.3924 30:0.3925 32:0.3925 34:0.3924 36:0.3921
+   IoU vs dx at dy=30: 26:0.3921 28:0.3923 30:0.3925 32:0.3925 34:0.3925 36:0.3924 38:0.3923
+   no shift                           level-0 ( 0,  0) level-1 (0, 0): IoU 0.3618, IoU in box 0.4425, MAN5 ink on front ink 0.8396, front ink on MAN5 ink 0.3886 (inter 909760.0, MAN5 1083591.0, front 2341009) place.py: inter 909760 placed 1083591 (same)
+   centred crop                       level-0 (29, 29) level-1 (14.5, 14.5): IoU 0.3923, IoU in box 0.4823, MAN5 ink on front ink 0.8905, front ink on MAN5 ink 0.4122 (inter 964935.8, MAN5 1083591.0, front 2341009) 
+   centred crop                       level-0 (29, 30) level-1 (14.5, 15): IoU 0.3924, IoU in box 0.4824, MAN5 ink on front ink 0.8906, front ink on MAN5 ink 0.4122 (inter 965075.5, MAN5 1083591.0, front 2341009) 
+   centred crop                       level-0 (30, 29) level-1 (15, 14.5): IoU 0.3924, IoU in box 0.4825, MAN5 ink on front ink 0.8907, front ink on MAN5 ink 0.4123 (inter 965132.0, MAN5 1083591.0, front 2341009) 
+   centred crop                       level-0 (30, 30) level-1 (15, 15): IoU 0.3925, IoU in box 0.4826, MAN5 ink on front ink 0.8908, front ink on MAN5 ink 0.4123 (inter 965248.0, MAN5 1083591.0, front 2341009) place.py: inter 965248 placed 1083591 (same)
+   offset.py best (level-1 15, 17)    level-0 (30, 34) level-1 (15, 17): IoU 0.3925, IoU in box 0.4826, MAN5 ink on front ink 0.8908, front ink on MAN5 ink 0.4123 (inter 965313.0, MAN5 1083591.0, front 2341009) place.py: inter 965313 placed 1083591 (same)
+   best at level 1                    level-0 (30, 32) level-1 (15, 16): IoU 0.3925, IoU in box 0.4826, MAN5 ink on front ink 0.8909, front ink on MAN5 ink 0.4124 (inter 965343.0, MAN5 1083591.0, front 2341009) place.py: inter 965343 placed 1083591 (same)
+
+## level 2: grid (6030, 7475), MAN5 label (6016, 7461); front ink 584994 px, MAN5 ink 270947 px (0.46 of front); table 15^2 shifts in -3 s; chunks {'local': 1354, 'remote': 0, 'missing': 70356}
+   box for iou_box (level-2 px): y 971..3640, x 2604..3713; front ink inside 470412 px (0.804 of all)
+   best integer level-2 shift (8, 8) = level-0 (32, 32): IoU 0.3924
+   best level-0 offset with level-2 data (upsampled, interpolated table): (32, 32) IoU 0.3924
+   IoU vs dy at dx=32: 26:0.3920 28:0.3923 30:0.3923 32:0.3924 34:0.3922 36:0.3919 38:0.3914
+   IoU vs dx at dy=32: 26:0.3921 28:0.3923 30:0.3924 32:0.3924 34:0.3923 36:0.3922 38:0.3920
+   no shift                           level-0 ( 0,  0) level-2 (0, 0): IoU 0.3616, IoU in box 0.4422, MAN5 ink on front ink 0.8389, front ink on MAN5 ink 0.3886 (inter 227308.0, MAN5 270947.0, front 584994) place.py: inter 227308 placed 270947 (same)
+   centred crop                       level-0 (29, 29) level-2 (7.25, 7.25): IoU 0.3921, IoU in box 0.4819, MAN5 ink on front ink 0.8898, front ink on MAN5 ink 0.4121 (inter 241092.4, MAN5 270947.0, front 584994) 
+   centred crop                       level-0 (29, 30) level-2 (7.25, 7.5): IoU 0.3922, IoU in box 0.4820, MAN5 ink on front ink 0.8899, front ink on MAN5 ink 0.4122 (inter 241121.6, MAN5 270947.0, front 584994) 
+   centred crop                       level-0 (30, 29) level-2 (7.5, 7.25): IoU 0.3922, IoU in box 0.4820, MAN5 ink on front ink 0.8899, front ink on MAN5 ink 0.4122 (inter 241123.4, MAN5 270947.0, front 584994) 
+   centred crop                       level-0 (30, 30) level-2 (7.5, 7.5): IoU 0.3922, IoU in box 0.4821, MAN5 ink on front ink 0.8900, front ink on MAN5 ink 0.4122 (inter 241146.2, MAN5 270947.0, front 584994) 
+   offset.py best (level-1 15, 17)    level-0 (30, 34) level-2 (7.5, 8.5): IoU 0.3923, IoU in box 0.4822, MAN5 ink on front ink 0.8901, front ink on MAN5 ink 0.4123 (inter 241171.5, MAN5 270947.0, front 584994) 
+   best at level 2                    level-0 (32, 32) level-2 (8, 8): IoU 0.3924, IoU in box 0.4823, MAN5 ink on front ink 0.8903, front ink on MAN5 ink 0.4123 (inter 241216.0, MAN5 270947.0, front 584994) place.py: inter 241216 placed 270947 (same)
+
+## level 0 window: segment grid y 6462..8510, x 12512..14560 (label block at 6432,12480); front ink 1284715 px; read in 12 s, 0.00 MB new; chunks {'local': 1670, 'remote': 260, 'missing': 81544}
+   best level-0 offset in the window (search -4..65 on both axes): (35, 57) IoU 0.8032, on search edge: False
+   IoU vs dy at dx=57: -4:0.7329 0:0.7445 4:0.7557 8:0.7662 12:0.7760 16:0.7849 20:0.7924 24:0.7981 28:0.8014 32:0.8029 36:0.8031 40:0.8023 44:0.8005 48:0.7982 52:0.7952 56:0.7916 60:0.7872 64:0.7819
+   IoU vs dx at dy=35: -4:0.7527 0:0.7573 4:0.7619 8:0.7664 12:0.7709 16:0.7753 20:0.7796 24:0.7839 28:0.7879 32:0.7917 36:0.7950 40:0.7978 44:0.7999 48:0.8016 52:0.8027 56:0.8032 60:0.8029 64:0.8020
+   no shift                           level-0 ( 0,  0): IoU 0.7056, MAN5 ink on front ink 0.8191 (inter 1073857, MAN5 1311064, front 1284715)
+   centred crop                       level-0 (29, 29): IoU 0.7813, MAN5 ink on front ink 0.8667 (inter 1140946, MAN5 1316463, front 1284715)
+   centred crop                       level-0 (29, 30): IoU 0.7824, MAN5 ink on front ink 0.8673 (inter 1141790, MAN5 1316495, front 1284715)
+   centred crop                       level-0 (30, 29): IoU 0.7827, MAN5 ink on front ink 0.8675 (inter 1142107, MAN5 1316543, front 1284715)
+   centred crop                       level-0 (30, 30): IoU 0.7837, MAN5 ink on front ink 0.8681 (inter 1142955, MAN5 1316576, front 1284715)
+   offset.py best (level-1 15, 17)    level-0 (30, 34): IoU 0.7877, MAN5 ink on front ink 0.8706 (inter 1146250, MAN5 1316693, front 1284715)
+   best in window                     level-0 (35, 57): IoU 0.8032, MAN5 ink on front ink 0.8802 (inter 1158473, MAN5 1316140, front 1284715)
+
+chunks read {'local': 1670, 'remote': 260, 'missing': 81544}

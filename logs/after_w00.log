@@ -1,0 +1,43 @@
+rangecache: 1740 cached ranges indexed; ledger <HF65_DATA>/ledger_after_w00.tsv
+w00 mode=after pyr_shift=(3,0) klev=2 PRED=0 R=32 SIG=4.0 model=w00/readme dy=[-20.7, 0.000993, 0.0] dx=[11.09, 0.0, -0.000663]
+w00 after r0 (in-sample (used by the fit)) y0=10752 x0=20992 win 0,0: level-0 (dy,dx)=(+0.03,+0.25) hp ncc=0.916 2nd=0.086 edge=False zero-shift ncc=0.9160836338996887 best slice 32; surf valid 1.000 img nz 1.000 dl 4.61 MB, 58.4 s
+w00 after r1 (in-sample (used by the fit)) y0=17408 x0=2048 win 0,0: level-0 (dy,dx)=(+0.16,+0.40) hp ncc=0.904 2nd=0.079 edge=False zero-shift ncc=0.9035085439682007 best slice 32; surf valid 1.000 img nz 1.000 dl 5.08 MB, 148.2 s
+w00 after r2 (in-sample (used by the fit)) y0=6656 x0=36864 win 0,0: level-0 (dy,dx)=(-0.09,+0.13) hp ncc=0.912 2nd=0.060 edge=False zero-shift ncc=0.9115378260612488 best slice 32; surf valid 1.000 img nz 1.000 dl 9.36 MB, 72.5 s
+Traceback (most recent call last):
+  File "<repo>/correct/regcorr.py", line 192, in <module>
+    run(sys.argv[1], sys.argv[2], sys.argv[3:])
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/correct/regcorr.py", line 116, in run
+    P = surf.cells(ty, tx)
+  File "<repo>/correct/../measure/lib.py", line 186, in cells
+    g = self.stored_rows(r0, r1, c0, c1)
+  File "<repo>/correct/../measure/lib.py", line 178, in stored_rows
+    return {a: self.t[a].rows(r0, r1, c0, c1) for a in "xyz"}
+               ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "<repo>/correct/../measure/common.py", line 146, in rows
+    res = list(ex.map(lambda j: self.src.read(j[1], j[2]), jobs))
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/_base.py", line 645, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/_base.py", line 312, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/_base.py", line 454, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/_base.py", line 396, in __get_result
+    raise self._exception
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "<repo>/correct/../measure/common.py", line 146, in <lambda>
+    res = list(ex.map(lambda j: self.src.read(j[1], j[2]), jobs))
+                                ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "<repo>/correct/../measure/common.py", line 88, in read
+    return fetch(self.loc, (a, b), allow_short=allow_short)
+  File "<repo>/correct/rangecache.py", line 103, in fetch
+    d = _orig_fetch(url, (pos, g1), cache, False)
+  File "<repo>/correct/../measure/common.py", line 69, in fetch
+    raise RuntimeError(f"retries exhausted for {url}: {last}")
+RuntimeError: retries exhausted for https://huggingface.co/buckets/scrollprize/datasets/resolve/ink%2Fphercparis4%2Fw00_20231016151002%2Fy.tif: 429

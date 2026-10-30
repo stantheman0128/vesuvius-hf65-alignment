@@ -1,0 +1,8 @@
+tile y 1982..3006 x 5248..6272 (level-1 label px), MAN5 ink 0.23: best level-1 shift (9, 10) = level-0 (18, 20), IoU 0.753, IoU drop at +-4 px 0.0021, on search edge False
+tile y 3006..4030 x 5248..6272 (level-1 label px), MAN5 ink 0.08: best level-1 shift (3, 30) = level-0 (6, 60), IoU 0.680, IoU drop at +-4 px nan, on search edge True
+tile y 3006..4030 x 6272..7296 (level-1 label px), MAN5 ink 0.23: best level-1 shift (29, 16) = level-0 (58, 32), IoU 0.757, IoU drop at +-4 px nan, on search edge False
+tile y 4030..5054 x 6272..7296 (level-1 label px), MAN5 ink 0.10: best level-1 shift (4, 27) = level-0 (8, 54), IoU 0.929, IoU drop at +-4 px nan, on search edge False
+tile y 6078..7102 x 5248..6272 (level-1 label px), MAN5 ink 0.14: best level-1 shift (30, 7) = level-0 (60, 14), IoU 0.642, IoU drop at +-4 px nan, on search edge True
+tile y 6078..7102 x 6272..7296 (level-1 label px), MAN5 ink 0.14: best level-1 shift (16, 14) = level-0 (32, 28), IoU 0.419, IoU drop at +-4 px 0.0018, on search edge False
+
+6 tiles, 4 not on the search edge; level-1 best shift dy median 12.5 range 4..29, dx median 15.0 range 10..27

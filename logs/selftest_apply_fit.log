@@ -1,0 +1,8 @@
+1) w01 new0: CLI level-2 bilinear vs method B array: max |diff| 7.63e-06 over 63756 px; /tmp/tmp3oxe3vpq/tile.npy (256x256, level 2, canvas origin 3328,7168) -> /tmp/tmp3oxe3vpq/out.npy (256x256, tifxyz level-2 origin 3343,7140); model w01/readme; offset at out centre (+70.40, -101.25) level-0 px; 1780 px filled with 0.0 (source outside tile)
+1) c018 new0: CLI level-2 bilinear vs method B array: max |diff| 7.62e-06 over 63001 px; /tmp/tmp3oxe3vpq/tile.npy (256x256, level 2, canvas origin 1536,22400) -> /tmp/tmp3oxe3vpq/out.npy (256x256, tifxyz level-2 origin 1536,22400); model c018/readme; offset at out centre (-19.64, -19.64) level-0 px; 2535 px filled with 0.0 (source outside tile)
+2) w01: 5 single-pixel labels land at round(fwd(y, x)): True
+2) w00: 5 single-pixel labels land at round(fwd(y, x)): True
+2) w05: 5 single-pixel labels land at round(fwd(y, x)): True
+2) c018: 5 single-pixel labels land at round(fwd(y, x)): True
+3) w01: canvas -> tifxyz -> canvas (nearest both ways), agreement over 85264 interior px: 0.9989
+ALL OK

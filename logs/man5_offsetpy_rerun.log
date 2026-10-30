@@ -1,0 +1,3 @@
+best IoU 0.485 at level-1 shift 15, 17
+no shift: IoU 0.444, M ink covered 0.840
+best:     IoU 0.485, M ink covered 0.891

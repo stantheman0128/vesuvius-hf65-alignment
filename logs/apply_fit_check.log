@@ -1,0 +1,65 @@
+results dir: <repo>/results
+
+## w00  (6 regions)
+  README : dy -20.7000 +0.0009930*y +0.0000000*x | dx +11.0900 +0.0000000*y -0.0006630*x
+  refit  : dy -20.6991 +0.0009926*y +0.0000013*x | dx +11.0864 +0.0000224*y -0.0006630*x  (w00/affine3)
+  README intercepts/main slopes equal the refit rounded to the printed digits: True
+  region | centre (y, x) | measured dy, dx | README model | measured - README | measured - refit
+  0 | 11264, 21504 | -9.32, -2.94 | -9.51, -3.17 | +0.19, +0.23 | +0.17, -0.02
+  1 | 17920, 2560 | -2.96, +9.86 | -2.91, +9.39 | -0.05, +0.47 | -0.05, +0.07
+  2 | 7168, 37376 | -13.65, -13.45 | -13.58, -13.69 | -0.07, +0.24 | -0.11, +0.08
+  3 | 16896, 31232 | -3.86, -9.27 | -3.92, -9.62 | +0.07, +0.35 | +0.03, -0.03
+  4 | 4096, 27648 | -16.58, -7.19 | -16.63, -7.24 | +0.05, +0.05 | +0.02, -0.03
+  5 | 14336, 14848 | -6.51, +1.49 | -6.46, +1.25 | -0.05, +0.25 | -0.06, -0.07
+  |README - refit| over the canvas: dy max 0.07 px, dx max 0.72 px
+  metadata size ratio - 1: rows +0.000992 (README b_y +0.000993), cols -0.000681 (README c_x -0.000663)
+  inversion w00/readme: 1 iter: |inv - exact| max 2.08e-02 px, |fwd(inv(t)) - t| max 2.09e-02 px; 2 iter: |inv - exact| max 2.07e-05 px, |fwd(inv(t)) - t| max 2.07e-05 px; 3 iter: |inv - exact| max 2.05e-08 px, |fwd(inv(t)) - t| max 2.06e-08 px; 6 iter: |inv - exact| max 7.28e-12 px, |fwd(inv(t)) - t| max 1.82e-12 px
+  inversion w00/affine3: 1 iter: |inv - exact| max 2.08e-02 px, |fwd(inv(t)) - t| max 2.08e-02 px; 2 iter: |inv - exact| max 2.07e-05 px, |fwd(inv(t)) - t| max 2.07e-05 px; 3 iter: |inv - exact| max 2.05e-08 px, |fwd(inv(t)) - t| max 2.05e-08 px; 6 iter: |inv - exact| max 7.28e-12 px, |fwd(inv(t)) - t| max 3.64e-12 px
+
+## w01  (6 regions)
+  README : dy +11.5100 +0.0042630*y +0.0000000*x | dx +11.8200 +0.0000000*y -0.0038760*x
+  refit  : dy +11.5100 +0.0042631*y +0.0000060*x | dx +11.8180 +0.0000025*y -0.0038761*x  (w01/affine3)
+  README intercepts/main slopes equal the refit rounded to the printed digits: True
+  region | centre (y, x) | measured dy, dx | README model | measured - README | measured - refit
+  0 | 28160, 27648 | +131.70, -95.33 | +131.56, -95.34 | +0.14, +0.02 | -0.03, -0.05
+  1 | 56832, 18432 | +253.88, -59.66 | +253.78, -59.62 | +0.10, -0.04 | -0.02, -0.18
+  2 | 9728, 43008 | +53.22, -155.05 | +52.98, -154.88 | +0.24, -0.17 | -0.02, -0.19
+  3 | 56320, 37888 | +251.82, -134.95 | +251.60, -135.03 | +0.22, +0.09 | -0.02, -0.05
+  4 | 14336, 16384 | +72.74, -51.54 | +72.62, -51.68 | +0.12, +0.15 | +0.02, +0.11
+  5 | 40960, 36352 | +186.41, -128.63 | +186.12, -129.08 | +0.29, +0.45 | +0.07, +0.35
+  |README - refit| over the canvas: dy max 0.35 px, dx max 0.16 px
+  metadata size ratio - 1: rows +0.004265 (README b_y +0.004263), cols -0.003867 (README c_x -0.003876)
+  inversion w01/readme: 1 iter: |inv - exact| max 1.24e+00 px, |fwd(inv(t)) - t| max 1.25e+00 px; 2 iter: |inv - exact| max 5.30e-03 px, |fwd(inv(t)) - t| max 5.32e-03 px; 3 iter: |inv - exact| max 2.26e-05 px, |fwd(inv(t)) - t| max 2.27e-05 px; 6 iter: |inv - exact| max 1.46e-11 px, |fwd(inv(t)) - t| max 7.28e-12 px
+  inversion w01/affine3: 1 iter: |inv - exact| max 1.24e+00 px, |fwd(inv(t)) - t| max 1.25e+00 px; 2 iter: |inv - exact| max 5.31e-03 px, |fwd(inv(t)) - t| max 5.33e-03 px; 3 iter: |inv - exact| max 2.26e-05 px, |fwd(inv(t)) - t| max 2.27e-05 px; 6 iter: |inv - exact| max 1.46e-11 px, |fwd(inv(t)) - t| max 1.46e-11 px
+
+## w05  (6 regions)
+  README : dy -42.3900 +0.0007890*y +0.0000000*x | dx +22.9300 +0.0000000*y -0.0004540*x
+  refit  : dy -42.3946 +0.0007890*y +0.0000008*x | dx +22.9348 -0.0000042*y -0.0004539*x  (w05/affine3)
+  README intercepts/main slopes equal the refit rounded to the printed digits: True
+  region | centre (y, x) | measured dy, dx | README model | measured - README | measured - refit
+  0 | 18432, 39936 | -27.86, +4.57 | -27.85, +4.80 | -0.02, -0.23 | -0.04, -0.16
+  1 | 48128, 66560 | -4.39, -7.48 | -4.42, -7.29 | +0.03, -0.19 | -0.02, -0.00
+  2 | 46592, 13824 | -5.56, +16.48 | -5.63, +16.65 | +0.07, -0.17 | +0.07, +0.02
+  3 | 10752, 72192 | -33.77, -9.81 | -33.91, -9.85 | +0.14, +0.04 | +0.09, +0.07
+  4 | 20480, 14336 | -26.25, +16.41 | -26.23, +16.42 | -0.02, -0.01 | -0.03, +0.07
+  5 | 28672, 58368 | -19.79, -3.68 | -19.77, -3.57 | -0.02, -0.11 | -0.06, -0.00
+  |README - refit| over the canvas: dy max 0.06 px, dx max 0.21 px
+  metadata size ratio - 1: rows +0.000778 (README b_y +0.000789), cols -0.000460 (README c_x -0.000454)
+  inversion w05/readme: 1 iter: |inv - exact| max 3.36e-02 px, |fwd(inv(t)) - t| max 3.36e-02 px; 2 iter: |inv - exact| max 2.65e-05 px, |fwd(inv(t)) - t| max 2.65e-05 px; 3 iter: |inv - exact| max 2.09e-08 px, |fwd(inv(t)) - t| max 2.09e-08 px; 6 iter: |inv - exact| max 1.46e-11 px, |fwd(inv(t)) - t| max 1.82e-12 px
+  inversion w05/affine3: 1 iter: |inv - exact| max 3.36e-02 px, |fwd(inv(t)) - t| max 3.36e-02 px; 2 iter: |inv - exact| max 2.65e-05 px, |fwd(inv(t)) - t| max 2.65e-05 px; 3 iter: |inv - exact| max 2.09e-08 px, |fwd(inv(t)) - t| max 2.09e-08 px; 6 iter: |inv - exact| max 1.46e-11 px, |fwd(inv(t)) - t| max 7.28e-12 px
+
+## c018  (6 regions)
+  README : dy -19.6400 +0.0000000*y +0.0000000*x | dx -19.6400 +0.0000000*y +0.0000000*x
+  refit  : dy -19.6421 +0.0000000*y +0.0000000*x | dx -19.6358 +0.0000000*y +0.0000000*x  (c018/mean)
+  README intercepts/main slopes equal the refit rounded to the printed digits: True
+  region | centre (y, x) | measured dy, dx | README model | measured - README | measured - refit
+  0 | 17408, 36864 | -19.67, -19.69 | -19.64, -19.64 | -0.03, -0.05 | -0.03, -0.05
+  1 | 26112, 95744 | -19.64, -19.65 | -19.64, -19.64 | -0.00, -0.01 | -0.00, -0.01
+  2 | 26112, 2048 | -19.69, -19.62 | -19.64, -19.64 | -0.05, +0.02 | -0.04, +0.02
+  3 | 5632, 68608 | -19.63, -19.67 | -19.64, -19.64 | +0.01, -0.03 | +0.01, -0.03
+  4 | 28160, 72704 | -19.62, -19.61 | -19.64, -19.64 | +0.02, +0.03 | +0.02, +0.02
+  5 | 6144, 5632 | -19.60, -19.58 | -19.64, -19.64 | +0.04, +0.06 | +0.04, +0.06
+  |README - refit| over the canvas: dy max 0.00 px, dx max 0.00 px
+  metadata size ratio - 1: rows +0.000000 (README b_y +0.000000), cols +0.000000 (README c_x +0.000000)
+  inversion c018/readme: 1 iter: |inv - exact| max 0.00e+00 px, |fwd(inv(t)) - t| max 4.55e-13 px; 2 iter: |inv - exact| max 0.00e+00 px, |fwd(inv(t)) - t| max 4.55e-13 px; 3 iter: |inv - exact| max 0.00e+00 px, |fwd(inv(t)) - t| max 4.55e-13 px; 6 iter: |inv - exact| max 0.00e+00 px, |fwd(inv(t)) - t| max 4.55e-13 px
+  inversion c018/mean: 1 iter: |inv - exact| max 0.00e+00 px, |fwd(inv(t)) - t| max 3.64e-12 px; 2 iter: |inv - exact| max 0.00e+00 px, |fwd(inv(t)) - t| max 3.64e-12 px; 3 iter: |inv - exact| max 0.00e+00 px, |fwd(inv(t)) - t| max 3.64e-12 px; 6 iter: |inv - exact| max 0.00e+00 px, |fwd(inv(t)) - t| max 3.64e-12 px

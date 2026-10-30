@@ -1,0 +1,45 @@
+rangecache: 1740 cached ranges indexed; ledger <HF65_DATA>/ledger_after_c018.tsv
+c018 mode=after pyr_shift=(0,0) klev=1 PRED=0 R=32 SIG=4.0 model=c018/readme dy=[-19.64, 0.0, 0.0] dx=[-19.64, 0.0, 0.0]
+c018 after r0 (in-sample (used by the fit)) y0=16896 x0=36352 win 0,0: level-0 (dy,dx)=(+0.06,+0.05) hp ncc=0.920 2nd=0.056 edge=False zero-shift ncc=0.9199508428573608 best slice 32; surf valid 1.000 img nz 1.000 dl 8.30 MB, 37.3 s
+c018 after r1 (in-sample (used by the fit)) y0=25600 x0=95232 win 0,0: level-0 (dy,dx)=(+0.09,+0.08) hp ncc=0.921 2nd=0.102 edge=False zero-shift ncc=0.9207049012184143 best slice 32; surf valid 1.000 img nz 1.000 dl 5.00 MB, 49.2 s
+c018 after r2 (in-sample (used by the fit)) y0=25600 x0=1536 win 0,0: level-0 (dy,dx)=(+0.03,+0.09) hp ncc=0.931 2nd=0.049 edge=False zero-shift ncc=0.9308322072029114 best slice 32; surf valid 1.000 img nz 1.000 dl 7.24 MB, 109.9 s
+c018 after r3 (in-sample (used by the fit)) y0=5120 x0=68096 win 0,0: level-0 (dy,dx)=(+0.09,+0.07) hp ncc=0.911 2nd=0.049 edge=False zero-shift ncc=0.9111130237579346 best slice 32; surf valid 1.000 img nz 1.000 dl 8.65 MB, 48.2 s
+c018 after r4 (in-sample (used by the fit)) y0=27648 x0=72192 win 0,0: level-0 (dy,dx)=(+0.10,+0.09) hp ncc=0.922 2nd=0.044 edge=False zero-shift ncc=0.9217880964279175 best slice 32; surf valid 1.000 img nz 1.000 dl 3.24 MB, 43.1 s
+Traceback (most recent call last):
+  File "<repo>/correct/regcorr.py", line 192, in <module>
+    run(sys.argv[1], sys.argv[2], sys.argv[3:])
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/correct/regcorr.py", line 116, in run
+    P = surf.cells(ty, tx)
+  File "<repo>/correct/../measure/lib.py", line 186, in cells
+    g = self.stored_rows(r0, r1, c0, c1)
+  File "<repo>/correct/../measure/lib.py", line 178, in stored_rows
+    return {a: self.t[a].rows(r0, r1, c0, c1) for a in "xyz"}
+               ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "<repo>/correct/../measure/common.py", line 146, in rows
+    res = list(ex.map(lambda j: self.src.read(j[1], j[2]), jobs))
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/_base.py", line 645, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/_base.py", line 312, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/_base.py", line 454, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/_base.py", line 396, in __get_result
+    raise self._exception
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "<repo>/correct/../measure/common.py", line 146, in <lambda>
+    res = list(ex.map(lambda j: self.src.read(j[1], j[2]), jobs))
+                                ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "<repo>/correct/../measure/common.py", line 88, in read
+    return fetch(self.loc, (a, b), allow_short=allow_short)
+  File "<repo>/correct/rangecache.py", line 103, in fetch
+    d = _orig_fetch(url, (pos, g1), cache, False)
+  File "<repo>/correct/../measure/common.py", line 69, in fetch
+    raise RuntimeError(f"retries exhausted for {url}: {last}")
+RuntimeError: retries exhausted for https://huggingface.co/buckets/scrollprize/datasets/resolve/ink%2F1667%2Fw018_20240304144031_2um%2Fx.tif: 429

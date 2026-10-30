@@ -1,0 +1,26 @@
+w00: candidates 164 (regions.py criteria)
+   first 6 picks equal measure/regions_w00.json: True
+   pick y0=3584 x0=19968 dist to nearest chosen 7168 px; tifxyz valid 1.000, shifted (-16.6,-2.5) 1.000; supmask 0.998; overlaps a published region: False
+   pick y0=20992 x0=7168 dist to nearest chosen 6250 px; tifxyz valid 1.000, shifted (+0.7,+6.0) 1.000; supmask 1.000; overlaps a published region: False
+   wrote regions_new_w00.json: [(3584, 19968), (20992, 7168)]
+process ledger bytes 4187238
+w01: candidates 200 (regions.py criteria)
+   first 6 picks equal measure/regions_w01.json: True
+   pick y0=13312 x0=28672 dist to nearest chosen 12810 px; tifxyz valid 1.000, shifted (+70.4,-101.3) 1.000; supmask 0.942; overlaps a published region: False
+   pick y0=31232 x0=15360 dist to nearest chosen 12309 px; tifxyz valid 1.000, shifted (+146.8,-49.7) 1.000; supmask 1.000; overlaps a published region: False
+   wrote regions_new_w01.json: [(13312, 28672), (31232, 15360)]
+process ledger bytes 4187238
+w05: candidates 1489 (regions.py criteria)
+   first 6 picks equal measure/regions_w05.json: True
+   pick y0=35840 x0=28160 dist to nearest chosen 18037 px; tifxyz valid 1.000, shifted (-13.7,+9.9) 1.000; supmask 0.912; overlaps a published region: False
+   pick y0=7680 x0=25600 dist to nearest chosen 17020 px; tifxyz valid 1.000, shifted (-35.9,+11.1) 1.000; supmask 1.000; overlaps a published region: False
+   wrote regions_new_w05.json: [(35840, 28160), (7680, 25600)]
+process ledger bytes 4187238
+c018: candidates 137 (regions.py criteria)
+   first 6 picks equal measure/regions_c018.json: True
+   pick y0=6144 x0=89600 dist to nearest chosen 20255 px; tifxyz valid 1.000, shifted (-19.6,-19.6) 1.000; supmask 0.903; overlaps a published region: False
+   pick y0=22528 x0=19456 dist to nearest chosen 17810 px; tifxyz valid 1.000, shifted (-19.6,-19.6) 1.000; supmask 0.947; overlaps a published region: False
+   wrote regions_new_c018.json: [(6144, 89600), (22528, 19456)]
+process ledger bytes 4187238
+w01 block y0=45504 x0=26496 (centre 46016,27008): tifxyz valid 1.000, at README-shifted position (+207.7,-92.9) 1.000; supervision mask level-5 frac 0.000
+process ledger bytes 4187238

@@ -1,0 +1,21 @@
+ledger.tsv before merge: 43440 lines, 506999805 bytes
+ledger_after2_c018.tsv: 761 requests, 2.16 MB
+ledger_after2_w00.tsv: 2111 requests, 13.32 MB
+ledger_after2_w01.tsv: 2817 requests, 15.99 MB
+ledger_after2_w05.tsv: 896 requests, 4.81 MB
+ledger_after_c018.tsv: 3139 requests, 32.45 MB
+ledger_after_w00.tsv: 3106 requests, 19.06 MB
+ledger_after_w01.tsv: 2945 requests, 12.30 MB
+ledger_after_w05.tsv: 4020 requests, 38.78 MB
+ledger_before_w00.tsv: 1537 requests, 0.81 MB
+ledger_covercheck2.tsv: 945 requests, 7.71 MB
+ledger_hold_w01.tsv: 2055 requests, 18.11 MB
+ledger_man5.tsv: 355 requests, 0.13 MB
+ledger_new_c018.tsv: 1447 requests, 17.27 MB
+ledger_new_w00.tsv: 3104 requests, 26.76 MB
+ledger_new_w01.tsv: 3635 requests, 21.36 MB
+ledger_new_w05.tsv: 2877 requests, 20.64 MB
+ledger_newregions.tsv: 231 requests, 4.19 MB
+all new: 35981 requests, 255.84 MB (255838722 bytes)
+malformed lines in new ledgers: 0
+ledger.tsv after merge: 79421 lines, 762838527 bytes

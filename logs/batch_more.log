@@ -1,0 +1,65 @@
+== 18:22:09 covercheck2 w01 after 45504,26496 (HF65_COVER=0)
+rangecache: 0 cached ranges indexed; ledger <HF65_DATA>/ledger_covercheck2.tsv
+w01 mode=after pyr_shift=(0,0) klev=2 PRED=0 R=32 SIG=4.0 model=w01/readme dy=[11.51, 0.004263, 0.0] dx=[11.82, 0.0, -0.003876]
+w01 after at45504_26496 (out-of-sample (explicit corner)) y0=45504 x0=26496 win 0,0: level-0 (dy,dx)=(+0.15,+0.13) hp ncc=0.930 2nd=0.095 edge=False zero-shift ncc=0.9299235939979553 best slice 32; surf valid 1.000 img nz 1.000 dl 7.71 MB, 61.8 s
+rangecache stats {'exact': 0, 'covered': 0, 'partial': 0, 'uncached': 0, 'gap_bytes': 0, 'stitched_bytes': 0} process ledger bytes 7706256
+covercheck2 S identical (320, 320)
+covercheck2 Sm identical (320, 320)
+covercheck2 Mh identical (65, 65)
+== 18:23:12 w01 before new1 (new downloads so far 188 MB)
+w01 mode=before pyr_shift=(0,0) klev=2 PRED=1 R=32 SIG=4.0 model=w01/readme dy=[11.51, 0.004263, 0.0] dx=[11.82, 0.0, -0.003876]
+w01 before new1 (out-of-sample (new region)) y0=31232 x0=15360 win 34,-15: level-0 (dy,dx)=(+147.06,-49.41) hp ncc=0.851 2nd=0.075 edge=False zero-shift ncc=None best slice 32; surf valid 1.000 img nz 1.000; README prediction (+146.83,-49.70); methodB[readme] (+0.11,+0.12) ncc 0.933 zero 0.933 valid 0.97; methodB[affine3] (+0.02,+0.06) ncc 0.933 zero 0.933 valid 0.97; dl 7.44 MB, 89.1 s
+rangecache stats {'exact': 12, 'covered': 0, 'partial': 1455, 'uncached': 112, 'gap_bytes': 3699008, 'stitched_bytes': 0} process ledger bytes 21247554
+== 18:24:43 w01 after new1 (new downloads so far 196 MB)
+w01 mode=after pyr_shift=(0,0) klev=2 PRED=0 R=32 SIG=4.0 model=w01/readme dy=[11.51, 0.004263, 0.0] dx=[11.82, 0.0, -0.003876]
+w01 after new1 (out-of-sample (new region)) y0=31232 x0=15360 win 0,0: level-0 (dy,dx)=(+0.12,+0.13) hp ncc=0.924 2nd=0.075 edge=False zero-shift ncc=0.9235349893569946 best slice 32; surf valid 1.000 img nz 1.000 dl 0.11 MB, 55.1 s
+rangecache stats {'exact': 553, 'covered': 260, 'partial': 775, 'uncached': 0, 'gap_bytes': 114260, 'stitched_bytes': 2666348} process ledger bytes 21361814
+== 18:25:41 w05 before new1 (new downloads so far 196 MB)
+w05 mode=before pyr_shift=(0,0) klev=2 PRED=1 R=32 SIG=4.0 model=w05/readme dy=[-42.39, 0.000789, 0.0] dx=[22.93, 0.0, -0.000454]
+w05 before new1 (out-of-sample (new region)) y0=7680 x0=25600 win 2,-3: level-0 (dy,dx)=(-35.96,+11.22) hp ncc=0.895 2nd=0.097 edge=False zero-shift ncc=-0.04297535493969917 best slice 32; surf valid 1.000 img nz 1.000; README prediction (-35.93,+11.08); methodB[readme] (-0.00,-0.11) ncc 0.914 zero 0.914 valid 0.93; methodB[affine3] (-0.01,-0.09) ncc 0.914 zero 0.914 valid 0.93; dl 4.65 MB, 58.7 s
+rangecache stats {'exact': 12, 'covered': 0, 'partial': 1022, 'uncached': 108, 'gap_bytes': 903788, 'stitched_bytes': 0} process ledger bytes 20589611
+== 18:26:42 w05 after new1 (new downloads so far 201 MB)
+w05 mode=after pyr_shift=(0,0) klev=2 PRED=0 R=32 SIG=4.0 model=w05/readme dy=[-42.39, 0.000789, 0.0] dx=[22.93, 0.0, -0.000454]
+w05 after new1 (out-of-sample (new region)) y0=7680 x0=25600 win 0,0: level-0 (dy,dx)=(-0.02,-0.01) hp ncc=0.909 2nd=0.096 edge=False zero-shift ncc=0.9093289971351624 best slice 32; surf valid 1.000 img nz 1.000 dl 0.05 MB, 27.5 s
+rangecache stats {'exact': 660, 'covered': 184, 'partial': 298, 'uncached': 0, 'gap_bytes': 47144, 'stitched_bytes': 365720} process ledger bytes 20636755
+== 18:27:12 w00 before new1 (new downloads so far 201 MB)
+w00 mode=before pyr_shift=(3,0) klev=2 PRED=0 R=32 SIG=4.0 model=w00/readme dy=[-20.7, 0.000993, 0.0] dx=[11.09, 0.0, -0.000663]
+w00 before new1 (out-of-sample (new region)) y0=20992 x0=7168 win 0,0: level-0 (dy,dx)=(+0.79,+6.58) hp ncc=0.869 2nd=0.076 edge=False zero-shift ncc=0.5834664106369019 best slice 32; surf valid 1.000 img nz 1.000; README prediction (+0.65,+6.00); methodB[readme] (+0.25,+0.39) ncc 0.921 zero 0.921 valid 0.99; methodB[affine3] (+0.27,-0.08) ncc 0.923 zero 0.923 valid 0.99; dl 18.21 MB, 67.2 s
+rangecache stats {'exact': 12, 'covered': 9, 'partial': 854, 'uncached': 89, 'gap_bytes': 2671920, 'stitched_bytes': 4752} process ledger bytes 26641592
+== 18:28:22 w00 after new1 (new downloads so far 219 MB)
+w00 mode=after pyr_shift=(3,0) klev=2 PRED=0 R=32 SIG=4.0 model=w00/readme dy=[-20.7, 0.000993, 0.0] dx=[11.09, 0.0, -0.000663]
+w00 after new1 (out-of-sample (new region)) y0=20992 x0=7168 win 0,0: level-0 (dy,dx)=(+0.18,+0.38) hp ncc=0.910 2nd=0.056 edge=False zero-shift ncc=0.9104984402656555 best slice 32; surf valid 1.000 img nz 1.000 dl 0.11 MB, 11.0 s
+rangecache stats {'exact': 513, 'covered': 199, 'partial': 257, 'uncached': 2, 'gap_bytes': 114304, 'stitched_bytes': 11186320} process ledger bytes 26756152
+== 18:28:35 c018 after 5 (new downloads so far 219 MB)
+c018 mode=after pyr_shift=(0,0) klev=1 PRED=0 R=32 SIG=4.0 model=c018/readme dy=[-19.64, 0.0, 0.0] dx=[-19.64, 0.0, 0.0]
+c018 after r5 (in-sample (used by the fit)) y0=5632 x0=5120 win 0,0: level-0 (dy,dx)=(+0.11,+0.12) hp ncc=0.927 2nd=0.073 edge=False zero-shift ncc=0.9267528057098389 best slice 32; surf valid 1.000 img nz 1.000 dl 2.16 MB, 43.5 s
+rangecache stats {'exact': 541, 'covered': 0, 'partial': 657, 'uncached': 104, 'gap_bytes': 1922576, 'stitched_bytes': 0} process ledger bytes 2159888
+== 18:29:21 w01 after 3 (new downloads so far 221 MB)
+w01 mode=after pyr_shift=(0,0) klev=2 PRED=0 R=32 SIG=4.0 model=w01/readme dy=[11.51, 0.004263, 0.0] dx=[11.82, 0.0, -0.003876]
+w01 after r3 (in-sample (used by the fit)) y0=55808 x0=37376 win 0,0: level-0 (dy,dx)=(+0.15,+0.13) hp ncc=0.926 2nd=0.113 edge=False zero-shift ncc=0.9258270859718323 best slice 32; surf valid 0.961 img nz 0.999 dl 2.05 MB, 39.8 s
+rangecache stats {'exact': 992, 'covered': 0, 'partial': 641, 'uncached': 124, 'gap_bytes': 1793760, 'stitched_bytes': 0} process ledger bytes 2046816
+== 18:30:03 w01 after 4 (new downloads so far 223 MB)
+w01 mode=after pyr_shift=(0,0) klev=2 PRED=0 R=32 SIG=4.0 model=w01/readme dy=[11.51, 0.004263, 0.0] dx=[11.82, 0.0, -0.003876]
+w01 after r4 (in-sample (used by the fit)) y0=13824 x0=15872 win 0,0: level-0 (dy,dx)=(+0.14,+0.13) hp ncc=0.908 2nd=0.165 edge=False zero-shift ncc=0.9084458947181702 best slice 32; surf valid 1.000 img nz 1.000 dl 5.24 MB, 74.8 s
+rangecache stats {'exact': 326, 'covered': 187, 'partial': 959, 'uncached': 57, 'gap_bytes': 5093044, 'stitched_bytes': 2596480} process ledger bytes 7285268
+== 18:31:18 w01 after 5 (new downloads so far 228 MB)
+w01 mode=after pyr_shift=(0,0) klev=2 PRED=0 R=32 SIG=4.0 model=w01/readme dy=[11.51, 0.004263, 0.0] dx=[11.82, 0.0, -0.003876]
+w01 after r5 (in-sample (used by the fit)) y0=40448 x0=35840 win 0,0: level-0 (dy,dx)=(+0.13,+0.14) hp ncc=0.930 2nd=0.103 edge=False zero-shift ncc=0.9298896193504333 best slice 32; surf valid 1.000 img nz 1.000 dl 8.70 MB, 64.9 s
+rangecache stats {'exact': 296, 'covered': 0, 'partial': 878, 'uncached': 98, 'gap_bytes': 3760064, 'stitched_bytes': 0} process ledger bytes 15989460
+== 18:32:22 w05 after 5 (new downloads so far 237 MB)
+w05 mode=after pyr_shift=(0,0) klev=2 PRED=0 R=32 SIG=4.0 model=w05/readme dy=[-42.39, 0.000789, 0.0] dx=[22.93, 0.0, -0.000454]
+w05 after r5 (in-sample (used by the fit)) y0=28160 x0=57856 win 0,0: level-0 (dy,dx)=(+0.01,-0.03) hp ncc=0.917 2nd=0.094 edge=False zero-shift ncc=0.9166077375411987 best slice 32; surf valid 1.000 img nz 1.000 dl 4.81 MB, 46.3 s
+rangecache stats {'exact': 461, 'covered': 0, 'partial': 781, 'uncached': 115, 'gap_bytes': 2995536, 'stitched_bytes': 0} process ledger bytes 4814032
+== 18:33:10 w00 after 3 (new downloads so far 242 MB)
+w00 mode=after pyr_shift=(3,0) klev=2 PRED=0 R=32 SIG=4.0 model=w00/readme dy=[-20.7, 0.000993, 0.0] dx=[11.09, 0.0, -0.000663]
+w00 after r3 (in-sample (used by the fit)) y0=16384 x0=30720 win 0,0: level-0 (dy,dx)=(+0.10,+0.18) hp ncc=0.899 2nd=0.085 edge=False zero-shift ncc=0.8985292911529541 best slice 32; surf valid 1.000 img nz 1.000 dl 4.56 MB, 50.3 s
+rangecache stats {'exact': 576, 'covered': 132, 'partial': 638, 'uncached': 105, 'gap_bytes': 2625520, 'stitched_bytes': 138864} process ledger bytes 4561648
+== 18:34:03 w00 after 4 (new downloads so far 246 MB)
+w00 mode=after pyr_shift=(3,0) klev=2 PRED=0 R=32 SIG=4.0 model=w00/readme dy=[-20.7, 0.000993, 0.0] dx=[11.09, 0.0, -0.000663]
+w00 after r4 (in-sample (used by the fit)) y0=3584 x0=27136 win 0,0: level-0 (dy,dx)=(-0.06,+0.16) hp ncc=0.899 2nd=0.120 edge=False zero-shift ncc=0.8988568186759949 best slice 32; surf valid 1.000 img nz 1.000 dl 7.99 MB, 68.3 s
+rangecache stats {'exact': 177, 'covered': 8, 'partial': 889, 'uncached': 86, 'gap_bytes': 2673752, 'stitched_bytes': 137320} process ledger bytes 12547912
+== 18:35:14 w00 after 5 (new downloads so far 254 MB)
+w00 mode=after pyr_shift=(3,0) klev=2 PRED=0 R=32 SIG=4.0 model=w00/readme dy=[-20.7, 0.000993, 0.0] dx=[11.09, 0.0, -0.000663]
+w00 after r5 (in-sample (used by the fit)) y0=13824 x0=14336 win 0,0: level-0 (dy,dx)=(+0.06,+0.26) hp ncc=0.899 2nd=0.073 edge=False zero-shift ncc=0.8994192481040955 best slice 32; surf valid 1.000 img nz 1.000 dl 0.77 MB, 18.2 s
+rangecache stats {'exact': 1555, 'covered': 9, 'partial': 237, 'uncached': 156, 'gap_bytes': 514432, 'stitched_bytes': 4752} process ledger bytes 13318472
+== 18:35:33 done, new downloads 255 MB
