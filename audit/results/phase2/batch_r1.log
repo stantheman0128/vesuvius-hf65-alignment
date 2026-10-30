@@ -1,0 +1,21 @@
+b0009 r1 (19456,15872) win 0,0: hp peak (-5,-5) ncc=0.929 2nd=0.07123842090368271 edge=False; level-0 (dy,dx)=(-19.5,-19.5); NCC at 0 -0.10338757187128067; slice best 32 (0.9293593632294758) vs compared 32; img nz 1.00 surf valid 1.00; dl 15.7 MB 110.5 s
+ledger total bytes 687792495
+t016 r1 (20480,6144) win 0,0: hp peak (-5,-5) ncc=0.920 2nd=0.09001187980175018 edge=False; level-0 (dy,dx)=(-19.6,-19.6); NCC at 0 -0.09542941302061081; slice best 32 (0.9198346954439164) vs compared 32; img nz 1.00 surf valid 1.00; dl 10.0 MB 122.4 s
+ledger total bytes 697795490
+t040 r1 (22016,11264) win 0,0: hp peak (8,-12) ncc=0.829 2nd=0.0818273052573204 edge=False; level-0 (dy,dx)=(30.6,-49.3); NCC at 0 -0.01845921389758587; slice best 8 (0.8285160308046177) vs compared 8; img nz 1.00 surf valid 1.00; dl 13.3 MB 61.6 s
+ledger total bytes 711061551
+c013 r1 (3072,10752) win 0,0: hp peak (-5,-5) ncc=0.915 2nd=0.06462910771369934 edge=False; level-0 (dy,dx)=(-19.6,-19.7); NCC at 0 -0.06434072554111481; slice best 32 (0.9151261015972347) vs compared 32; img nz 1.00 surf valid 1.00; dl 14.0 MB 126.2 s
+ledger total bytes 725095397
+p4w02 r1 (3072,11264) win 1,-2: hp peak (-5,3) ncc=0.846 2nd=0.12392177432775497 edge=False; level-0 (dy,dx)=(-17.4,5.7); NCC at 0 0.00562879117205739; slice best 32 (0.846183454389206) vs compared 32; img nz 1.00 surf valid 1.00; dl 12.1 MB 131.1 s
+ledger total bytes 737197795
+p4w03 r1 (8704,7168) win 2,-1: hp peak (-5,3) ncc=0.899 2nd=0.11994889378547668 edge=False; level-0 (dy,dx)=(-11.5,7.5); NCC at 0 0.15724949538707733; slice best 32 (0.899359110307365) vs compared 32; img nz 1.00 surf valid 1.00; dl 5.8 MB 152.2 s
+ledger total bytes 742995921
+p4w06 r1 (47104,8192) win 13,-1: hp peak (-6,3) ncc=0.852 2nd=0.09861109405755997 edge=False; level-0 (dy,dx)=(28.8,6.5); NCC at 0 -0.042829837650060654; slice best 32 (0.8518153029914863) vs compared 32; img nz 1.00 surf valid 1.00; dl 10.4 MB 138.5 s
+ledger total bytes 753371508
+p4w07 r1 (7680,99328) win 2,-11: hp peak (-11,6) ncc=0.917 2nd=0.07967638224363327 edge=False; level-0 (dy,dx)=(-35.5,-20.0); NCC at 0 -0.04542845860123634; slice best 32 (0.9168888865234889) vs compared 32; img nz 1.00 surf valid 1.00; dl 16.9 MB 83.5 s
+ledger total bytes 770311873
+p4w09 r1 (11264,28160) win 2,-4: hp peak (-5,3) ncc=0.912 2nd=0.05696644261479378 edge=False; level-0 (dy,dx)=(-12.1,-4.1); NCC at 0 0.19850851595401764; slice best 32 (0.9117004735008754) vs compared 32; img nz 1.00 surf valid 1.00; dl 12.6 MB 138.4 s
+ledger total bytes 782945165
+c028 r1 (9728,23040) win 0,0: hp peak (-5,-5) ncc=0.928 2nd=0.08119244873523712 edge=False; level-0 (dy,dx)=(-19.6,-19.6); NCC at 0 -0.07489560544490814; slice best 32 (0.9279180990140448) vs compared 32; img nz 1.00 surf valid 1.00; dl 4.2 MB 83.2 s
+ledger total bytes 787107107
+BATCH END

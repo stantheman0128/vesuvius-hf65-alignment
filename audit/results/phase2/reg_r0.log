@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "audit/code/reg2.py", line 260, in <module>
+    reg(key, [int(a) for a in args], pred="--pred" in sys.argv)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  Fp4w03 r0 (17408,24576) win 5,-4: hp peak (-6,3) ncc=0.854 2nd=0.07292859256267548 edge=False; level-0 (dy,dx)=(-2.4,-2.6); NCC at 0 0.7882272005081177; slice best 32 (0.8536064411906962) vs compared 32; img nz 1.00 surf valid 1.00; dl 23.5 MB 117.7 s
+ledger total bytes 161598713
+p4w06 r0 (25088,22016) win 7,-4: hp peak (-5,3) ncc=0.811 2nd=0.10695680975914001 edge=False; level-0 (dy,dx)=(6.3,-2.6); NCC at 0 0.4546368718147278; slice best 32 (0.8106531398158093) vs compared 32; img nz 1.00 surf valid 1.00; dl 35.6 MB 124.9 s
+ledger total bytes 199834363
+p4w07 r0 (17920,45056) win 4,-5: hp peak (-11,6) ncc=0.898 2nd=0.075872041285038 edge=False; level-0 (dy,dx)=(-27.2,3.4); NCC at 0 0.04415993392467499; slice best 32 (0.8982780128375932) vs compared 32; img nz 1.00 surf valid 1.00; dl 11.6 MB 99.7 s
+ledger total bytes 228736799
+p4w09 r0 (12800,59392) win 2,-8: hp peak (-5,3) ncc=0.873 2nd=0.06990990042686462 edge=False; level-0 (dy,dx)=(-11.2,-21.0); NCC at 0 -0.05536282807588577; slice best 32 (0.8726093278728675) vs compared 32; img nz 1.00 surf valid 1.00; dl 28.5 MB 123.5 s
+ledger total bytes 276587786
+b0009 r0 (19456,10752) win 0,0: hp peak (-5,-5) ncc=0.920 2nd=0.10340916365385056 edge=False; level-0 (dy,dx)=(-19.6,-19.6); NCC at 0 -0.10154961794614792; slice best 32 (0.9200861793169851) vs compared 32; img nz 1.00 surf valid 1.00; dl 5.9 MB 131.4 s
+ledger total bytes 308552121
+t016 r0 (20992,9728) win 0,0: hp peak (-5,-5) ncc=0.924 2nd=0.15693894028663635 edge=False; level-0 (dy,dx)=(-19.6,-19.6); NCC at 0 -0.0840572938323021; slice best 32 (0.9238162660979119) vs compared 32; img nz 1.00 surf valid 1.00; dl 8.8 MB 92.3 s
+ledger total bytes 335473225
+t029 r0 (14848,10752) win 0,0: hp peak (-5,-5) ncc=0.913 2nd=0.19351816177368164 edge=False; level-0 (dy,dx)=(-19.6,-19.6); NCC at 0 -0.13422930240631104; slice best 32 (0.9133833738461204) vs compared 32; img nz 1.00 surf valid 1.00; dl 30.6 MB 85.5 s
+ledger total bytes 383340886
+t040 r0 (2560,26112) win 0,0: hp peak (8,-12) ncc=0.817 2nd=0.07832539826631546 edge=False; level-0 (dy,dx)=(30.7,-49.3); NCC at 0 -0.03133212402462959; slice best 8 (0.8173460619758767) vs compared 8; img nz 1.00 surf valid 1.00; dl 24.4 MB 100.5 s
+ledger total bytes 419698004
+t044 r0 (15360,13312) win 0,0: hp peak (8,-12) ncc=0.811 2nd=0.08545082062482834 edge=False; level-0 (dy,dx)=(30.7,-49.3); NCC at 0 -0.027695773169398308; slice best 8 (0.8112334472522649) vs compared 8; img nz 1.00 surf valid 1.00; dl 16.6 MB 111.9 s
+ledger total bytes 445742844
+p500 r0 (14336,5632) win 0,0: hp peak (0,0) ncc=0.939 2nd=0.09686945378780365 edge=False; level-0 (dy,dx)=(0.5,0.5); NCC at 0 0.9392317533493042; slice best 32 (0.9392317264587204) vs compared 32; img nz 1.00 surf valid 1.00; dl 19.2 MB 122.8 s
+ledger total bytes 485741856
+n841 r0 (9216,12288) win 0,0: hp peak (0,0) ncc=0.931 2nd=0.07146187871694565 edge=False; level-0 (dy,dx)=(0.5,0.4); NCC at 0 0.9305241107940674; slice best 32 (0.9305241179803128) vs compared 32; img nz 1.00 surf valid 1.00; dl 31.3 MB 91.8 s
+ledger total bytes 539447499
+n841a r0 (3584,10752) win 0,0: hp peak (0,0) ncc=0.903 2nd=0.036509595811367035 edge=False; level-0 (dy,dx)=(0.5,0.4); NCC at 0 0.903045654296875; slice best 32 (0.9030456720728585) vs compared 32; img nz 1.00 surf valid 1.00; dl 23.3 MB 99.6 s
+ledger total bytes 591120309
+c013 r0 (16896,11776) win 0,0: hp peak (-5,-5) ncc=0.880 2nd=0.08746260404586792 edge=False; level-0 (dy,dx)=(-19.7,-19.7); NCC at 0 -0.06316414475440979; slice best 32 (0.8802821976485289) vs compared 32; img nz 1.00 surf valid 1.00; dl 9.5 MB 91.5 s
+ledger total bytes 622232611
+c028 r0 (9728,22528) win 0,0: hp peak (-5,-5) ncc=0.930 2nd=0.08595502376556396 edge=False; level-0 (dy,dx)=(-19.7,-19.6); NCC at 0 -0.04513982683420181; slice best 32 (0.9297487826971457) vs compared 32; img nz 1.00 surf valid 1.00; dl 6.5 MB 91.3 s
+ledger total bytes 652208354
+man5 r0 (7168,12288) win 0,0: hp peak (0,0) ncc=0.906 2nd=0.04585961997509003 edge=False; level-0 (dy,dx)=(0.4,0.4); NCC at 0 0.905886709690094; slice best 8 (0.9058867228710409) vs compared 8; img nz 1.00 surf valid 1.00; dl 6.4 MB 120.2 s
+ledger total bytes 672100695

@@ -2,6 +2,8 @@
 
 Measurements behind [ScrollPrize/villa#2370](https://github.com/ScrollPrize/villa/issues/2370), which answers question 1 of [#2346](https://github.com/ScrollPrize/villa/issues/2346): on the segments below, pixel (y, x) of the 65-slice HF surface volume ("HF65 canvas") in `scrollprize/datasets` `ink/<scroll>/<segment>/` does not show the CT at tifxyz full-res cell (y, x) of the tifxyz in the same folder.
 
+[`audit/`](audit/) runs the same measurement on all 32 training segment folders in `ink/`: 26 offset, 5 aligned, 1 not measured.
+
 ## Correction
 
 Sampling the CT at tifxyz cell (y + dy, x + dx), with dy and dx from the fits under "Result", lines HF65 slice 32 up with the CT to within 0.4 px on both axes, in all 32 regions tested: the 24 the fits were made from and 8 they never saw (two new regions per Paris4 segment, one on w018, and the held-out w01 region). Before the correction the same regions were off by up to 254 px on one axis. After it the NCC peak is at zero shift in every region.
@@ -55,7 +57,7 @@ The w00 HF65 image pyramid is shifted: level 1, 2 and 3 are offset by -1, -3 and
 
 ## Rerun
 
-Python 3.14 with numpy, scipy and httpx. All data comes from public URLs by HTTP range reads and is cached under `HF65_DATA` (default `./hf65_data`); the first full run reads about 500 MB.
+Python 3.14 with numpy, scipy, httpx and numcodecs. All data comes from public URLs by HTTP range reads and is cached under `HF65_DATA` (default `./hf65_data`); the first full run reads about 500 MB.
 
 ```
 export HF65_DATA=$PWD/hf65_data
@@ -68,4 +70,4 @@ python -I measure/summarize.py w00 w01 w05 c018
 
 ## Not checked
 
-The other Paris4 and 1667 segments, areas outside the supervision masks (except the held-out region in the independent check, which lies outside the w01 mask), where the Paris4 intercepts come from, villa's own loader end to end (the index convention was reimplemented), and whether the labels sit exactly on the canvas pixels (assumed).
+Areas outside the supervision masks (except the held-out region in the independent check, which lies outside the w01 mask), where the Paris4 intercepts come from, villa's own loader end to end (the index convention was reimplemented), and whether the labels sit exactly on the canvas pixels (assumed). The other training segments are measured in [`audit/`](audit/).

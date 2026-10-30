@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "audit/code/reg2.py", line 257, in <module>
+    regions(key, int(sys.argv[3]) if len(sys.argv) > 3 else 4)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "audit/code/reg2.py", line 138, in regions
+    X = np.stack([S.t["x"].rows(r, r + 1, 0, S.W)[0] for r in rows])
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "audit/code/common.py", line 146, in rows
+    res = list(ex.map(lambda j: self.src.read(j[1], j[2]), jobs))
+  File "<python3.14>/concurrent/futures/_base.py", line 645, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "<python3.14>/concurrent/futures/_base.py", line 312, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "<python3.14>/concurrent/futures/_base.py", line 454, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "<python3.14>/concurrent/futures/_base.py", line 396, in __get_result
+    raise self._exception
+  File "<python3.14>/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "<python3.14>/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "audit/code/common.py", line 146, in <lambda>
+    res = list(ex.map(lambda j: self.src.read(j[1], j[2]), jobs))
+                                ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "audit/code/common.py", line 88, in read
+    return fetch(self.loc, (a, b), allow_short=allow_short)
+  File "audit/code/common.py"{"key": "p4w06", "at": [25472, 20224], "chosen": {"level": 2, "slice": 32, "model": "mean", "s": [2, 0], "z_source": "z32", "r": 0.9999715629419054, "centre_offset_L": [-0.5, 1.5]}, "centre_offset": [-0.5, 1.5]}
+  level 2 Z 65 fits (k, r, model, sy, sx, z): [(0, 1.0, 'mean', 2, 0, 'z0'), (1, 1.0, 'mean', 2, 0, 'z1'), (2, 1.0, 'mean', 2, 0, 'z2'), (3, 1.0, 'mean', 2, 0, 'z3'), (4, 0.9999, 'mean', 2, 0, 'z4'), (5, 0.9999, 'mean', 2, 0, 'z5')]

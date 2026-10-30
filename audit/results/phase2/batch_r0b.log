@@ -1,0 +1,67 @@
+t040b r0 (2560,26112) win 0,0: hp peak (8,-12) ncc=0.817 2nd=0.07832539826631546 edge=False; level-0 (dy,dx)=(30.7,-49.3); NCC at 0 -0.03133212402462959; slice best 8 (0.8173460619758767) vs compared 8; img nz 1.00 surf valid 1.00; dl 12.2 MB 71.1 s
+ledger total bytes 799328419
+{"key": "t035", "at": [11264, 9984], "chosen": {"level": 2, "slice": 8, "model": "strided", "s": [0, 3], "z_source": "z32", "r": 1.0, "centre_offset_L": [0.0, 3.0]}, "centre_offset": [0.0, 3.0]}
+  level 2 Z 17 fits (k, r, model, sy, sx, z): [(0, 1.0, 'strided', 0, 3, 'z0'), (1, 1.0, 'strided', 0, 3, 'z4'), (2, 1.0, 'strided', 0, 3, 'z8'), (3, 1.0, 'strided', 0, 3, 'z12'), (4, 1.0, 'strided', 0, 3, 'z16'), (5, 1.0, 'strided', 0, 3, 'z20')]
+t035: stored 1132x1000 full (22640, 20000); canvas 22640x20000; tifxyz valid 0.848; supmask L5 (708, 625) set 0.036
+   candidates: 10
+    {'y0': 3584, 'x0': 5632, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 1.0}
+    {'y0': 5632, 'x0': 7680, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 1.0}
+    {'y0': 3072, 'x0': 4608, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 0.9130859375}
+    {'y0': 5120, 'x0': 7168, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 0.9755859375}
+t035 r0 (3584,5632) win 0,0: hp peak (8,-12) ncc=0.841 2nd=0.0783667042851448 edge=False; level-0 (dy,dx)=(30.8,-49.1); NCC at 0 -0.02162158489227295; slice best 8 (0.8409638920240036) vs compared 8; img nz 1.00 surf valid 1.00; dl 15.0 MB 92.6 s
+ledger total bytes 826562391
+{"key": "t017", "at": [14336, 13696], "chosen": {"level": 1, "slice": 32, "model": "mean", "s": [0, 0], "z_source": "z32", "r": 0.9999777975223463, "centre_offset_L": [0.5, 0.5]}, "centre_offset": [1.5, 1.5]}
+  level 2 Z 17 fits (k, r, model, sy, sx, z): [(0, 0.9913, 'mean', 0, 0, 'z0'), (1, 0.9918, 'mean', 0, 0, 'z1'), (2, 0.9924, 'mean', 0, 0, 'z2'), (3, 0.993, 'mean', 0, 0, 'z3'), (4, 0.9935, 'mean', 0, 0, 'z4'), (5, 0.994, 'mean', 0, 0, 'z5')]
+  level 1 Z 33 fits (k, r, model, sy, sx, z): [(0, 0.9944, 'mean', 0, 0, 'z0'), (1, 0.9946, 'mean', 0, 0, 'z1'), (2, 0.995, 'mean', 0, 0, 'z2'), (3, 0.9953, 'mean', 0, 0, 'z3'), (4, 0.9957, 'mean', 0, 0, 'z4'), (5, 0.9959, 'mean', 0, 0, 'z5')]
+t017: stored 1439x1373 full (28784, 27460); canvas 28784x27460; tifxyz valid 0.870; supmask L5 (900, 859) set 0.015
+   candidates: 14
+    {'y0': 12288, 'x0': 15360, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 0.9072265625}
+    {'y0': 10240, 'x0': 12288, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 1.0}
+    {'y0': 12800, 'x0': 17408, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 0.9580078125}
+    {'y0': 13312, 'x0': 15872, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 0.919921875}
+t017 r0 (12288,15360) win 0,0: hp peak (-5,-5) ncc=0.931 2nd=0.041808921843767166 edge=False; level-0 (dy,dx)=(-19.6,-19.6); NCC at 0 -0.05217063054442406; slice best 32 (0.9312273467124744) vs compared 32; img nz 1.00 surf valid 1.00; dl 19.9 MB 114.0 s
+ledger total bytes 859295161
+{"key": "c023", "at": [20864, 51200], "chosen": {"level": 1, "slice": 32, "model": "mean", "s": [1, 1], "z_source": "z32", "r": 0.9999716866385049, "centre_offset_L": [-0.5, -0.5]}, "centre_offset": [0.5, 0.5]}
+  level 2 Z 17 fits (k, r, model, sy, sx, z): [(0, 1.0, 'mean', 3, 1, 'z0'), (1, 1.0, 'mean', 3, 1, 'z1'), (2, 1.0, 'mean', 3, 1, 'z2'), (3, 1.0, 'mean', 3, 1, 'z3'), (4, 1.0, 'mean', 3, 1, 'z4'), (5, 1.0, 'mean', 3, 1, 'z5')]
+  level 1 Z 33 fits (k, r, model, sy, sx, z): [(0, 1.0, 'mean', 1, 1, 'z0'), (1, 1.0, 'mean', 1, 1, 'z1'), (2, 1.0, 'mean', 1, 1, 'z2'), (3, 1.0, 'mean', 1, 1, 'z3'), (4, 1.0, 'mean', 1, 1, 'z4'), (5, 1.0, 'mean', 1, 1, 'z5')]
+c023: stored 2098x5129 full (41977, 102619); canvas 41977x102619; tifxyz valid 0.905; supmask L5 (1312, 3207) set 0.005
+   candidates: 22
+    {'y0': 16384, 'x0': 71680, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 0.9111328125}
+    {'y0': 28672, 'x0': 45568, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 1.0}
+    {'y0': 25088, 'x0': 98304, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 1.0}
+    {'y0': 10240, 'x0': 74752, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 0.927734375}
+c023 r0 (16384,71680) win 0,0: hp peak (-5,-5) ncc=0.918 2nd=0.05988334119319916 edge=False; level-0 (dy,dx)=(-19.6,-19.6); NCC at 0 -0.008321424946188927; slice best 32 (0.9181239202267593) vs compared 32; img nz 1.00 surf valid 1.00; dl 18.4 MB 92.9 s
+ledger total bytes 896332354
+{"key": "t039", "at": [16512, 14976], "chosen": {"level": 2, "slice": 8, "model": "strided", "s": [0, 3], "z_source": "z32", "r": 1.0, "centre_offset_L": [0.0, 3.0]}, "centre_offset": [0.0, 3.0]}
+  level 2 Z 17 fits (k, r, model, sy, sx, z): [(0, 1.0, 'strided', 0, 3, 'z0'), (1, 1.0, 'strided', 0, 3, 'z4'), (2, 1.0, 'strided', 0, 3, 'z8'), (3, 1.0, 'strided', 0, 3, 'z12'), (4, 1.0, 'strided', 0, 3, 'z16'), (5, 1.0, 'strided', 0, 3, 'z20')]
+t039: stored 1652x1504 full (33040, 30080); canvas 33040x30080; tifxyz valid 0.629; supmask L5 (1033, 940) set 0.009
+   candidates: 5
+    {'y0': 15360, 'x0': 15872, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 1.0}
+    {'y0': 17408, 'x0': 10240, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 1.0}
+    {'y0': 14848, 'x0': 16384, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 0.9072265625}
+    {'y0': 15360, 'x0': 16384, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 1.0}
+t039 r0 (15360,15872) win 0,0: hp peak (8,-12) ncc=0.815 2nd=0.1048092246055603 edge=False; level-0 (dy,dx)=(30.7,-49.3); NCC at 0 -0.006542608141899109; slice best 8 (0.8151936045181272) vs compared 8; img nz 1.00 surf valid 1.00; dl 3.9 MB 111.7 s
+ledger total bytes 906951674
+{"key": "t030", "at": [11520, 16128], "chosen": {"level": 1, "slice": 32, "model": "mean", "s": [1, 1], "z_source": "z32", "r": 0.9999708731173594, "centre_offset_L": [-0.5, -0.5]}, "centre_offset": [0.5, 0.5]}
+  level 2 Z 17 fits (k, r, model, sy, sx, z): [(0, 1.0, 'mean', 3, 1, 'z0'), (1, 1.0, 'mean', 3, 1, 'z1'), (2, 1.0, 'mean', 3, 1, 'z2'), (3, 1.0, 'mean', 3, 1, 'z3'), (4, 1.0, 'mean', 3, 1, 'z4'), (5, 1.0, 'mean', 3, 1, 'z5')]
+  level 1 Z 33 fits (k, r, model, sy, sx, z): [(0, 1.0, 'mean', 1, 1, 'z0'), (1, 1.0, 'mean', 1, 1, 'z1'), (2, 1.0, 'mean', 1, 1, 'z2'), (3, 1.0, 'mean', 1, 1, 'z3'), (4, 1.0, 'mean', 1, 1, 'z4'), (5, 1.0, 'mean', 1, 1, 'z5')]
+t030: stored 1155x1618 full (23105, 32363); canvas 23105x32363; tifxyz valid 0.880; supmask L5 (723, 1012) set 0.038
+   candidates: 26
+    {'y0': 1536, 'x0': 8192, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 0.974609375}
+    {'y0': 21504, 'x0': 10752, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 0.908203125}
+    {'y0': 14336, 'x0': 17408, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 0.9970703125}
+    {'y0': 4608, 'x0': 16896, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 1.0}
+t030 r0 (1536,8192) win 0,0: hp peak (-5,-5) ncc=0.909 2nd=0.1416895091533661 edge=False; level-0 (dy,dx)=(-19.6,-19.6); NCC at 0 -0.08469704538583755; slice best 32 (0.909161183765992) vs compared 32; img nz 1.00 surf valid 1.00; dl 19.6 MB 115.3 s
+ledger total bytes 940844987
+{"key": "c031", "at": [19456, 15744], "chosen": {"level": 1, "slice": 32, "model": "mean", "s": [1, 0], "z_source": "z32", "r": 0.9999712348882017, "centre_offset_L": [-0.5, 0.5]}, "centre_offset": [0.5, 1.5]}
+  level 2 Z 17 fits (k, r, model, sy, sx, z): [(0, 1.0, 'mean', 1, 0, 'z0'), (1, 1.0, 'mean', 1, 0, 'z1'), (2, 1.0, 'mean', 1, 0, 'z2'), (3, 1.0, 'mean', 1, 0, 'z3'), (4, 1.0, 'mean', 1, 0, 'z4'), (5, 1.0, 'mean', 1, 0, 'z5')]
+  level 1 Z 33 fits (k, r, model, sy, sx, z): [(0, 1.0, 'mean', 1, 0, 'z0'), (1, 1.0, 'mean', 1, 0, 'z1'), (2, 1.0, 'mean', 1, 0, 'z2'), (3, 1.0, 'mean', 1, 0, 'z3'), (4, 1.0, 'mean', 1, 0, 'z4'), (5, 1.0, 'mean', 1, 0, 'z5')]
+c031: stored 1939x1574 full (39031, 31696); canvas 39031x31696; tifxyz valid 0.701; supmask L5 (1220, 991) set 0.018
+   candidates: 25
+    {'y0': 24576, 'x0': 12288, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 0.9296875}
+    {'y0': 22016, 'x0': 23040, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 0.9990234375}
+    {'y0': 20480, 'x0': 6144, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 0.94921875}
+    {'y0': 27136, 'x0': 21504, 'size': 1024, 'tifxyz_valid': 1.0, 'supmask': 0.95703125}
+c031 r0 (24576,12288) win 0,0: hp peak (-5,-5) ncc=0.934 2nd=0.06548931449651718 edge=False; level-0 (dy,dx)=(-19.7,-19.7); NCC at 0 -0.08932427316904068; slice best 32 (0.9341873101742185) vs compared 32; img nz 1.00 surf valid 1.00; dl 10.0 MB 127.6 s
+ledger total bytes 967357306
+BATCH END

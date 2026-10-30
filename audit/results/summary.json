@@ -1,0 +1,28 @@
+{
+ "segments_total": 93,
+ "training": 32,
+ "unused": 61,
+ "training_in_full3d_config": 32,
+ "flag_a_training": 1,
+ "flag_a_loader_picked_training": 1,
+ "flag_b_training": 8,
+ "flag_c_training": 0,
+ "validator_fail_training": 1,
+ "flag_d_training": 9,
+ "flag_e_training": 0,
+ "flag_f_training": 6,
+ "raises_if_label_version_v2_training": 22,
+ "flag_d_unused": 0,
+ "flag_e_unused": 0,
+ "loader_ignores_versioned_training": 6,
+ "flag_a_unused": 0,
+ "flag_b_unused": 32,
+ "flag_c_unused": 18,
+ "validator_fail_unused": 60,
+ "registered_segments": 29,
+ "registered_regions": 39,
+ "verdicts": {
+  "offset": 24,
+  "aligned": 5
+ }
+}

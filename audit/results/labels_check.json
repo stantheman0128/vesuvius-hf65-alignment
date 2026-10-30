@@ -1,0 +1,3640 @@
+[
+ {
+  "path": "ink/0009b/auto_grown_20250919055754487_inp_hr_2um",
+  "scroll": "0009b",
+  "segment": "auto_grown_20250919055754487_inp_hr_2um",
+  "unused": false,
+  "used": {
+   "inklabels": "auto_grown_20250919055754487_inp_hr_2um_inklabels.zarr",
+   "supervision_mask": "auto_grown_20250919055754487_inp_hr_2um_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "auto_grown_20250919055754487_inp_hr_2um_inklabels.tif",
+    "prefix": "auto_grown_20250919055754487_inp_hr_2um",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20250919055754487_inp_hr_2um_inklabels.zarr",
+    "prefix": "auto_grown_20250919055754487_inp_hr_2um",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "auto_grown_20250919055754487_inp_hr_2um_supervision_mask.tif",
+    "prefix": "auto_grown_20250919055754487_inp_hr_2um",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20250919055754487_inp_hr_2um_supervision_mask.zarr",
+    "prefix": "auto_grown_20250919055754487_inp_hr_2um",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "auto_grown_20250919055754487_inp_hr_inklabels.tif",
+    "prefix": "auto_grown_20250919055754487_inp_hr",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20250919055754487_inp_hr_inklabels.zarr",
+    "prefix": "auto_grown_20250919055754487_inp_hr",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "auto_grown_20250919055754487_inp_hr_inklabels_v2.tif",
+    "prefix": "auto_grown_20250919055754487_inp_hr",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20250919055754487_inp_hr_inklabels_v2.zarr",
+    "prefix": "auto_grown_20250919055754487_inp_hr",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "auto_grown_20250919055754487_inp_hr_supervision_mask.tif",
+    "prefix": "auto_grown_20250919055754487_inp_hr",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20250919055754487_inp_hr_supervision_mask.zarr",
+    "prefix": "auto_grown_20250919055754487_inp_hr",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "auto_grown_20250919055754487_inp_hr_supervision_mask_v2.tif",
+    "prefix": "auto_grown_20250919055754487_inp_hr",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20250919055754487_inp_hr_supervision_mask_v2.zarr",
+    "prefix": "auto_grown_20250919055754487_inp_hr",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "auto_grown_20250919055754487_inp_hr_validation_mask_v2.tif",
+    "prefix": "auto_grown_20250919055754487_inp_hr",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20250919055754487_inp_hr_validation_mask_v2.zarr",
+    "prefix": "auto_grown_20250919055754487_inp_hr",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [
+   "auto_grown_20250919055754487_inp_hr_inklabels.tif",
+   "auto_grown_20250919055754487_inp_hr_inklabels.zarr",
+   "auto_grown_20250919055754487_inp_hr_inklabels_v2.tif",
+   "auto_grown_20250919055754487_inp_hr_inklabels_v2.zarr",
+   "auto_grown_20250919055754487_inp_hr_supervision_mask.tif",
+   "auto_grown_20250919055754487_inp_hr_supervision_mask.zarr",
+   "auto_grown_20250919055754487_inp_hr_supervision_mask_v2.tif",
+   "auto_grown_20250919055754487_inp_hr_supervision_mask_v2.zarr",
+   "auto_grown_20250919055754487_inp_hr_validation_mask_v2.tif",
+   "auto_grown_20250919055754487_inp_hr_validation_mask_v2.zarr"
+  ],
+  "e_rejected": [],
+  "f_newer_or_only": [
+   "auto_grown_20250919055754487_inp_hr_inklabels_v2.zarr (v2 > used v1)",
+   "auto_grown_20250919055754487_inp_hr_supervision_mask_v2.zarr (v2 > used v1)",
+   "auto_grown_20250919055754487_inp_hr_validation_mask_v2.zarr (only validation_mask; loader uses none)"
+  ],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/0139/w016_2025010815",
+  "scroll": "0139",
+  "segment": "w016_2025010815",
+  "unused": false,
+  "used": {
+   "inklabels": "w016_2025010815_inklabels_v2.zarr",
+   "supervision_mask": "w016_2025010815_supervision_mask_v2.zarr",
+   "validation_mask": "w016_2025010815_validation_mask_v2.zarr"
+  },
+  "assets": [
+   {
+    "name": "w016_2025010815_inklabels.tif",
+    "prefix": "w016_2025010815",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w016_2025010815_inklabels.zarr",
+    "prefix": "w016_2025010815",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w016_2025010815_inklabels_v2.tif",
+    "prefix": "w016_2025010815",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w016_2025010815_inklabels_v2.zarr",
+    "prefix": "w016_2025010815",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w016_2025010815_supervision_mask.tif",
+    "prefix": "w016_2025010815",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w016_2025010815_supervision_mask.zarr",
+    "prefix": "w016_2025010815",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w016_2025010815_supervision_mask_v2.tif",
+    "prefix": "w016_2025010815",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w016_2025010815_supervision_mask_v2.zarr",
+    "prefix": "w016_2025010815",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w016_2025010815_validation_mask_v2.tif",
+    "prefix": "w016_2025010815",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w016_2025010815_validation_mask_v2.zarr",
+    "prefix": "w016_2025010815",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": null
+  }
+ },
+ {
+  "path": "ink/0139/w017_2025010815",
+  "scroll": "0139",
+  "segment": "w017_2025010815",
+  "unused": false,
+  "used": {
+   "inklabels": "w017_2025010815_inklabels_v2.zarr",
+   "supervision_mask": "w017_2025010815_supervision_mask_v2.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w017_2025010815_inklabels.tif",
+    "prefix": "w017_2025010815",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w017_2025010815_inklabels.zarr",
+    "prefix": "w017_2025010815",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w017_2025010815_inklabels_v2.tif",
+    "prefix": "w017_2025010815",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w017_2025010815_inklabels_v2.zarr",
+    "prefix": "w017_2025010815",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w017_2025010815_supervision_mask.tif",
+    "prefix": "w017_2025010815",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w017_2025010815_supervision_mask.zarr",
+    "prefix": "w017_2025010815",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w017_2025010815_supervision_mask_v2.tif",
+    "prefix": "w017_2025010815",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w017_2025010815_supervision_mask_v2.zarr",
+    "prefix": "w017_2025010815",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": null
+  }
+ },
+ {
+  "path": "ink/0139/w028_20260115221",
+  "scroll": "0139",
+  "segment": "w028_20260115221",
+  "unused": false,
+  "used": {
+   "inklabels": "w028_20260115221_inklabels_v2.zarr",
+   "supervision_mask": "w028_20260115221_supervision_mask_v2.zarr",
+   "validation_mask": "w028_20260115221_validation_mask_v2.zarr"
+  },
+  "assets": [
+   {
+    "name": "w028_20260115221_inklabels.tif",
+    "prefix": "w028_20260115221",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w028_20260115221_inklabels.zarr",
+    "prefix": "w028_20260115221",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w028_20260115221_inklabels_v2.tif",
+    "prefix": "w028_20260115221",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w028_20260115221_inklabels_v2.zarr",
+    "prefix": "w028_20260115221",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w028_20260115221_supervision_mask.tif",
+    "prefix": "w028_20260115221",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w028_20260115221_supervision_mask.zarr",
+    "prefix": "w028_20260115221",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w028_20260115221_supervision_mask_v2.tif",
+    "prefix": "w028_20260115221",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w028_20260115221_supervision_mask_v2.zarr",
+    "prefix": "w028_20260115221",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w028_20260115221_validation_mask_v2.tif",
+    "prefix": "w028_20260115221",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w028_20260115221_validation_mask_v2.zarr",
+    "prefix": "w028_20260115221",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": null
+  }
+ },
+ {
+  "path": "ink/0139/w029_202601261946",
+  "scroll": "0139",
+  "segment": "w029_202601261946",
+  "unused": false,
+  "used": {
+   "inklabels": "w029_202601261946_inklabels_v2.zarr",
+   "supervision_mask": "w029_202601261946_supervision_mask_v2.zarr",
+   "validation_mask": "w029_202601261946_validation_mask_v2.zarr"
+  },
+  "assets": [
+   {
+    "name": "w029_202601261946_inklabels.tif",
+    "prefix": "w029_202601261946",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w029_202601261946_inklabels.zarr",
+    "prefix": "w029_202601261946",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w029_202601261946_inklabels_v2.tif",
+    "prefix": "w029_202601261946",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w029_202601261946_inklabels_v2.zarr",
+    "prefix": "w029_202601261946",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w029_202601261946_supervision_mask.tif",
+    "prefix": "w029_202601261946",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w029_202601261946_supervision_mask.zarr",
+    "prefix": "w029_202601261946",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w029_202601261946_supervision_mask_v2.tif",
+    "prefix": "w029_202601261946",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w029_202601261946_supervision_mask_v2.zarr",
+    "prefix": "w029_202601261946",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w029_202601261946_validation_mask_v2.tif",
+    "prefix": "w029_202601261946",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w029_202601261946_validation_mask_v2.zarr",
+    "prefix": "w029_202601261946",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": null
+  }
+ },
+ {
+  "path": "ink/0139/w030_202601301912",
+  "scroll": "0139",
+  "segment": "w030_202601301912",
+  "unused": false,
+  "used": {
+   "inklabels": "w030_202601301912_inklabels_v2.zarr",
+   "supervision_mask": "w030_202601301912_supervision_mask_v2.zarr",
+   "validation_mask": "w030_202601301912_validation_mask_v2.zarr"
+  },
+  "assets": [
+   {
+    "name": "w030_202601301912_inklabels.tif",
+    "prefix": "w030_202601301912",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w030_202601301912_inklabels.zarr",
+    "prefix": "w030_202601301912",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w030_202601301912_inklabels_v2.tif",
+    "prefix": "w030_202601301912",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w030_202601301912_inklabels_v2.zarr",
+    "prefix": "w030_202601301912",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w030_202601301912_supervision_mask.tif",
+    "prefix": "w030_202601301912",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w030_202601301912_supervision_mask.zarr",
+    "prefix": "w030_202601301912",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w030_202601301912_supervision_mask_v2.tif",
+    "prefix": "w030_202601301912",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w030_202601301912_supervision_mask_v2.zarr",
+    "prefix": "w030_202601301912",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w030_202601301912_validation_mask_v2.tif",
+    "prefix": "w030_202601301912",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w030_202601301912_validation_mask_v2.zarr",
+    "prefix": "w030_202601301912",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": null
+  }
+ },
+ {
+  "path": "ink/0139/w035_2026031718",
+  "scroll": "0139",
+  "segment": "w035_2026031718",
+  "unused": false,
+  "used": {
+   "inklabels": "w035_2026031718_inklabels.zarr",
+   "supervision_mask": "w035_2026031718_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w035_2026031718_inklabels.tif",
+    "prefix": "w035_2026031718",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w035_2026031718_inklabels.zarr",
+    "prefix": "w035_2026031718",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w035_2026031718_supervision_mask.tif",
+    "prefix": "w035_2026031718",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w035_2026031718_supervision_mask.zarr",
+    "prefix": "w035_2026031718",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/0139/w039_2026030210",
+  "scroll": "0139",
+  "segment": "w039_2026030210",
+  "unused": false,
+  "used": {
+   "inklabels": "w039_2026030210_inklabels.zarr",
+   "supervision_mask": "w039_2026030210_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w039_2026030210_inklabels.tif",
+    "prefix": "w039_2026030210",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w039_2026030210_inklabels.zarr",
+    "prefix": "w039_2026030210",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w039_2026030210_supervision_mask.tif",
+    "prefix": "w039_2026030210",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w039_2026030210_supervision_mask.zarr",
+    "prefix": "w039_2026030210",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/0139/w040_2025083102",
+  "scroll": "0139",
+  "segment": "w040_2025083102",
+  "unused": false,
+  "used": {
+   "inklabels": "w040_2025083102_inklabels.zarr",
+   "supervision_mask": "w040_2025083102_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w040_2025083102_inklabels.tif",
+    "prefix": "w040_2025083102",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w040_2025083102_inklabels.zarr",
+    "prefix": "w040_2025083102",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w040_2025083102_supervision_mask.tif",
+    "prefix": "w040_2025083102",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w040_2025083102_supervision_mask.zarr",
+    "prefix": "w040_2025083102",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/0139/w041_2026010816",
+  "scroll": "0139",
+  "segment": "w041_2026010816",
+  "unused": false,
+  "used": {
+   "inklabels": "w041_2026010816_inklabels.zarr",
+   "supervision_mask": "w041_2026010816_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w041_2026010816_inklabels.tif",
+    "prefix": "w041_2026010816",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w041_2026010816_inklabels.zarr",
+    "prefix": "w041_2026010816",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w041_2026010816_supervision_mask.tif",
+    "prefix": "w041_2026010816",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w041_2026010816_supervision_mask.zarr",
+    "prefix": "w041_2026010816",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/0139/w043_2026011217",
+  "scroll": "0139",
+  "segment": "w043_2026011217",
+  "unused": false,
+  "used": {
+   "inklabels": "w043_2026011217_inklabels.zarr",
+   "supervision_mask": "w043_2026011217_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w043_2026011217_inklabels.tif",
+    "prefix": "w043_2026011217",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w043_2026011217_inklabels.zarr",
+    "prefix": "w043_2026011217",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w043_2026011217_supervision_mask.tif",
+    "prefix": "w043_2026011217",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w043_2026011217_supervision_mask.zarr",
+    "prefix": "w043_2026011217",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/0139/w044_2026011522",
+  "scroll": "0139",
+  "segment": "w044_2026011522",
+  "unused": false,
+  "used": {
+   "inklabels": "w044_2026011522_inklabels.zarr",
+   "supervision_mask": "w044_2026011522_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w044_2026011522_inklabels.tif",
+    "prefix": "w044_2026011522",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w044_2026011522_inklabels.zarr",
+    "prefix": "w044_2026011522",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w044_2026011522_supervision_mask.tif",
+    "prefix": "w044_2026011522",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w044_2026011522_supervision_mask.zarr",
+    "prefix": "w044_2026011522",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/0500p2/-1",
+  "scroll": "0500p2",
+  "segment": "-1",
+  "unused": false,
+  "used": {
+   "inklabels": "-1_inklabels_v2.zarr",
+   "supervision_mask": "-1_supervision_mask_v2.zarr",
+   "validation_mask": "-1_validation_mask_v2.zarr"
+  },
+  "assets": [
+   {
+    "name": "-1_inklabels.tif",
+    "prefix": "-1",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "-1_inklabels.zarr",
+    "prefix": "-1",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "-1_inklabels_v2.tif",
+    "prefix": "-1",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "-1_inklabels_v2.zarr",
+    "prefix": "-1",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "-1_supervision_mask.tif",
+    "prefix": "-1",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "-1_supervision_mask.zarr",
+    "prefix": "-1",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "-1_supervision_mask_v2.tif",
+    "prefix": "-1",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "-1_supervision_mask_v2.zarr",
+    "prefix": "-1",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "-1_validation_mask_v2.tif",
+    "prefix": "-1",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "-1_validation_mask_v2.zarr",
+    "prefix": "-1",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": null
+  }
+ },
+ {
+  "path": "ink/1667/w013_20240304141531_2um",
+  "scroll": "1667",
+  "segment": "w013_20240304141531_2um",
+  "unused": false,
+  "used": {
+   "inklabels": "w013_20240304141531_2um_inklabels.zarr",
+   "supervision_mask": "w013_20240304141531_2um_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w013_20240304141531_2um_inklabels.zarr",
+    "prefix": "w013_20240304141531_2um",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w013_20240304141531_2um_supervision_mask.zarr",
+    "prefix": "w013_20240304141531_2um",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w013_20240304141531_inklabels.tif",
+    "prefix": "w013_20240304141531",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w013_20240304141531_inklabels.zarr",
+    "prefix": "w013_20240304141531",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w013_20240304141531_supervision_mask.tif",
+    "prefix": "w013_20240304141531",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w013_20240304141531_supervision_mask.zarr",
+    "prefix": "w013_20240304141531",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [
+   "w013_20240304141531_inklabels.tif",
+   "w013_20240304141531_inklabels.zarr",
+   "w013_20240304141531_supervision_mask.tif",
+   "w013_20240304141531_supervision_mask.zarr"
+  ],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/1667/w018_20240304144031_2um",
+  "scroll": "1667",
+  "segment": "w018_20240304144031_2um",
+  "unused": false,
+  "used": {
+   "inklabels": "w018_20240304144031_2um_inklabels.zarr",
+   "supervision_mask": "w018_20240304144031_2um_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w018_20240304144031_2um_inklabels.zarr",
+    "prefix": "w018_20240304144031_2um",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w018_20240304144031_2um_supervision_mask.zarr",
+    "prefix": "w018_20240304144031_2um",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w018_20240304144031_inklabels.tif",
+    "prefix": "w018_20240304144031",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w018_20240304144031_inklabels.zarr",
+    "prefix": "w018_20240304144031",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w018_20240304144031_inklabels_v2.tif",
+    "prefix": "w018_20240304144031",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w018_20240304144031_inklabels_v2.zarr",
+    "prefix": "w018_20240304144031",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w018_20240304144031_supervision_mask.tif",
+    "prefix": "w018_20240304144031",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w018_20240304144031_supervision_mask.zarr",
+    "prefix": "w018_20240304144031",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w018_20240304144031_supervision_mask_v2.tif",
+    "prefix": "w018_20240304144031",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w018_20240304144031_supervision_mask_v2.zarr",
+    "prefix": "w018_20240304144031",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w018_20240304144031_validation_mask_v2.tif",
+    "prefix": "w018_20240304144031",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w018_20240304144031_validation_mask_v2.zarr",
+    "prefix": "w018_20240304144031",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [
+   "w018_20240304144031_inklabels.tif",
+   "w018_20240304144031_inklabels.zarr",
+   "w018_20240304144031_inklabels_v2.tif",
+   "w018_20240304144031_inklabels_v2.zarr",
+   "w018_20240304144031_supervision_mask.tif",
+   "w018_20240304144031_supervision_mask.zarr",
+   "w018_20240304144031_supervision_mask_v2.tif",
+   "w018_20240304144031_supervision_mask_v2.zarr",
+   "w018_20240304144031_validation_mask_v2.tif",
+   "w018_20240304144031_validation_mask_v2.zarr"
+  ],
+  "e_rejected": [],
+  "f_newer_or_only": [
+   "w018_20240304144031_inklabels_v2.zarr (v2 > used v1)",
+   "w018_20240304144031_supervision_mask_v2.zarr (v2 > used v1)",
+   "w018_20240304144031_validation_mask_v2.zarr (only validation_mask; loader uses none)"
+  ],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/1667/w023_20240304161941_2um",
+  "scroll": "1667",
+  "segment": "w023_20240304161941_2um",
+  "unused": false,
+  "used": {
+   "inklabels": "w023_20240304161941_2um_inklabels.zarr",
+   "supervision_mask": "w023_20240304161941_2um_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w023_20240304161941_2um_inklabels.zarr",
+    "prefix": "w023_20240304161941_2um",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w023_20240304161941_2um_supervision_mask.zarr",
+    "prefix": "w023_20240304161941_2um",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w023_20240304161941_inklabels.tif",
+    "prefix": "w023_20240304161941",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w023_20240304161941_inklabels.zarr",
+    "prefix": "w023_20240304161941",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w023_20240304161941_inklabels_v2.tif",
+    "prefix": "w023_20240304161941",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w023_20240304161941_inklabels_v2.zarr",
+    "prefix": "w023_20240304161941",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w023_20240304161941_supervision_mask.tif",
+    "prefix": "w023_20240304161941",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w023_20240304161941_supervision_mask.zarr",
+    "prefix": "w023_20240304161941",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w023_20240304161941_supervision_mask_v2.tif",
+    "prefix": "w023_20240304161941",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w023_20240304161941_supervision_mask_v2.zarr",
+    "prefix": "w023_20240304161941",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w023_20240304161941_validation_mask_v2.tif",
+    "prefix": "w023_20240304161941",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w023_20240304161941_validation_mask_v2.zarr",
+    "prefix": "w023_20240304161941",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [
+   "w023_20240304161941_inklabels.tif",
+   "w023_20240304161941_inklabels.zarr",
+   "w023_20240304161941_inklabels_v2.tif",
+   "w023_20240304161941_inklabels_v2.zarr",
+   "w023_20240304161941_supervision_mask.tif",
+   "w023_20240304161941_supervision_mask.zarr",
+   "w023_20240304161941_supervision_mask_v2.tif",
+   "w023_20240304161941_supervision_mask_v2.zarr",
+   "w023_20240304161941_validation_mask_v2.tif",
+   "w023_20240304161941_validation_mask_v2.zarr"
+  ],
+  "e_rejected": [],
+  "f_newer_or_only": [
+   "w023_20240304161941_inklabels_v2.zarr (v2 > used v1)",
+   "w023_20240304161941_supervision_mask_v2.zarr (v2 > used v1)",
+   "w023_20240304161941_validation_mask_v2.zarr (only validation_mask; loader uses none)"
+  ],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/1667/w028_20251208130119156_2um",
+  "scroll": "1667",
+  "segment": "w028_20251208130119156_2um",
+  "unused": false,
+  "used": {
+   "inklabels": "w028_20251208130119156_2um_inklabels.zarr",
+   "supervision_mask": "w028_20251208130119156_2um_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w028_20251208130119156_2um_inklabels.zarr",
+    "prefix": "w028_20251208130119156_2um",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w028_20251208130119156_2um_supervision_mask.zarr",
+    "prefix": "w028_20251208130119156_2um",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w028_20251208130119156_inklabels.tif",
+    "prefix": "w028_20251208130119156",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w028_20251208130119156_inklabels.zarr",
+    "prefix": "w028_20251208130119156",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w028_20251208130119156_inklabels_v2.tif",
+    "prefix": "w028_20251208130119156",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w028_20251208130119156_inklabels_v2.zarr",
+    "prefix": "w028_20251208130119156",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w028_20251208130119156_supervision_mask.tif",
+    "prefix": "w028_20251208130119156",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w028_20251208130119156_supervision_mask.zarr",
+    "prefix": "w028_20251208130119156",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w028_20251208130119156_supervision_mask_v2.tif",
+    "prefix": "w028_20251208130119156",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w028_20251208130119156_supervision_mask_v2.zarr",
+    "prefix": "w028_20251208130119156",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w028_20251208130119156_validation_mask_v2.tif",
+    "prefix": "w028_20251208130119156",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w028_20251208130119156_validation_mask_v2.zarr",
+    "prefix": "w028_20251208130119156",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [
+   "w028_20251208130119156_inklabels.tif",
+   "w028_20251208130119156_inklabels.zarr",
+   "w028_20251208130119156_inklabels_v2.tif",
+   "w028_20251208130119156_inklabels_v2.zarr",
+   "w028_20251208130119156_supervision_mask.tif",
+   "w028_20251208130119156_supervision_mask.zarr",
+   "w028_20251208130119156_supervision_mask_v2.tif",
+   "w028_20251208130119156_supervision_mask_v2.zarr",
+   "w028_20251208130119156_validation_mask_v2.tif",
+   "w028_20251208130119156_validation_mask_v2.zarr"
+  ],
+  "e_rejected": [],
+  "f_newer_or_only": [
+   "w028_20251208130119156_inklabels_v2.zarr (v2 > used v1)",
+   "w028_20251208130119156_supervision_mask_v2.zarr (v2 > used v1)",
+   "w028_20251208130119156_validation_mask_v2.zarr (only validation_mask; loader uses none)"
+  ],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/1667/w029_20251212185248662_2um",
+  "scroll": "1667",
+  "segment": "w029_20251212185248662_2um",
+  "unused": false,
+  "used": {
+   "inklabels": "w029_20251212185248662_2um_inklabels.zarr",
+   "supervision_mask": "w029_20251212185248662_2um_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w029_20251212185248662_2um_inklabels.zarr",
+    "prefix": "w029_20251212185248662_2um",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w029_20251212185248662_2um_supervision_mask.zarr",
+    "prefix": "w029_20251212185248662_2um",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w029_20251212185248662_inklabels.tif",
+    "prefix": "w029_20251212185248662",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w029_20251212185248662_inklabels.zarr",
+    "prefix": "w029_20251212185248662",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w029_20251212185248662_inklabels_v2.tif",
+    "prefix": "w029_20251212185248662",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w029_20251212185248662_inklabels_v2.zarr",
+    "prefix": "w029_20251212185248662",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w029_20251212185248662_supervision_mask.tif",
+    "prefix": "w029_20251212185248662",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w029_20251212185248662_supervision_mask.zarr",
+    "prefix": "w029_20251212185248662",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w029_20251212185248662_supervision_mask_v2.tif",
+    "prefix": "w029_20251212185248662",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w029_20251212185248662_supervision_mask_v2.zarr",
+    "prefix": "w029_20251212185248662",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w029_20251212185248662_validation_mask_v2.tif",
+    "prefix": "w029_20251212185248662",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w029_20251212185248662_validation_mask_v2.zarr",
+    "prefix": "w029_20251212185248662",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [
+   "w029_20251212185248662_inklabels.tif",
+   "w029_20251212185248662_inklabels.zarr",
+   "w029_20251212185248662_inklabels_v2.tif",
+   "w029_20251212185248662_inklabels_v2.zarr",
+   "w029_20251212185248662_supervision_mask.tif",
+   "w029_20251212185248662_supervision_mask.zarr",
+   "w029_20251212185248662_supervision_mask_v2.tif",
+   "w029_20251212185248662_supervision_mask_v2.zarr",
+   "w029_20251212185248662_validation_mask_v2.tif",
+   "w029_20251212185248662_validation_mask_v2.zarr"
+  ],
+  "e_rejected": [],
+  "f_newer_or_only": [
+   "w029_20251212185248662_inklabels_v2.zarr (v2 > used v1)",
+   "w029_20251212185248662_supervision_mask_v2.zarr (v2 > used v1)",
+   "w029_20251212185248662_validation_mask_v2.zarr (only validation_mask; loader uses none)"
+  ],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/1667/w031_2025122323_2um",
+  "scroll": "1667",
+  "segment": "w031_2025122323_2um",
+  "unused": false,
+  "used": {
+   "inklabels": "w031_2025122323_2um_inklabels.zarr",
+   "supervision_mask": "w031_2025122323_2um_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w031_2025122323_2um_inklabels.zarr",
+    "prefix": "w031_2025122323_2um",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w031_2025122323_2um_supervision_mask.zarr",
+    "prefix": "w031_2025122323_2um",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w031_2025122323_inklabels.tif",
+    "prefix": "w031_2025122323",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w031_2025122323_inklabels.zarr",
+    "prefix": "w031_2025122323",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w031_2025122323_inklabels_v2.tif",
+    "prefix": "w031_2025122323",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w031_2025122323_inklabels_v2.zarr",
+    "prefix": "w031_2025122323",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w031_2025122323_supervision_mask.tif",
+    "prefix": "w031_2025122323",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w031_2025122323_supervision_mask.zarr",
+    "prefix": "w031_2025122323",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w031_2025122323_supervision_mask_v2.tif",
+    "prefix": "w031_2025122323",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w031_2025122323_supervision_mask_v2.zarr",
+    "prefix": "w031_2025122323",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w031_2025122323_validation_mask_v2.tif",
+    "prefix": "w031_2025122323",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w031_2025122323_validation_mask_v2.zarr",
+    "prefix": "w031_2025122323",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [
+   "w031_2025122323_inklabels.tif",
+   "w031_2025122323_inklabels.zarr",
+   "w031_2025122323_inklabels_v2.tif",
+   "w031_2025122323_inklabels_v2.zarr",
+   "w031_2025122323_supervision_mask.tif",
+   "w031_2025122323_supervision_mask.zarr",
+   "w031_2025122323_supervision_mask_v2.tif",
+   "w031_2025122323_supervision_mask_v2.zarr",
+   "w031_2025122323_validation_mask_v2.tif",
+   "w031_2025122323_validation_mask_v2.zarr"
+  ],
+  "e_rejected": [],
+  "f_newer_or_only": [
+   "w031_2025122323_inklabels_v2.zarr (v2 > used v1)",
+   "w031_2025122323_supervision_mask_v2.zarr (v2 > used v1)",
+   "w031_2025122323_validation_mask_v2.zarr (only validation_mask; loader uses none)"
+  ],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/814/814_46527_2um_try2",
+  "scroll": "814",
+  "segment": "814_46527_2um_try2",
+  "unused": false,
+  "used": {
+   "inklabels": "814_46527_2um_try2_inklabels_v2.zarr",
+   "supervision_mask": "814_46527_2um_try2_supervision_mask_v2.zarr",
+   "validation_mask": "814_46527_2um_try2_validation_mask_v2.zarr"
+  },
+  "assets": [
+   {
+    "name": "814_46527_2um_try2_inklabels.tif",
+    "prefix": "814_46527_2um_try2",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "814_46527_2um_try2_inklabels.zarr",
+    "prefix": "814_46527_2um_try2",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "814_46527_2um_try2_inklabels_v2.tif",
+    "prefix": "814_46527_2um_try2",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "814_46527_2um_try2_inklabels_v2.zarr",
+    "prefix": "814_46527_2um_try2",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "814_46527_2um_try2_supervision_mask.tif",
+    "prefix": "814_46527_2um_try2",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "814_46527_2um_try2_supervision_mask.zarr",
+    "prefix": "814_46527_2um_try2",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "814_46527_2um_try2_supervision_mask_v2.tif",
+    "prefix": "814_46527_2um_try2",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "814_46527_2um_try2_supervision_mask_v2.zarr",
+    "prefix": "814_46527_2um_try2",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "814_46527_2um_try2_validation_mask_v2.tif",
+    "prefix": "814_46527_2um_try2",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "814_46527_2um_try2_validation_mask_v2.zarr",
+    "prefix": "814_46527_2um_try2",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": null
+  }
+ },
+ {
+  "path": "ink/841/auto_grown_20260220144552896",
+  "scroll": "841",
+  "segment": "auto_grown_20260220144552896",
+  "unused": false,
+  "used": {
+   "inklabels": "auto_grown_20260220144552896_inklabels_v2.zarr",
+   "supervision_mask": "auto_grown_20260220144552896_supervision_mask_v2.zarr",
+   "validation_mask": "auto_grown_20260220144552896_validation_mask_v2.zarr"
+  },
+  "assets": [
+   {
+    "name": "auto_grown_20260220144552896_inklabels.tif",
+    "prefix": "auto_grown_20260220144552896",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20260220144552896_inklabels.zarr",
+    "prefix": "auto_grown_20260220144552896",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "auto_grown_20260220144552896_inklabels_v2.tif",
+    "prefix": "auto_grown_20260220144552896",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20260220144552896_inklabels_v2.zarr",
+    "prefix": "auto_grown_20260220144552896",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "auto_grown_20260220144552896_supervision_mask.tif",
+    "prefix": "auto_grown_20260220144552896",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20260220144552896_supervision_mask.zarr",
+    "prefix": "auto_grown_20260220144552896",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "auto_grown_20260220144552896_supervision_mask_v2.tif",
+    "prefix": "auto_grown_20260220144552896",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20260220144552896_supervision_mask_v2.zarr",
+    "prefix": "auto_grown_20260220144552896",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "auto_grown_20260220144552896_validation_mask_v2.tif",
+    "prefix": "auto_grown_20260220144552896",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20260220144552896_validation_mask_v2.zarr",
+    "prefix": "auto_grown_20260220144552896",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": null
+  }
+ },
+ {
+  "path": "ink/841/auto_grown_20260220174252405",
+  "scroll": "841",
+  "segment": "auto_grown_20260220174252405",
+  "unused": false,
+  "used": {
+   "inklabels": "auto_grown_20260220174252405_inklabels_v2.zarr",
+   "supervision_mask": "auto_grown_20260220174252405_supervision_mask_v2.zarr",
+   "validation_mask": "auto_grown_20260220174252405_validation_mask_v2.zarr"
+  },
+  "assets": [
+   {
+    "name": "auto_grown_20260220174252405_inklabels.tif",
+    "prefix": "auto_grown_20260220174252405",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20260220174252405_inklabels.zarr",
+    "prefix": "auto_grown_20260220174252405",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "auto_grown_20260220174252405_inklabels_v2.tif",
+    "prefix": "auto_grown_20260220174252405",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20260220174252405_inklabels_v2.zarr",
+    "prefix": "auto_grown_20260220174252405",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "auto_grown_20260220174252405_supervision_mask.tif",
+    "prefix": "auto_grown_20260220174252405",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20260220174252405_supervision_mask.zarr",
+    "prefix": "auto_grown_20260220174252405",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "auto_grown_20260220174252405_supervision_mask_v2.tif",
+    "prefix": "auto_grown_20260220174252405",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20260220174252405_supervision_mask_v2.zarr",
+    "prefix": "auto_grown_20260220174252405",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "auto_grown_20260220174252405_validation_mask_v2.tif",
+    "prefix": "auto_grown_20260220174252405",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "auto_grown_20260220174252405_validation_mask_v2.zarr",
+    "prefix": "auto_grown_20260220174252405",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": null
+  }
+ },
+ {
+  "path": "ink/841/w00",
+  "scroll": "841",
+  "segment": "w00",
+  "unused": false,
+  "used": {
+   "inklabels": "w00_inklabels_v2.zarr",
+   "supervision_mask": "w00_supervision_mask_v2.zarr",
+   "validation_mask": "w00_validation_mask_v2.zarr"
+  },
+  "assets": [
+   {
+    "name": "w00_inklabels.tif",
+    "prefix": "w00",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w00_inklabels.zarr",
+    "prefix": "w00",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w00_inklabels_v2.tif",
+    "prefix": "w00",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w00_inklabels_v2.zarr",
+    "prefix": "w00",
+    "kind": "inklabels",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w00_supervision_mask.tif",
+    "prefix": "w00",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w00_supervision_mask.zarr",
+    "prefix": "w00",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w00_supervision_mask_v2.tif",
+    "prefix": "w00",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w00_supervision_mask_v2.zarr",
+    "prefix": "w00",
+    "kind": "supervision_mask",
+    "version": 2,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w00_validation_mask_v2.tif",
+    "prefix": "w00",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".tif"
+   },
+   {
+    "name": "w00_validation_mask_v2.zarr",
+    "prefix": "w00",
+    "kind": "validation_mask",
+    "version": 2,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": null
+  }
+ },
+ {
+  "path": "ink/man5/MAN5_outer_3",
+  "scroll": "man5",
+  "segment": "MAN5_outer_3",
+  "unused": false,
+  "used": {
+   "inklabels": "MAN5_outer_3_inklabels.zarr",
+   "supervision_mask": "MAN5_outer_3_supervision_mask.zarr",
+   "validation_mask": "MAN5_outer_3_validation_mask.zarr"
+  },
+  "assets": [
+   {
+    "name": "MAN5_outer_3_inklabels.tif",
+    "prefix": "MAN5_outer_3",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "MAN5_outer_3_inklabels.zarr",
+    "prefix": "MAN5_outer_3",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "MAN5_outer_3_supervision_mask.tif",
+    "prefix": "MAN5_outer_3",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "MAN5_outer_3_supervision_mask.zarr",
+    "prefix": "MAN5_outer_3",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "MAN5_outer_3_validation_mask.zarr",
+    "prefix": "MAN5_outer_3",
+    "kind": "validation_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "front_inklabels.zarr",
+    "prefix": "front",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [
+   "front_inklabels.zarr"
+  ],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/phercparis4/w00_20231016151002",
+  "scroll": "phercparis4",
+  "segment": "w00_20231016151002",
+  "unused": false,
+  "used": {
+   "inklabels": "w00_20231016151002_inklabels.zarr",
+   "supervision_mask": "w00_20231016151002_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w00_20231016151002_inklabels.tif",
+    "prefix": "w00_20231016151002",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w00_20231016151002_inklabels.zarr",
+    "prefix": "w00_20231016151002",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w00_20231016151002_supervision_mask.tif",
+    "prefix": "w00_20231016151002",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w00_20231016151002_supervision_mask.zarr",
+    "prefix": "w00_20231016151002",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/phercparis4/w01_20230702185753_r15",
+  "scroll": "phercparis4",
+  "segment": "w01_20230702185753_r15",
+  "unused": false,
+  "used": {
+   "inklabels": "w01_20230702185753_r15_inklabels.zarr",
+   "supervision_mask": "w01_20230702185753_r15_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w01_20230702185753_r15_inklabels.tif",
+    "prefix": "w01_20230702185753_r15",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w01_20230702185753_r15_inklabels.zarr",
+    "prefix": "w01_20230702185753_r15",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w01_20230702185753_r15_supervision_mask.tif",
+    "prefix": "w01_20230702185753_r15",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w01_20230702185753_r15_supervision_mask.zarr",
+    "prefix": "w01_20230702185753_r15",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/phercparis4/w02_20231031143852",
+  "scroll": "phercparis4",
+  "segment": "w02_20231031143852",
+  "unused": false,
+  "used": {
+   "inklabels": "w02_20231031143852_inklabels.zarr",
+   "supervision_mask": "w02_20231031143852_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w02_20231031143852_inklabels.tif",
+    "prefix": "w02_20231031143852",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w02_20231031143852_inklabels.zarr",
+    "prefix": "w02_20231031143852",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w02_20231031143852_supervision_mask.tif",
+    "prefix": "w02_20231031143852",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w02_20231031143852_supervision_mask.zarr",
+    "prefix": "w02_20231031143852",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/phercparis4/w03_20231106155351",
+  "scroll": "phercparis4",
+  "segment": "w03_20231106155351",
+  "unused": false,
+  "used": {
+   "inklabels": "w03_20231106155351_inklabels.zarr",
+   "supervision_mask": "w03_20231106155351_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w03_20231106155351_inklabels.tiff",
+    "prefix": "w03_20231106155351",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tiff"
+   },
+   {
+    "name": "w03_20231106155351_inklabels.zarr",
+    "prefix": "w03_20231106155351",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w03_20231106155351_supervision_mask.tiff",
+    "prefix": "w03_20231106155351",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tiff"
+   },
+   {
+    "name": "w03_20231106155351_supervision_mask.zarr",
+    "prefix": "w03_20231106155351",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/phercparis4/w05_4424",
+  "scroll": "phercparis4",
+  "segment": "w05_4424",
+  "unused": false,
+  "used": {
+   "inklabels": "w05_4424_inklabels.zarr",
+   "supervision_mask": "w05_4424_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "4424_inklabels.tif",
+    "prefix": "4424",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "4424_inklabels.zarr",
+    "prefix": "4424",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "4424_supervision_mask.tif",
+    "prefix": "4424",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "4424_supervision_mask.zarr",
+    "prefix": "4424",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w05_4424_inklabels.tif",
+    "prefix": "w05_4424",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w05_4424_inklabels.zarr",
+    "prefix": "w05_4424",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w05_4424_supervision_mask.tif",
+    "prefix": "w05_4424",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w05_4424_supervision_mask.zarr",
+    "prefix": "w05_4424",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [
+   "4424_inklabels.tif",
+   "4424_inklabels.zarr",
+   "4424_supervision_mask.tif",
+   "4424_supervision_mask.zarr"
+  ],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/phercparis4/w06_1321",
+  "scroll": "phercparis4",
+  "segment": "w06_1321",
+  "unused": false,
+  "used": {
+   "inklabels": "w06_1321_inklabels.zarr",
+   "supervision_mask": "w06_1321_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w06_1321_inklabels.tif",
+    "prefix": "w06_1321",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w06_1321_inklabels.zarr",
+    "prefix": "w06_1321",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w06_1321_supervision_mask.tif",
+    "prefix": "w06_1321",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w06_1321_supervision_mask.zarr",
+    "prefix": "w06_1321",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/phercparis4/w07_1619",
+  "scroll": "phercparis4",
+  "segment": "w07_1619",
+  "unused": false,
+  "used": {
+   "inklabels": "w07_1619_inklabels.zarr",
+   "supervision_mask": "w07_1619_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w07_1619_inklabels.tif",
+    "prefix": "w07_1619",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w07_1619_inklabels.zarr",
+    "prefix": "w07_1619",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w07_1619_supervision_mask.tif",
+    "prefix": "w07_1619",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "w07_1619_supervision_mask.zarr",
+    "prefix": "w07_1619",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/phercparis4/w09_20230929220926",
+  "scroll": "phercparis4",
+  "segment": "w09_20230929220926",
+  "unused": false,
+  "used": {
+   "inklabels": "w09_20230929220926_inklabels.zarr",
+   "supervision_mask": "w09_20230929220926_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "w09_20230929220926_inklabels.tiff",
+    "prefix": "w09_20230929220926",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tiff"
+   },
+   {
+    "name": "w09_20230929220926_inklabels.zarr",
+    "prefix": "w09_20230929220926",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "w09_20230929220926_supervision_mask.tiff",
+    "prefix": "w09_20230929220926",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tiff"
+   },
+   {
+    "name": "w09_20230929220926_supervision_mask.zarr",
+    "prefix": "w09_20230929220926",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/test_title3_2026031114",
+  "scroll": "0139",
+  "segment": "test_title3_2026031114",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/title2_2026033141569",
+  "scroll": "0139",
+  "segment": "title2_2026033141569",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/title3_2026040114",
+  "scroll": "0139",
+  "segment": "title3_2026040114",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w023_202603112281",
+  "scroll": "0139",
+  "segment": "w023_202603112281",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w024_2026021572",
+  "scroll": "0139",
+  "segment": "w024_2026021572",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w025_2025010863",
+  "scroll": "0139",
+  "segment": "w025_2025010863",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w026_2025010854",
+  "scroll": "0139",
+  "segment": "w026_2025010854",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w027_2025010845",
+  "scroll": "0139",
+  "segment": "w027_2025010845",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w031_2026013019",
+  "scroll": "0139",
+  "segment": "w031_2026013019",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w032_2026020303",
+  "scroll": "0139",
+  "segment": "w032_2026020303",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w033_2026021913",
+  "scroll": "0139",
+  "segment": "w033_2026021913",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w034_2026030317",
+  "scroll": "0139",
+  "segment": "w034_2026030317",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w036_2026031607",
+  "scroll": "0139",
+  "segment": "w036_2026031607",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w037_2026031015",
+  "scroll": "0139",
+  "segment": "w037_2026031015",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w038_2026030608",
+  "scroll": "0139",
+  "segment": "w038_2026030608",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w042_2026020613",
+  "scroll": "0139",
+  "segment": "w042_2026020613",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w045_2026012619",
+  "scroll": "0139",
+  "segment": "w045_2026012619",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w046_20260325",
+  "scroll": "0139",
+  "segment": "w046_20260325",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w047_2026020613",
+  "scroll": "0139",
+  "segment": "w047_2026020613",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w048_2026021912",
+  "scroll": "0139",
+  "segment": "w048_2026021912",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w049_20260318",
+  "scroll": "0139",
+  "segment": "w049_20260318",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w050_2026030220",
+  "scroll": "0139",
+  "segment": "w050_2026030220",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w051_2026030600",
+  "scroll": "0139",
+  "segment": "w051_2026030600",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w052_2026022705",
+  "scroll": "0139",
+  "segment": "w052_2026022705",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w053_2026022021",
+  "scroll": "0139",
+  "segment": "w053_2026022021",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w054_2026020617",
+  "scroll": "0139",
+  "segment": "w054_2026020617",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w055_2025122611",
+  "scroll": "0139",
+  "segment": "w055_2025122611",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w056_2026011514",
+  "scroll": "0139",
+  "segment": "w056_2026011514",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w057_2026012713",
+  "scroll": "0139",
+  "segment": "w057_2026012713",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w058_2026021020",
+  "scroll": "0139",
+  "segment": "w058_2026021020",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0139/w059_2025022312",
+  "scroll": "0139",
+  "segment": "w059_2025022312",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0332/w022",
+  "scroll": "0332",
+  "segment": "w022",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0332/w023",
+  "scroll": "0332",
+  "segment": "w023",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/0332/w024",
+  "scroll": "0332",
+  "segment": "w024",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/1451/auto_grown_20251124-w020",
+  "scroll": "1451",
+  "segment": "auto_grown_20251124-w020",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/1451/auto_grown_20251201-w025",
+  "scroll": "1451",
+  "segment": "auto_grown_20251201-w025",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/1451/auto_grown_20251202-w026",
+  "scroll": "1451",
+  "segment": "auto_grown_20251202-w026",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/1451/auto_grown_20251211-w027",
+  "scroll": "1451",
+  "segment": "auto_grown_20251211-w027",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/1451/auto_grown_20251215-w028",
+  "scroll": "1451",
+  "segment": "auto_grown_20251215-w028",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/1451/auto_grown_20251217-w029",
+  "scroll": "1451",
+  "segment": "auto_grown_20251217-w029",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/1451/auto_grown_20251218-w030",
+  "scroll": "1451",
+  "segment": "auto_grown_20251218-w030",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/1451/neighbor_out_20251211190641996",
+  "scroll": "1451",
+  "segment": "neighbor_out_20251211190641996",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/1451/neighbor_out_20251215205836585",
+  "scroll": "1451",
+  "segment": "neighbor_out_20251215205836585",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/1451/neighbor_out_20251217201339944",
+  "scroll": "1451",
+  "segment": "neighbor_out_20251217201339944",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/1451/neighbor_out_20251218220609152",
+  "scroll": "1451",
+  "segment": "neighbor_out_20251218220609152",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/500p2a/preds",
+  "scroll": "500p2a",
+  "segment": "preds",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/P343p/20250511003658",
+  "scroll": "P343p",
+  "segment": "20250511003658",
+  "unused": true,
+  "used": {
+   "inklabels": "20250511003658_inklabels.zarr",
+   "supervision_mask": "20250511003658_supervision_mask.zarr",
+   "validation_mask": null
+  },
+  "assets": [
+   {
+    "name": "20250511003658_inklabels.tif",
+    "prefix": "20250511003658",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "20250511003658_inklabels.zarr",
+    "prefix": "20250511003658",
+    "kind": "inklabels",
+    "version": 1,
+    "ext": ".zarr"
+   },
+   {
+    "name": "20250511003658_supervision_mask.tif",
+    "prefix": "20250511003658",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".tif"
+   },
+   {
+    "name": "20250511003658_supervision_mask.zarr",
+    "prefix": "20250511003658",
+    "kind": "supervision_mask",
+    "version": 1,
+    "ext": ".zarr"
+   }
+  ],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": null,
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/manb/w00_sean_240226",
+  "scroll": "manb",
+  "segment": "w00_sean_240226",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/manb/w00_sean_240226_front",
+  "scroll": "manb",
+  "segment": "w00_sean_240226_front",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/manbp/w02",
+  "scroll": "manbp",
+  "segment": "w02",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/manbp/w03",
+  "scroll": "manbp",
+  "segment": "w03",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/manbp/w04",
+  "scroll": "manbp",
+  "segment": "w04",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/manbp/w05",
+  "scroll": "manbp",
+  "segment": "w05",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/manbp/w0_20251218010446110",
+  "scroll": "manbp",
+  "segment": "w0_20251218010446110",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/manbp/w5_20251218212713988",
+  "scroll": "manbp",
+  "segment": "w5_20251218212713988",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/manbp/w6_20251220015639809",
+  "scroll": "manbp",
+  "segment": "w6_20251220015639809",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/manbp/w6_20251222204911527",
+  "scroll": "manbp",
+  "segment": "w6_20251222204911527",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/manbp/w7_20251220012955200",
+  "scroll": "manbp",
+  "segment": "w7_20251220012955200",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/manbp/w7_20251222223312675",
+  "scroll": "manbp",
+  "segment": "w7_20251222223312675",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/manbp/w8_20251219211451561",
+  "scroll": "manbp",
+  "segment": "w8_20251219211451561",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ },
+ {
+  "path": "ink/unused/phercparis4/w08_3336",
+  "scroll": "phercparis4",
+  "segment": "w08_3336",
+  "unused": true,
+  "used": {
+   "inklabels": null,
+   "supervision_mask": null,
+   "validation_mask": null
+  },
+  "assets": [],
+  "d_ignored_prefix": [],
+  "e_rejected": [],
+  "f_newer_or_only": [],
+  "raises_if_label_version": {
+   "v1": "<seg> does not contain matching .zarr labels for version v1",
+   "v2": "<seg> does not contain matching .zarr labels for version v2"
+  }
+ }
+]

@@ -1,2 +1,3 @@
 __pycache__/
 hf65_data/
+audit/independent/out/*.npz

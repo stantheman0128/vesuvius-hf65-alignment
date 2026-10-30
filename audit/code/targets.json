@@ -1,0 +1,188 @@
+{
+ "c018": {
+  "seg": "ink/1667/w018_20240304144031_2um",
+  "sup": "w018_20240304144031_2um_supervision_mask.zarr",
+  "vol": "PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr",
+  "note": "control: published w018, -19.64 constant"
+ },
+ "p4w00": {
+  "seg": "ink/phercparis4/w00_20231016151002",
+  "sup": "w00_20231016151002_supervision_mask.zarr",
+  "vol": "PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr",
+  "note": "control: published w00 fit"
+ },
+ "p4w02": {
+  "seg": "ink/phercparis4/w02_20231031143852",
+  "sup": "w02_20231031143852_supervision_mask.zarr",
+  "vol": "PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr",
+  "note": "flag b"
+ },
+ "p4w03": {
+  "seg": "ink/phercparis4/w03_20231106155351",
+  "sup": "w03_20231106155351_supervision_mask.zarr",
+  "vol": "PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr",
+  "note": "flag b"
+ },
+ "p4w06": {
+  "seg": "ink/phercparis4/w06_1321",
+  "sup": "w06_1321_supervision_mask.zarr",
+  "vol": "PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr",
+  "note": "flag b"
+ },
+ "p4w07": {
+  "seg": "ink/phercparis4/w07_1619",
+  "sup": "w07_1619_supervision_mask.zarr",
+  "vol": "PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr",
+  "note": "flag b"
+ },
+ "p4w09": {
+  "seg": "ink/phercparis4/w09_20230929220926",
+  "sup": "w09_20230929220926_supervision_mask.zarr",
+  "vol": "PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr",
+  "note": "flag b"
+ },
+ "b0009": {
+  "seg": "ink/0009b/auto_grown_20250919055754487_inp_hr_2um",
+  "sup": "auto_grown_20250919055754487_inp_hr_2um_supervision_mask.zarr",
+  "vol": "PHerc0009B/volumes/20250820154339-2.401um-0.3m-77keV-masked.zarr",
+  "note": "unflagged"
+ },
+ "t016": {
+  "seg": "ink/0139/w016_2025010815",
+  "sup": "w016_2025010815_supervision_mask_v2.zarr",
+  "vol": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+  "note": "unflagged"
+ },
+ "t029": {
+  "seg": "ink/0139/w029_202601261946",
+  "sup": "w029_202601261946_supervision_mask_v2.zarr",
+  "vol": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+  "note": "unflagged"
+ },
+ "t040": {
+  "seg": "ink/0139/w040_2025083102",
+  "sup": "w040_2025083102_supervision_mask.zarr",
+  "vol": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+  "note": "unflagged; canvas source not recorded, volume is a guess"
+ },
+ "t044": {
+  "seg": "ink/0139/w044_2026011522",
+  "sup": "w044_2026011522_supervision_mask.zarr",
+  "vol": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+  "note": "unflagged; canvas source not recorded, volume is a guess"
+ },
+ "p500": {
+  "seg": "ink/0500p2/-1",
+  "sup": "-1_supervision_mask_v2.zarr",
+  "vol": "PHerc0500P2/volumes/20250526151718-2.215um-0.4m-111keV-masked.zarr",
+  "note": "unflagged"
+ },
+ "n841": {
+  "seg": "ink/841/w00",
+  "sup": "w00_supervision_mask_v2.zarr",
+  "vol": "PHerc0841/volumes/20260319124803-2.403um-0.2m-77keV-masked.zarr",
+  "note": "unflagged"
+ },
+ "n841a": {
+  "seg": "ink/841/auto_grown_20260220144552896",
+  "sup": "auto_grown_20260220144552896_supervision_mask_v2.zarr",
+  "vol": "PHerc0841/volumes/20260319124803-2.403um-0.2m-77keV-masked.zarr",
+  "note": "unflagged"
+ },
+ "c013": {
+  "seg": "ink/1667/w013_20240304141531_2um",
+  "sup": "w013_20240304141531_2um_supervision_mask.zarr",
+  "vol": "PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr",
+  "note": "unflagged"
+ },
+ "c028": {
+  "seg": "ink/1667/w028_20251208130119156_2um",
+  "sup": "w028_20251208130119156_2um_supervision_mask.zarr",
+  "vol": "PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr",
+  "note": "unflagged"
+ },
+ "man5": {
+  "seg": "ink/man5/MAN5_outer_3",
+  "sup": "MAN5_outer_3_supervision_mask.zarr",
+  "vol": "PHercMAN5/volumes/20260311104824-2.399um-0.2m-78keV-masked.zarr",
+  "note": "flag a (labels, #2369); canvas source not recorded, volume is a guess"
+ },
+ "t040b": {
+  "seg": "ink/0139/w040_2025083102",
+  "sup": "w040_2025083102_supervision_mask.zarr",
+  "vol": "PHerc0139/volumes/20260930100252-2.399um-0.2m-78keV-masked.zarr",
+  "note": "volume-choice check for t040: same segment, the other public export of the same 0139 raw scan"
+ },
+ "t035": {
+  "seg": "ink/0139/w035_2026031718",
+  "sup": "w035_2026031718_supervision_mask.zarr",
+  "vol": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+  "note": "unflagged; canvas source not recorded, volume is a guess"
+ },
+ "t017": {
+  "seg": "ink/0139/w017_2025010815",
+  "sup": "w017_2025010815_supervision_mask_v2.zarr",
+  "vol": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+  "note": "unflagged"
+ },
+ "c023": {
+  "seg": "ink/1667/w023_20240304161941_2um",
+  "sup": "w023_20240304161941_2um_supervision_mask.zarr",
+  "vol": "PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr",
+  "note": "unflagged"
+ },
+ "t039": {
+  "seg": "ink/0139/w039_2026030210",
+  "sup": "w039_2026030210_supervision_mask.zarr",
+  "vol": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+  "note": "unflagged; canvas source not recorded, volume is a guess"
+ },
+ "t030": {
+  "seg": "ink/0139/w030_202601301912",
+  "sup": "w030_202601301912_supervision_mask_v2.zarr",
+  "vol": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+  "note": "unflagged"
+ },
+ "c031": {
+  "seg": "ink/1667/w031_2025122323_2um",
+  "sup": "w031_2025122323_2um_supervision_mask.zarr",
+  "vol": "PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr",
+  "note": "unflagged"
+ },
+ "t028": {
+  "seg": "ink/0139/w028_20260115221",
+  "sup": "w028_20260115221_supervision_mask.zarr",
+  "vol": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+  "note": "added by main session 10-30 to finish the cap-stopped five"
+ },
+ "t041": {
+  "seg": "ink/0139/w041_2026010816",
+  "sup": "w041_2026010816_supervision_mask.zarr",
+  "vol": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+  "note": "added by main session 10-30 to finish the cap-stopped five"
+ },
+ "t043": {
+  "seg": "ink/0139/w043_2026011217",
+  "sup": "w043_2026011217_supervision_mask.zarr",
+  "vol": "PHerc0139/volumes/20260102150214-2.399um-0.2m-78keV-masked.zarr",
+  "note": "added by main session 10-30 to finish the cap-stopped five"
+ },
+ "c029": {
+  "seg": "ink/1667/w029_20251212185248662_2um",
+  "sup": "w029_20251212185248662_2um_supervision_mask.zarr",
+  "vol": "PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr",
+  "note": "added by main session 10-30 to finish the cap-stopped five"
+ },
+ "n841b": {
+  "seg": "ink/841/auto_grown_20260220174252405",
+  "sup": "auto_grown_20260220174252405_supervision_mask.zarr",
+  "vol": "PHerc0841/volumes/20260319124803-2.403um-0.2m-77keV-masked.zarr",
+  "note": "added by main session 10-30 to finish the cap-stopped five"
+ },
+ "c029v": {
+  "seg": "ink/1667/w029_20251212185248662_2um",
+  "sup": "w029_20251212185248662_supervision_mask_v2.zarr",
+  "vol": "PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr",
+  "note": "c029 retry: _2um supervision mask has 0.1% set at L5 so the region picker found 0 candidates; the v2 mask (ignored by the loader, see flag f) is used only to pick regions"
+ }
+}

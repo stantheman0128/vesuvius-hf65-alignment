@@ -1,0 +1,42 @@
+{
+ "key": "t040",
+ "n_candidates": 10,
+ "canvas": [
+  24880,
+  31040
+ ],
+ "full": [
+  24880,
+  31040
+ ],
+ "regions": [
+  {
+   "y0": 2560,
+   "x0": 26112,
+   "size": 1024,
+   "tifxyz_valid": 1.0,
+   "supmask": 0.998046875
+  },
+  {
+   "y0": 22016,
+   "x0": 11264,
+   "size": 1024,
+   "tifxyz_valid": 1.0,
+   "supmask": 1.0
+  },
+  {
+   "y0": 8704,
+   "x0": 8192,
+   "size": 1024,
+   "tifxyz_valid": 1.0,
+   "supmask": 1.0
+  },
+  {
+   "y0": 14336,
+   "x0": 26624,
+   "size": 1024,
+   "tifxyz_valid": 1.0,
+   "supmask": 1.0
+  }
+ ]
+}
