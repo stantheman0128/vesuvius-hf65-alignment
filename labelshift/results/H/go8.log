@@ -1,0 +1,7 @@
+[2026-10-31T14:23:08+00:00] go8 start (Amendment H)
+[2026-10-31T14:23:08+00:00] prepare (configs for C16y, C32y and the C0 session check)
+[2026-10-31T15:02:57+00:00] run
+[2026-10-31T20:14:39+00:00] pod_run.sh run exited with status 0
+[2026-10-31T20:14:39+00:00] session check: C0 seed 28
+[2026-10-31T21:36:38+00:00] session check exited with status 0
+[2026-10-31T21:36:38+00:00] go8 end; - C16y vs C0: d = C0 minus C16y = -0.0006, 95% interval -0.0151 to 0.0140; no cost detected; the data rule out a cost above 0.0140 AUC (upper end is 6% of the headroom) - C32y vs C0: d = C0 minus C32y = 0.0359, 95% interval 0.0214 to 0.0504; cost detected (upper end is 21% of the headroom) 

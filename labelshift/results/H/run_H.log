@@ -1,0 +1,29 @@
+[15:02:57] train C16y_s27
+[16:23:11] eval C16y_s27 /root/labelshift/runs/C16y_s27/out/ckpt_012000.pth
+[16:25:37] G0 waived (Amendment F): C16y_s27 is not gated
+[16:25:37] train C32y_s27
+[17:37:29] eval C32y_s27 /root/labelshift/runs/C32y_s27/out/ckpt_012000.pth
+[17:39:27] train C16y_s28
+[18:50:18] eval C16y_s28 /root/labelshift/runs/C16y_s28/out/ckpt_012000.pth
+[18:53:08] train C32y_s28
+[20:12:41] eval C32y_s28 /root/labelshift/runs/C32y_s28/out/ckpt_012000.pth
+# Label-shift results (rules from PREREG.md section 7)
+
+| arm | seed | pooled AUC | best F0.5 | per-segment AUC | trainer val balanced acc |
+|---|---|---|---|---|---|
+| C0 | 27 | missing | missing |  | missing |
+| C0 | 28 | missing | missing |  | missing |
+| C16y | 27 | 0.6416 | 0.4132 | w00 0.7374, w018 0.5098 | 0.5988 |
+| C16y | 28 | 0.6557 | 0.4306 | w00 0.7447, w018 0.5269 | 0.5418 |
+| C32y | 27 | 0.6266 | 0.4049 | w00 0.7020, w018 0.5183 | 0.5818 |
+| C32y | 28 | 0.6324 | 0.4088 | w00 0.7072, w018 0.5283 | 0.5223 |
+
+```
+{
+ "gate_G0": null,
+ "y_curve": {
+  "complete_arms": [],
+  "status": "no complete arms"
+ }
+}
+```

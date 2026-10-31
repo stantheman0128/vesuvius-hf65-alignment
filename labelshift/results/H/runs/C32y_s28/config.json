@@ -1,0 +1,96 @@
+{
+  "description": "label-shift gpu run derived from dino_guided_teacher.json; arm C32y, seed 28; changes from the teacher are listed in PREREG.md section 4",
+  "mode": "full_3d",
+  "model_type": "unet",
+  "model_config": {
+    "autoconfigure": true,
+    "z_projection_mode": "none"
+  },
+  "targets": {
+    "ink": {
+      "activation": "none",
+      "out_channels": 1,
+      "z_projection_mode": "none"
+    }
+  },
+  "in_channels": 1,
+  "patch_size": [
+    128,
+    128,
+    128
+  ],
+  "patch_overlap": 0.5,
+  "patch_min_labeled_coverage": 0.02,
+  "patch_finding_scale": 4,
+  "full_3d": {
+    "projection_half_thickness": 3
+  },
+  "image_normalization": "percentile_minmax",
+  "loss": {
+    "terms": [
+      {
+        "name": "LabelSmoothedDCAndBCELoss",
+        "metric_name": "base",
+        "weight": 1.0,
+        "weight_ce": 1.0,
+        "weight_dice": 1.0,
+        "bce_label_smoothing": 0.1,
+        "dice_label_smoothing": 0.1
+      }
+    ]
+  },
+  "optimizer": "sgd",
+  "learning_rate": 0.01,
+  "weight_decay": 3e-05,
+  "optimizer_momentum": 0.99,
+  "optimizer_nesterov": true,
+  "scheduler": {
+    "name": "diffusers_cosine_warmup"
+  },
+  "warmup_steps": 1000,
+  "ema": {
+    "enabled": true,
+    "decay": 0.9995,
+    "start_step": 200,
+    "update_every_steps": 1,
+    "validate": true,
+    "save_in_checkpoint": true
+  },
+  "mixed_precision": "bf16",
+  "batch_size": 2,
+  "num_iterations": 12000,
+  "max_steps": 12000,
+  "save_iterations": [
+    12000
+  ],
+  "seed": 28,
+  "save_every": 12000,
+  "val_every": 750,
+  "val_steps": 10,
+  "dataloader_workers": 16,
+  "prefetch_factor": 4,
+  "stitch_factor": 1,
+  "use_stitched_forward": false,
+  "stitched_gradient_checkpointing": true,
+  "out_dir": "/root/labelshift/runs/C32y_s28/out",
+  "datasets": [
+    {
+      "segments_path": "/root/labelshift/labels/full/C32y/phercparis4",
+      "segments": [
+        "w00_20231016151002"
+      ],
+      "volume_path": "s3://vesuvius-challenge-open-data/PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr/",
+      "volume_scale": 2
+    },
+    {
+      "segments_path": "/root/labelshift/labels/full/C32y/pherc1667",
+      "segments": [
+        "w018_20240304144031_2um"
+      ],
+      "volume_path": "s3://vesuvius-challenge-open-data/PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr/",
+      "volume_scale": 2
+    }
+  ],
+  "volume_cache_dir": "/root/labelshift/volume_cache",
+  "volume_cache_max_gb": 200
+}

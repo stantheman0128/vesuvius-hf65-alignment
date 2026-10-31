@@ -1,0 +1,1 @@
+CHECK_OK max |auc diff| per segment w00_20231016151002 0.00e+00, pooled 0.00e+00, w018_20240304144031_2um 0.00e+00

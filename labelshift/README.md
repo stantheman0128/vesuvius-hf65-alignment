@@ -73,9 +73,29 @@ All three trained and scored C0 seed 27 only.
 
 L2's C0 seed 27 run is the C0 seed 27 run of the comparison above (same files, copied into `results/F/runs/C0_s27`).
 
-## Amendment H (runs in progress)
+## Amendment H
 
-Amendment H adds two arms, C16y and C32y, which move C0 by 64 and 128 level-0 px in y, with seeds 27 and 28 on the settings above. It reuses the F runs of C0, AS and C8y and judges w00 only, with the seed noise pooled over all five arms. Its rules and `scripts/decide_h.py` were frozen at 22:08 +0800 on 2026-10-31 (`logs/amendment_h_timestamp.txt`), before any of its runs started. The results will be added here when the runs finish.
+Amendment H adds two arms, C16y and C32y, which move C0 by 64 and 128 level-0 px in y, with seeds 27 and 28 on the settings above. It reuses the F runs of C0, AS and C8y and judges w00 only, with the seed noise pooled over all five arms. Its rules and `scripts/decide_h.py` were frozen at 22:08 +0800 on 2026-10-31 (`logs/amendment_h_timestamp.txt`), before any of its runs started.
+
+Held-out AUC of the four new runs (`results/H/results_H.md`):
+
+| run | w00 | w018 | pooled |
+|---|---|---|---|
+| C16y s27 | 0.7374 | 0.5098 | 0.6416 |
+| C16y s28 | 0.7447 | 0.5269 | 0.6557 |
+| C32y s27 | 0.7020 | 0.5183 | 0.6266 |
+| C32y s28 | 0.7072 | 0.5283 | 0.6324 |
+
+Mean w00 AUC over the two seeds: C16y 0.7410, C32y 0.7046. The seed noise pooled over the five arms is s = 0.0056 (df 5, t = 2.571). C0's w00 lower bound is 0.7302, above chance. As in Amendment G, d is m(C0) minus m(arm):
+
+| arm | d | 95% interval | verdict | upper end as share of headroom |
+|---|---|---|---|---|
+| C16y | -0.0006 | -0.0151 to 0.0140 | no cost detected | 6% |
+| C32y | 0.0359 | 0.0214 to 0.0504 | cost detected | 21% |
+
+For C16y the data rule out a cost above 0.0140 AUC, 6% of C0's headroom of 0.2405. C32y's whole interval lies above zero. The dose response, reported only, is -0.0095 AUC per 32 px, a least squares fit over the arm means at 0, 32, 64 and 128 px.
+
+Session check: C0 seed 28 was retrained in H's session (`results/H/runs/C0_s28`). Its `eval.json` equals Amendment F's in every value except the run time, and its `validation_metrics.jsonl` is byte for byte the same, so the retrain reproduced the earlier run exactly and the new session did not move its score. `scripts/h_crosscheck.py`, written apart from `decide_h.py`, recomputes the reading from the `eval.json` files and agrees with `results_H.json`. The largest difference is 4e-4, in t, from rounding in the t table.
 
 Amendment I adds a third seed (29) for C0, C16y and C32y, trained after H's runs on the same pod, and reads w00 again with `scripts/decide_i.py`. It was frozen at 23:46 +0800 on 2026-10-31 and `decide_i.py` at 23:53, both while H's first run was still training (`logs/amendment_i_timestamp.txt`), so the extra runs do not depend on what H shows.
 
@@ -83,13 +103,39 @@ Amendment J adds a fourth seed (30) for C0, C16y and C32y. It runs on a second p
 
 The same pod also runs an eval offset scan (`SCAN-2026-11-01.md`). Every training arm carries C0's labels in the held-out boxes, so every run above is scored against C0. The scan scores finished checkpoints against held-out labels moved down by 16, 32, 64 and 128 px, and against the held-out labels as shipped (`labels/full_eval`, built by `scripts/build_eval_labels.py`). It asks how fast a C0 model's held-out AUC falls when the held-out labels are off, and whether a model trained on moved labels scores higher on labels moved the same way. It is descriptive and outside the rules of `PREREG.md` and the amendments. It was frozen at 01:36 +0800 on 2026-11-01 and revised at 01:37 to add C0 on the as-shipped labels for both seeds, then at 02:40 to start while H trains instead of after it, each time before any scan output existed (`logs/scan_timestamp.txt`).
 
+Pair 1 gave C0 seed 27's `eval.json` back exactly (CHECK_OK, largest AUC difference 0), so the scan's numbers are reported. `results/scan/scan_readout.md` has the tables below with pooled and w018 next to them.
+
+Question 1, w00 AUC of the C0 checkpoints on the held-out labels as placed (E0) and moved down, with the change against E0 in brackets:
+
+| checkpoint | as placed | 16 px | 32 px | 64 px | 128 px |
+|---|---|---|---|---|---|
+| C0 s27 | 0.7425 | 0.7416 (-0.0009) | 0.7376 (-0.0050) | 0.7171 (-0.0255) | 0.6603 (-0.0822) |
+| C0 s28 | 0.7384 | not run | 0.7312 (-0.0072) | 0.7098 (-0.0286) | 0.6550 (-0.0834) |
+
+The 16 px move was scored for seed 27 only. For scale, H's seed noise is s = 0.0056.
+
+Question 2, w00 AUC of each checkpoint trained on moved labels, scored on the held-out labels moved the same way (its own move) and on E0:
+
+| checkpoint | own move | w00 on E0 | w00 on own move | difference | C0 same seed: difference there |
+|---|---|---|---|---|---|
+| C8y s27 | 32 px | 0.7510 | 0.7476 | -0.0034 | -0.0050 |
+| C8y s28 | 32 px | 0.7361 | 0.7356 | -0.0005 | -0.0072 |
+| C16y s27 | 64 px | 0.7374 | 0.7216 | -0.0158 | -0.0255 |
+| C16y s28 | 64 px | 0.7447 | 0.7308 | -0.0139 | -0.0286 |
+| C32y s27 | 128 px | 0.7020 | 0.6475 | -0.0545 | -0.0822 |
+| C32y s28 | 128 px | 0.7072 | 0.6482 | -0.0590 | -0.0834 |
+| AS s27 | as shipped | 0.7516 | 0.7498 | -0.0018 | -0.0012 |
+| AS s28 | as shipped | 0.7510 | 0.7492 | -0.0017 | -0.0022 |
+
+None of the 8 checkpoints scored higher on its own move than on the labels as placed. 7 of 8 lost less there than C0 of the same seed; AS seed 27 lost 0.0018 against C0's 0.0012. Each pair is one evaluation, and no significance test is applied. For scale, moving the held-out labels 64 px costs C0 0.0255 and 0.0286 w00 AUC, about five times the seed noise, while training on labels moved 64 px showed no detectable cost in Amendment H.
+
 ## Limits
 
 - Exploratory. Amendment F was written after two G0 failures and Amendment G after three, with C0 seed 27 already known.
 - One segment that learns (w00), two seeds per arm, and fixed held-out boxes. The intervals cover run to run variation in training, not the choice of boxes.
 - A weak model, about 0.74 AUC on w00. A stronger model could be more sensitive to label position, so "no cost detected" holds for this model at this level.
 - C8y shifts y only. AS's offset on w00 is two-axis and varies with position.
-- C0 seed 27 was trained before a pod restart and the other five runs after it (`F_RESTART_NOTE.md`). Checked: the configs differ only in seed and output folder, both C0 seeds drew the same 2,478 patches (`sampling_audit` in the trainer log), and every install used the same pinned `scripts/pod_requirements.txt`. The package freeze before the restart was not recorded, so matching versions are inferred. The freeze after the restart is `results/F/pod_venv_freeze_after_restart.txt`.
+- C0 seed 27 was trained before a pod restart and the other five runs after it (`F_RESTART_NOTE.md`). Checked: the configs differ only in seed and output folder, both C0 seeds drew the same 2,478 patches (`sampling_audit` in the trainer log), and every install used the same pinned `scripts/pod_requirements.txt`. The package freeze before the restart was not recorded, so matching versions are inferred. The freeze after the restart is `results/F/pod_venv_freeze_after_restart.txt`. Amendment H's session check later retrained C0 seed 28 in a new session and got F's `eval.json` back exactly, apart from the run time.
 
 ## Files
 
@@ -99,8 +145,11 @@ The same pod also runs an eval offset scan (`SCAN-2026-11-01.md`). Every trainin
 - `logs/check_tif_vs_zarr*.log`, `logs/components_*.log`: the checks and component boxes `PREREG.md` section 2 cites.
 - `pod_run.sh`, `go5.sh`, `go6.sh`, `go7.sh`, `go8.sh`, `go9.sh`, `go9b.sh`, `go9c.sh`, `scan.sh`, `scan2.sh`, `scan_wait_h.sh`, `go_j.sh`, `pod_setup_j.sh`, `vault_sync_j.sh`, `final_sync_j.sh`, `regions.json`, `labels/manifest_full.json`, `scripts/`: everything the pods ran. `scripts/hf65/` is a copy of `correct/apply_fit.py` and three files of `measure/` from this repository at a7b7468.
 - `results/<attempt>/`: each run's `config.json`, `eval.json` and the trainer's `validation_metrics.jsonl`, plus the readouts and run logs.
+- `results/H/`: Amendment H's four new runs and the C0 seed 28 session check, laid out as in `results/F/`, with `results_H.md`, `results_H.json` and the logs of `go8.sh`.
+- `results/scan/`: the scan's readout, pair 1's check (`check.txt`), `scan.log`, `go9.log` and the `eval_heldout.py` output of each of the 18 pairs (`out/<checkpoint>__<folder>.json`).
+- `scripts/h_crosscheck.py`: an independent recompute of the Amendment H reading, written apart from `decide_h.py` and run off the pod (`python -I scripts/h_crosscheck.py results/F/runs results/H/runs results/H/results_H.json`).
 
-Not included: model checkpoints, trainer and evaluation stdout and stderr logs (progress bars, up to 1.5 MB each), the label arms (1.1 GB, rebuilt by `prepare`), the scan's label folders (rebuilt by `scripts/build_eval_labels.py`), downloaded data and the volume cache, configs written for arms that never trained in attempt 0, the 5 minutes of AS seed 27 that ran before the pod stopped, and the local CPU smoke test and WSL prep scripts.
+Not included: model checkpoints, trainer and evaluation stdout and stderr logs (progress bars, up to 1.5 MB each), the scan's stdout and stderr logs for each pair, the label arms (1.1 GB, rebuilt by `prepare`), the scan's label folders (rebuilt by `scripts/build_eval_labels.py`), downloaded data and the volume cache, configs written for arms that never trained in attempt 0, the 5 minutes of AS seed 27 that ran before the pod stopped, and the local CPU smoke test and WSL prep scripts.
 
 Check the frozen files against the timestamp files:
 

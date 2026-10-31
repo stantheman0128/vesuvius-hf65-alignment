@@ -1,0 +1,8 @@
+[2026-10-31T15:54:40+00:00] go9 start (Amendment I), waiting for ALL_DONE_H
+[2026-10-31T17:37:41+00:00] go9b start (Amendment I with the eval offset scan first), waiting for ALL_DONE_H
+[2026-10-31T18:39:31+00:00] go9c start (Amendment I after the rest of the eval offset scan), waiting for ALL_DONE_H
+[2026-10-31T21:37:33+00:00] ALL_DONE_H seen
+[2026-10-31T21:37:33+00:00] eval offset scan, pairs not scored yet (scan2.sh, log appended to scan.log)
+[2026-10-31T21:38:33+00:00] scan2.sh returned 0
+[2026-10-31T21:38:33+00:00] prepare (configs for seed 29)
+[2026-10-31T21:38:38+00:00] run
