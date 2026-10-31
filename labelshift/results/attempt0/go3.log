@@ -1,0 +1,36 @@
+== go3 start 2026-10-31T01:47:51+00:00
+label arms match the local build
+386M	/root/labelshift/data/raw
+1.1G	/root/labelshift/labels/full
+measured 2.240 steps/s (0.45 s/step, data wait nan s/step)
+projected 0.82 GPU h per run, 1.64 per arm (2 seeds), 8.2 for 10 runs; cap 13.03
+PROJECTION_OK
+[01:47:56] train C0_s27
+[02:26:12] eval C0_s27 /root/labelshift/runs/C0_s27/out/ckpt_006000.pth
+G0: C0 seed 27 pooled AUC 0.6182 (gate 0.70)
+[02:28:24] gate G0 failed, stopping (PREREG section 7)
+# Label-shift results (rules from PREREG.md section 7)
+
+| arm | seed | pooled AUC | best F0.5 | per-segment AUC | trainer val balanced acc |
+|---|---|---|---|---|---|
+| AS | 27 | missing | missing |  | missing |
+| AS | 28 | missing | missing |  | missing |
+| C0 | 27 | 0.6182 | 0.3968 | w00 0.6901, w018 0.5119 | 0.5975 |
+| C0 | 28 | missing | missing |  | missing |
+| C2y | 27 | missing | missing |  | missing |
+| C2y | 28 | missing | missing |  | missing |
+| C4y | 27 | missing | missing |  | missing |
+| C4y | 28 | missing | missing |  | missing |
+| C8y | 27 | missing | missing |  | missing |
+| C8y | 28 | missing | missing |  | missing |
+
+```
+{
+ "gate_G0": {
+  "c0_seed27_auc": 0.6181604481110663,
+  "pass": false
+ },
+ "outcome": "G0 failed: C0 seed 27 AUC 0.6182 < 0.7; inconclusive"
+}
+```
+== go3 end 2026-10-31T02:28:24+00:00

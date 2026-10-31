@@ -1,0 +1,29 @@
+Plan choice under AMENDMENT-B-2026-10-31.md (sha256 7b74b6e2e365c8bc4886ec661d0c5fdd4d8267efd4ccbd53263e401dea82c0c3)
+Written 2026-10-31 09:39 +0800, before `run` and before any training result exists.
+
+Smoke (runs/gpusmoke/projection.txt, pod clock 2026-10-30 22:31 UTC = 06:31 +0800):
+  measured 0.693 steps/s (1.44 s/step, data wait 0.96 s/step)
+  per_run(S) = S / 0.693 / 3600 * 1.10: per_run(6000) 2.646 h, per_run(4000) 1.764 h, per_run(3000) 1.323 h
+
+Deviation from Amendment B: the choice was due at the end of smoke (06:31) and is being made at 09:40.
+The local watcher that was meant to report the end of smoke never fired (its remote `pgrep -f` matched its
+own ssh command line), so the pod sat idle for about 3.1 h. Using T from the end of smoke (16.52 h) would put
+the plan past the 23:20 hard stop, so T is taken from now instead. This only shortens T. No training or
+evaluation result exists yet, so the change cannot depend on one.
+  Under the rule as written, T = 16.52 h, P0 needs 26.71 h (no), P1 at 6000 needs 15.87 h (fits).
+  With T from 09:45: T = 23:20 - 09:45 - 0.3 h = 13.30 h.
+
+Plans checked in order with T = 13.30 h:
+  P0  10 x per_run(6000) + 0.25 = 26.71 h > 13.30   no
+  P1  6000: 6 x 2.646 = 15.87 h > 13.30             no
+      4000: 6 x 1.764 = 10.58 h <= 13.30            fits
+
+Chosen: P1, ARMS=C0,AS,C8y SEEDS="27 28" STEPS=4000 WORKERS=16 CAP_HOURS=13.30.
+Projected end about 20:25 +0800 if the smoke rate holds. Rules as amended in Amendment A for P1 (R1 and R3
+with the two-point yardstick; R2 dropped). A smaller STEPS makes G0 more likely to stop the run; reported as
+it is.
+
+Mechanics: prepare is re-run with STEPS=4000 to rewrite the six run configs and two eval configs (labels are
+already built and are not rebuilt). runs/gpusmoke/projection.txt as written by smoke is kept as
+projection_smoke.txt; projection.txt is recomputed from the same benchmark_summary.json with STEPS=4000,
+6 runs and cap 13.30, which is arithmetic on the same measurement, so `run` passes its own gate without FORCE.

@@ -1,0 +1,21 @@
+tif w00_20231016151002_supervision_mask.tif (32249, 51380) uint8 values [  0 255]
+level 0: 3265/6522 listed chunks present, 53493760 px compared, 0 differ from tif[::1, ::1], 0 nonzero px outside slice 32
+level 1: 0/1811 listed chunks present, 0 px compared, 0 differ from tif[::2, ::2], 0 nonzero px outside slice 32
+level 2: 541/541 listed chunks present, 8863744 px compared, 0 differ from tif[::4, ::4], 0 nonzero px outside slice 32
+level 3: 176/176 listed chunks present, 2883584 px compared, 0 differ from tif[::8, ::8], 0 nonzero px outside slice 32
+level 4: 68/68 listed chunks present, 1114112 px compared, 0 differ from tif[::16, ::16], 0 nonzero px outside slice 32
+level 5: 28/28 listed chunks present, 458752 px compared, 0 differ from tif[::32, ::32], 0 nonzero px outside slice 32
+tif w018_20240304144031_inklabels.tif (42632, 98362) uint8 values [  0 255]
+level 0: 0/4387 listed chunks present, 0 px compared, 0 differ from tif[::1, ::1], 0 nonzero px outside slice 32
+level 1: 0/1490 listed chunks present, 0 px compared, 0 differ from tif[::2, ::2], 0 nonzero px outside slice 32
+level 2: 582/582 listed chunks present, 9535488 px compared, 0 differ from tif[::4, ::4], 0 nonzero px outside slice 32
+level 3: 244/244 listed chunks present, 3997696 px compared, 0 differ from tif[::8, ::8], 0 nonzero px outside slice 32
+level 4: 114/114 listed chunks present, 1867776 px compared, 0 differ from tif[::16, ::16], 0 nonzero px outside slice 32
+level 5: 55/55 listed chunks present, 901120 px compared, 0 differ from tif[::32, ::32], 0 nonzero px outside slice 32
+tif w018_20240304144031_supervision_mask.tif (42632, 98362) uint8 values [  0 255]
+level 0: 0/9100 listed chunks present, 0 px compared, 0 differ from tif[::1, ::1], 0 nonzero px outside slice 32
+level 1: 0/2599 listed chunks present, 0 px compared, 0 differ from tif[::2, ::2], 0 nonzero px outside slice 32
+level 2: 812/812 listed chunks present, 13303808 px compared, 0 differ from tif[::4, ::4], 0 nonzero px outside slice 32
+level 3: 305/305 listed chunks present, 4997120 px compared, 0 differ from tif[::8, ::8], 0 nonzero px outside slice 32
+level 4: 129/129 listed chunks present, 2113536 px compared, 0 differ from tif[::16, ::16], 0 nonzero px outside slice 32
+level 5: 59/59 listed chunks present, 966656 px compared, 0 differ from tif[::32, ::32], 0 nonzero px outside slice 32

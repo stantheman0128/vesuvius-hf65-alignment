@@ -1,0 +1,31 @@
+{
+  "_doc": "Boxes are level-0 canvas px [y0, y1, x0, x1] of supervised components from logs/components_*.log (scripts/list_components.py: level-4 supervision after a 48 px dilation). build_labels.py maps them into the tifxyz frame with the HF65 correction and pads by margin_px. Held-out: w018 = the three components fully inside the shipped w018_20240304144031_validation_mask_v2 (ids 5, 7, 14; 11.8% of its ink); w00 = ids 10, 12, 14 (20.8% of its ink; w00 ships no validation mask). guard_px of supervision around every held-out box is dropped from training in every arm. Smoke boxes restrict the CPU smoke test to one training and one held-out component per segment so it reads few CT chunks.",
+  "margin_px": 64,
+  "guard_px": 512,
+  "shift_cell_level0_px": 4,
+  "segments": {
+    "w00": {
+      "scroll": "phercparis4",
+      "segment": "w00_20231016151002",
+      "fit_key": "w00",
+      "ink_tif": "w00_20231016151002_inklabels.tif",
+      "sup_tif": "w00_20231016151002_supervision_mask.tif",
+      "volume_path": "s3://vesuvius-challenge-open-data/PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr/",
+      "heldout": {"10": [12640, 14832, 30544, 34784], "12": [15632, 17728, 30480, 31936], "14": [17840, 22480, 4240, 8352]},
+      "smoke_train": {"8": [9792, 12160, 25616, 28016]},
+      "smoke_heldout": {"12": [15632, 17728, 30480, 31936]}
+    },
+    "w018": {
+      "scroll": "pherc1667",
+      "bucket_scroll": "1667",
+      "segment": "w018_20240304144031_2um",
+      "fit_key": "c018",
+      "ink_tif": "w018_20240304144031_inklabels.tif",
+      "sup_tif": "w018_20240304144031_supervision_mask.tif",
+      "volume_path": "s3://vesuvius-challenge-open-data/PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr/",
+      "heldout": {"5": [5728, 7680, 89424, 93680], "7": [7824, 9712, 5376, 10032], "14": [16400, 18240, 26224, 28576]},
+      "smoke_train": {"1": [4784, 5984, 19024, 20224]},
+      "smoke_heldout": {"14": [16400, 18240, 26224, 28576]}
+    }
+  }
+}

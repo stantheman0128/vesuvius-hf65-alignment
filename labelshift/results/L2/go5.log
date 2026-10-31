@@ -1,0 +1,8 @@
+[2026-10-31T03:03:21+00:00] go5 start
+[2026-10-31T03:03:21+00:00] pilot L1: STEPS=6000 MAXSTEPS_MODE=anneal
+pilot L1 steps 6000 seconds 2645 pooled_auc 0.6230604335201047
+[2026-10-31T04:10:52+00:00] pilot L1 did not pass G0 (AUC 0.6230604335201047)
+[2026-10-31T04:10:52+00:00] pilot L2: STEPS=12000 MAXSTEPS_MODE=anneal
+pilot L2 steps 12000 seconds 4276 pooled_auc 0.6549824153032139
+[2026-10-31T05:22:12+00:00] pilot L2 did not pass G0 (AUC 0.6549824153032139)
+[2026-10-31T05:22:12+00:00] no pilot passed G0: stop (Amendment E)

@@ -1,0 +1,2 @@
+pilot L1 steps 6000 seconds 2645 pooled_auc 0.6230604335201047
+pilot L2 steps 12000 seconds 4276 pooled_auc 0.6549824153032139

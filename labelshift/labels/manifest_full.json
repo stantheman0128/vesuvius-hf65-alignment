@@ -1,0 +1,738 @@
+{
+ "regions": {
+  "_doc": "Boxes are level-0 canvas px [y0, y1, x0, x1] of supervised components from logs/components_*.log (scripts/list_components.py: level-4 supervision after a 48 px dilation). build_labels.py maps them into the tifxyz frame with the HF65 correction and pads by margin_px. Held-out: w018 = the three components fully inside the shipped w018_20240304144031_validation_mask_v2 (ids 5, 7, 14; 11.8% of its ink); w00 = ids 10, 12, 14 (20.8% of its ink; w00 ships no validation mask). guard_px of supervision around every held-out box is dropped from training in every arm. Smoke boxes restrict the CPU smoke test to one training and one held-out component per segment so it reads few CT chunks.",
+  "margin_px": 64,
+  "guard_px": 512,
+  "shift_cell_level0_px": 4,
+  "segments": {
+   "w00": {
+    "scroll": "phercparis4",
+    "segment": "w00_20231016151002",
+    "fit_key": "w00",
+    "ink_tif": "w00_20231016151002_inklabels.tif",
+    "sup_tif": "w00_20231016151002_supervision_mask.tif",
+    "volume_path": "s3://vesuvius-challenge-open-data/PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr/",
+    "heldout": {
+     "10": [
+      12640,
+      14832,
+      30544,
+      34784
+     ],
+     "12": [
+      15632,
+      17728,
+      30480,
+      31936
+     ],
+     "14": [
+      17840,
+      22480,
+      4240,
+      8352
+     ]
+    },
+    "smoke_train": {
+     "8": [
+      9792,
+      12160,
+      25616,
+      28016
+     ]
+    },
+    "smoke_heldout": {
+     "12": [
+      15632,
+      17728,
+      30480,
+      31936
+     ]
+    }
+   },
+   "w018": {
+    "scroll": "pherc1667",
+    "bucket_scroll": "1667",
+    "segment": "w018_20240304144031_2um",
+    "fit_key": "c018",
+    "ink_tif": "w018_20240304144031_inklabels.tif",
+    "sup_tif": "w018_20240304144031_supervision_mask.tif",
+    "volume_path": "s3://vesuvius-challenge-open-data/PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr/",
+    "heldout": {
+     "5": [
+      5728,
+      7680,
+      89424,
+      93680
+     ],
+     "7": [
+      7824,
+      9712,
+      5376,
+      10032
+     ],
+     "14": [
+      16400,
+      18240,
+      26224,
+      28576
+     ]
+    },
+    "smoke_train": {
+     "1": [
+      4784,
+      5984,
+      19024,
+      20224
+     ]
+    },
+    "smoke_heldout": {
+     "14": [
+      16400,
+      18240,
+      26224,
+      28576
+     ]
+    }
+   }
+  }
+ },
+ "arms": "AS,C0,C2y,C4y,C8y,C2x,C4x,C8x",
+ "smoke": false,
+ "villa_src": "trees/main37d1897/vesuvius/src",
+ "segments": {
+  "w00": {
+   "canvas_shape": [
+    32249,
+    51380
+   ],
+   "tifxyz_full_shape": [
+    32281,
+    51345
+   ],
+   "model": "w00/readme",
+   "model_dy": [
+    -20.7,
+    0.000993,
+    0.0
+   ],
+   "model_dx": [
+    11.09,
+    0.0,
+    -0.000663
+   ],
+   "heldout_tifxyz_boxes": [
+    [
+     12567,
+     14891,
+     30470,
+     34837
+    ],
+    [
+     15562,
+     17789,
+     30406,
+     31990
+    ],
+    [
+     17773,
+     22546,
+     4184,
+     8422
+    ]
+   ],
+   "guard_boxes": [
+    [
+     12055,
+     15403,
+     29958,
+     35349
+    ],
+    [
+     15050,
+     18301,
+     29894,
+     32502
+    ],
+    [
+     17261,
+     23058,
+     3672,
+     8934
+    ]
+   ],
+   "smoke_train_boxes": null,
+   "smoke_heldout_boxes": null,
+   "nonzero_per_level": {
+    "AS": {
+     "inklabels": [
+      22077678,
+      5518476,
+      1379642,
+      344964,
+      86193,
+      21526
+     ],
+     "supervision_mask": [
+      76708528,
+      19177132,
+      4794283,
+      1198604,
+      299695,
+      74900
+     ],
+     "validation_mask": [
+      19037581,
+      4758104,
+      1189586,
+      297570,
+      74382,
+      18584
+     ]
+    },
+    "C0": {
+     "inklabels": [
+      22089410,
+      5521384,
+      1380319,
+      344990,
+      86245,
+      21547
+     ],
+     "supervision_mask": [
+      76722731,
+      19182625,
+      4794518,
+      1199189,
+      299777,
+      74912
+     ],
+     "validation_mask": [
+      19037581,
+      4758104,
+      1189586,
+      297570,
+      74382,
+      18584
+     ]
+    },
+    "C2y": {
+     "inklabels": [
+      22089410,
+      5521384,
+      1380319,
+      344990,
+      86256,
+      21528
+     ],
+     "supervision_mask": [
+      76722731,
+      19182625,
+      4794518,
+      1199189,
+      299780,
+      74897
+     ],
+     "validation_mask": [
+      19037581,
+      4758104,
+      1189586,
+      297570,
+      74382,
+      18584
+     ]
+    },
+    "C4y": {
+     "inklabels": [
+      22089410,
+      5521384,
+      1380319,
+      344990,
+      86245,
+      21532
+     ],
+     "supervision_mask": [
+      76722731,
+      19182625,
+      4794518,
+      1199189,
+      299777,
+      74898
+     ],
+     "validation_mask": [
+      19037581,
+      4758104,
+      1189586,
+      297570,
+      74382,
+      18584
+     ]
+    },
+    "C8y": {
+     "inklabels": [
+      22089410,
+      5521384,
+      1380319,
+      344990,
+      86245,
+      21547
+     ],
+     "supervision_mask": [
+      76722731,
+      19182625,
+      4794518,
+      1199189,
+      299777,
+      74912
+     ],
+     "validation_mask": [
+      19037581,
+      4758104,
+      1189586,
+      297570,
+      74382,
+      18584
+     ]
+    },
+    "C2x": {
+     "inklabels": [
+      22089410,
+      5521384,
+      1380319,
+      344990,
+      86247,
+      21561
+     ],
+     "supervision_mask": [
+      76715291,
+      19180761,
+      4794052,
+      1199072,
+      299843,
+      74991
+     ],
+     "validation_mask": [
+      19037581,
+      4758104,
+      1189586,
+      297570,
+      74382,
+      18584
+     ]
+    },
+    "C4x": {
+     "inklabels": [
+      22089410,
+      5521384,
+      1380319,
+      344990,
+      86245,
+      21572
+     ],
+     "supervision_mask": [
+      76707795,
+      19178885,
+      4793584,
+      1198955,
+      299718,
+      74959
+     ],
+     "validation_mask": [
+      19037581,
+      4758104,
+      1189586,
+      297570,
+      74382,
+      18584
+     ]
+    },
+    "C8x": {
+     "inklabels": [
+      22089410,
+      5521384,
+      1380319,
+      344990,
+      86245,
+      21547
+     ],
+     "supervision_mask": [
+      76692731,
+      19175113,
+      4792642,
+      1198719,
+      299659,
+      74882
+     ],
+     "validation_mask": [
+      19037581,
+      4758104,
+      1189586,
+      297570,
+      74382,
+      18584
+     ]
+    }
+   },
+   "sha256": {
+    "AS": {
+     "inklabels": "ffa47ce26913aa9a0d76d182c057b5f356d9bcb0b60b76bbaede88e679c67edb",
+     "supervision_mask": "e1969b48a29b862938d39a84318e781fc8589d60efc4ee495a0631a8cc657198",
+     "validation_mask": "10ed441c32ca29ee03b9aee373fb82b6e6882d76fe661d1558f3dbf510be3f4a"
+    },
+    "C0": {
+     "inklabels": "70d94f6955251ff89ebe3a68d047a952bbbd4de6f031d407ec3d046266ae5ecb",
+     "supervision_mask": "ec3c8d2fe68d3a72aa60dcd18bd94e324593c8fa93808c54c77ecf12c64ac279",
+     "validation_mask": "10ed441c32ca29ee03b9aee373fb82b6e6882d76fe661d1558f3dbf510be3f4a"
+    },
+    "C2y": {
+     "inklabels": "d716bdea125f6c67aea31450e9660474420913cdba02bc444fbf796f88984a99",
+     "supervision_mask": "c4a023618ea83cd17b58bd03ca4c97f28f42d162c082bb94d76faa03f1d21d6e",
+     "validation_mask": "10ed441c32ca29ee03b9aee373fb82b6e6882d76fe661d1558f3dbf510be3f4a"
+    },
+    "C4y": {
+     "inklabels": "e2226da47f4bd2d8acaec748d043ac2bccf606bb6e254524971bdb7652baa111",
+     "supervision_mask": "11ebc14d038eff64dec3d6aeef2a71572c09087ab73b2b2dc26e096cc1a4ed57",
+     "validation_mask": "10ed441c32ca29ee03b9aee373fb82b6e6882d76fe661d1558f3dbf510be3f4a"
+    },
+    "C8y": {
+     "inklabels": "3c443291e7af2910e69e005d12ad2375205718547ecef360a8a0dd757121486c",
+     "supervision_mask": "ec04b1c74fed41f383caa193c9839ef3fa75b18b7d596a08d8f4b4992cebcea8",
+     "validation_mask": "10ed441c32ca29ee03b9aee373fb82b6e6882d76fe661d1558f3dbf510be3f4a"
+    },
+    "C2x": {
+     "inklabels": "577a61ab248911fb3967064a2dfea96c9febab968c17aea14f7970d3e7b37cae",
+     "supervision_mask": "4bcc0ba6ae811e5745ce53762fe2f116ab62c6aaf14438f984e175a27c20d8f1",
+     "validation_mask": "10ed441c32ca29ee03b9aee373fb82b6e6882d76fe661d1558f3dbf510be3f4a"
+    },
+    "C4x": {
+     "inklabels": "0a9bb23876a4764da02eb51993f350bfed4f8c9316355198d2b24143a9954e1b",
+     "supervision_mask": "f314fdce2832ca9fe91db3f5ef41e9f1ab5bf0cfaaf142485c52058f0dd81a5e",
+     "validation_mask": "10ed441c32ca29ee03b9aee373fb82b6e6882d76fe661d1558f3dbf510be3f4a"
+    },
+    "C8x": {
+     "inklabels": "8edc33e032864f0086d9993827918a5388858dc1663805ba453d8a3a67a38e64",
+     "supervision_mask": "62b57f82a62cac2c79a73745b309f896e6f1b95b69a3bdd48a30847c4db90363",
+     "validation_mask": "10ed441c32ca29ee03b9aee373fb82b6e6882d76fe661d1558f3dbf510be3f4a"
+    }
+   },
+   "tiles_written": 28,
+   "seconds": 391.1
+  },
+  "w018": {
+   "canvas_shape": [
+    42632,
+    98362
+   ],
+   "tifxyz_full_shape": [
+    42632,
+    98362
+   ],
+   "model": "c018/readme",
+   "model_dy": [
+    -19.64,
+    0.0,
+    0.0
+   ],
+   "model_dx": [
+    -19.64,
+    0.0,
+    0.0
+   ],
+   "heldout_tifxyz_boxes": [
+    [
+     5644,
+     7725,
+     89340,
+     93725
+    ],
+    [
+     7740,
+     9757,
+     5292,
+     10077
+    ],
+    [
+     16316,
+     18285,
+     26140,
+     28621
+    ]
+   ],
+   "guard_boxes": [
+    [
+     5132,
+     8237,
+     88828,
+     94237
+    ],
+    [
+     7228,
+     10269,
+     4780,
+     10589
+    ],
+    [
+     15804,
+     18797,
+     25628,
+     29133
+    ]
+   ],
+   "smoke_train_boxes": null,
+   "smoke_heldout_boxes": null,
+   "nonzero_per_level": {
+    "AS": {
+     "inklabels": [
+      45608010,
+      11400683,
+      2852863,
+      713436,
+      178409,
+      44623
+     ],
+     "supervision_mask": [
+      112308855,
+      28076860,
+      7019806,
+      1753823,
+      438135,
+      109519
+     ],
+     "validation_mask": [
+      16312327,
+      4078007,
+      1019691,
+      255138,
+      63762,
+      15944
+     ]
+    },
+    "C0": {
+     "inklabels": [
+      45608010,
+      11400683,
+      2852863,
+      713015,
+      178329,
+      44588
+     ],
+     "supervision_mask": [
+      112308855,
+      28076860,
+      7019806,
+      1756120,
+      439075,
+      109810
+     ],
+     "validation_mask": [
+      16312327,
+      4078007,
+      1019691,
+      255138,
+      63762,
+      15944
+     ]
+    },
+    "C2y": {
+     "inklabels": [
+      45608010,
+      11400683,
+      2852863,
+      713015,
+      178227,
+      44550
+     ],
+     "supervision_mask": [
+      112308855,
+      28076860,
+      7019806,
+      1756120,
+      439030,
+      109755
+     ],
+     "validation_mask": [
+      16312327,
+      4078007,
+      1019691,
+      255138,
+      63762,
+      15944
+     ]
+    },
+    "C4y": {
+     "inklabels": [
+      45608010,
+      11400683,
+      2852863,
+      713015,
+      178329,
+      44591
+     ],
+     "supervision_mask": [
+      112308855,
+      28076860,
+      7019806,
+      1756120,
+      439075,
+      109748
+     ],
+     "validation_mask": [
+      16312327,
+      4078007,
+      1019691,
+      255138,
+      63762,
+      15944
+     ]
+    },
+    "C8y": {
+     "inklabels": [
+      45608010,
+      11400683,
+      2852863,
+      713015,
+      178329,
+      44588
+     ],
+     "supervision_mask": [
+      112308855,
+      28076860,
+      7019806,
+      1756120,
+      439075,
+      109810
+     ],
+     "validation_mask": [
+      16312327,
+      4078007,
+      1019691,
+      255138,
+      63762,
+      15944
+     ]
+    },
+    "C2x": {
+     "inklabels": [
+      45608010,
+      11400683,
+      2852863,
+      713015,
+      178304,
+      44538
+     ],
+     "supervision_mask": [
+      112308855,
+      28076860,
+      7019806,
+      1756120,
+      439030,
+      109754
+     ],
+     "validation_mask": [
+      16312327,
+      4078007,
+      1019691,
+      255138,
+      63762,
+      15944
+     ]
+    },
+    "C4x": {
+     "inklabels": [
+      45608010,
+      11400683,
+      2852863,
+      713015,
+      178329,
+      44534
+     ],
+     "supervision_mask": [
+      112308855,
+      28076860,
+      7019806,
+      1756120,
+      439075,
+      109801
+     ],
+     "validation_mask": [
+      16312327,
+      4078007,
+      1019691,
+      255138,
+      63762,
+      15944
+     ]
+    },
+    "C8x": {
+     "inklabels": [
+      45608010,
+      11400683,
+      2852863,
+      713015,
+      178329,
+      44588
+     ],
+     "supervision_mask": [
+      112308855,
+      28076860,
+      7019806,
+      1756120,
+      439075,
+      109810
+     ],
+     "validation_mask": [
+      16312327,
+      4078007,
+      1019691,
+      255138,
+      63762,
+      15944
+     ]
+    }
+   },
+   "sha256": {
+    "AS": {
+     "inklabels": "db3b0a1ed972f1b3f2113eeac24e197dae26a430d482b5dc25bc478b1cd0fb28",
+     "supervision_mask": "7ef3671fb91c747dc7a6301f38b03fd3bee628b8f23e39e47e3a74cbd1189687",
+     "validation_mask": "2206d40abeef8a09b99a8dd2a9d124d54487d72bd1ac350d206597c08d4b747b"
+    },
+    "C0": {
+     "inklabels": "359e686357c4fc45f747cb8a8f810f27c2566accf2933873a34a01c9b224f5dd",
+     "supervision_mask": "5d52dfc81e61598c3a357868b771680c73a85d6fea16de1e6ca45d8a6d7e3e26",
+     "validation_mask": "2206d40abeef8a09b99a8dd2a9d124d54487d72bd1ac350d206597c08d4b747b"
+    },
+    "C2y": {
+     "inklabels": "ce5a108841e766d80d247fb473b72c97f5eb61e0c50605c83175336089448648",
+     "supervision_mask": "19448f32f27ddbe18dbcd2825456d8a8a857c8d299a0deae6e30e178902bb510",
+     "validation_mask": "2206d40abeef8a09b99a8dd2a9d124d54487d72bd1ac350d206597c08d4b747b"
+    },
+    "C4y": {
+     "inklabels": "0379e6c1e267c43ca9d91438f18e31fcb146c34d198844f1157ab28758f1bd68",
+     "supervision_mask": "6441108f852bdacd2e2bdc0ed99698f5ae1490880051aa9a8df8a73d20dcbf23",
+     "validation_mask": "2206d40abeef8a09b99a8dd2a9d124d54487d72bd1ac350d206597c08d4b747b"
+    },
+    "C8y": {
+     "inklabels": "9aace082327d147581a5bacf6941da88167c417def663bc5dc27d110de901862",
+     "supervision_mask": "7c2e492cf0b6f814ca3fc5bf9041c8b428c8ebf84be53e889c8fce9370cd32ee",
+     "validation_mask": "2206d40abeef8a09b99a8dd2a9d124d54487d72bd1ac350d206597c08d4b747b"
+    },
+    "C2x": {
+     "inklabels": "3528f7a1f75f6fd9087120abb34a2bac0c8a4e48e4c0a1197f724915bf8f0233",
+     "supervision_mask": "c67e542be676c71a4c76bf05265db4e25a1420a3ebd79208fb78ac0da7260765",
+     "validation_mask": "2206d40abeef8a09b99a8dd2a9d124d54487d72bd1ac350d206597c08d4b747b"
+    },
+    "C4x": {
+     "inklabels": "cf0827392ca0adbdc677cb82a89f99544a63fbe4a11c04538e5cde9b1a380d7b",
+     "supervision_mask": "d36c4ccd822d3e2f87cd41e7e7d039a15243320a66b90b5d4f012333cade796e",
+     "validation_mask": "2206d40abeef8a09b99a8dd2a9d124d54487d72bd1ac350d206597c08d4b747b"
+    },
+    "C8x": {
+     "inklabels": "7c6a4b63ca8a703ed0860d8916df3b0af4142ffd6dd6a2d35796d36f239c8489",
+     "supervision_mask": "d163f1d929972780f71b4bb10f5319f7b76f10974ac12175b0dec294d8da9fdd",
+     "validation_mask": "2206d40abeef8a09b99a8dd2a9d124d54487d72bd1ac350d206597c08d4b747b"
+    }
+   },
+   "tiles_written": 61,
+   "seconds": 670.3
+  }
+ }
+}

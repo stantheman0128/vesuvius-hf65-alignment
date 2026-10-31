@@ -1,0 +1,4 @@
+[2026-10-31T02:07:51+00:00] go4 waiting for GO_DONE
+[2026-10-31T02:28:51+00:00] GO_DONE seen
+G0 auc 0.6181604481110663
+[2026-10-31T02:28:51+00:00] G0 not passed or C0_s27 eval missing: no x arms

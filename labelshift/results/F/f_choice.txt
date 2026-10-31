@@ -1,0 +1,5 @@
+Amendment F choice, written 2026-10-31T05:22:36+00:00 before any Amendment F run
+C0 seed 27 w00 AUC: L1 0.6942730591912217, L2 0.7425291343945278 (L2 setting needs L2 - L1 >= 0.01)
+L2 wall clock 4276s; five runs at that pace from now would end 2026-10-31T11:18:56+00:00, hard stop 2026-10-31T15:20:00+00:00
+setting: L2 (STEPS=12000, MAXSTEPS_MODE=anneal, WORKERS=16); C0 seed 27 reused from runs_L2/C0_s27
+new runs, in order: AS s27, C8y s27, C0 s28, AS s28, C8y s28; G0 waived; primary readout: w00 AUC

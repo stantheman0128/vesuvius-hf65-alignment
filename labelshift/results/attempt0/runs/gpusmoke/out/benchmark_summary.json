@@ -1,0 +1,15 @@
+{
+  "batch_size_per_process": 2,
+  "data_wait_seconds": 143.35514147765934,
+  "data_wait_seconds_per_step": 0.9557009431843956,
+  "device": "cuda",
+  "elapsed_seconds": 216.49536017002538,
+  "examples": 300,
+  "examples_per_second": 1.385710990593027,
+  "measured_steps": 150,
+  "peak_allocated_bytes": 7017525248,
+  "peak_reserved_bytes": 8667529216,
+  "steps_per_second": 0.6928554952965135,
+  "warmup_steps": 50,
+  "world_size": 1
+}

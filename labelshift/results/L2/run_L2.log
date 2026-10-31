@@ -1,0 +1,19 @@
+[04:10:56] train C0_s27
+[05:19:59] eval C0_s27 /root/labelshift/runs/C0_s27/out/ckpt_012000.pth
+G0: C0 seed 27 pooled AUC 0.6550 (gate 0.70)
+[05:22:12] gate G0 failed, stopping (PREREG section 7)
+# Label-shift results (rules from PREREG.md section 7)
+
+| arm | seed | pooled AUC | best F0.5 | per-segment AUC | trainer val balanced acc |
+|---|---|---|---|---|---|
+| C0 | 27 | 0.6550 | 0.4299 | w00 0.7425, w018 0.5307 | 0.6183 |
+
+```
+{
+ "gate_G0": {
+  "c0_seed27_auc": 0.6549824153032139,
+  "pass": false
+ },
+ "outcome": "G0 failed: C0 seed 27 AUC 0.6550 < 0.7; inconclusive"
+}
+```

@@ -1,0 +1,5 @@
+[2026-10-31T06:27:14+00:00] go7 start (Amendment F restart)
+[2026-10-31T06:27:14+00:00] prepare (fresh tree)
+[2026-10-31T06:50:48+00:00] run
+[2026-10-31T12:58:08+00:00] pod_run.sh run exited with status 0
+[2026-10-31T12:58:08+00:00] go7 end; - C8y vs C0: NO COST (no measurable cost of a 32 px shift on w00 in this setting, with a base model near 0.69 AUC) - AS vs C0 (reported, does not decide COST): NO COST 

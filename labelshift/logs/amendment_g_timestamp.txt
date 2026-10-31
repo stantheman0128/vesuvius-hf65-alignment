@@ -1,0 +1,4 @@
+Amendment G frozen at 2026-10-31 14:49:19 +0800
+a27df738f9e78e71468acbf1378e22c170e916f99824b7029fdcd3bfc2314282 *AMENDMENT-G-2026-10-31.md
+eca655753929d8090e3781af99dbce6e068f3a469c4a16d77052c4bca8776cf5 *scripts/decide_g.py
+pod at 2026-10-31T06:49:03+00:00: runs/*/eval.json = runs/C0_s27/eval.json only (reused from L2); go7 still in prepare

@@ -1,0 +1,3 @@
+measured 0.693 steps/s (1.44 s/step, data wait 0.96 s/step)
+projected 2.65 GPU h per run, 5.29 per arm (2 seeds), 26.5 for 10 runs; cap 16.4
+PROJECTION_OVER_CAP

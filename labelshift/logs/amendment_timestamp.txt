@@ -1,0 +1,14 @@
+2026-10-31 05:24:29 +0800
+96eabd6079a51cd6ba625373474c62de4da58d77c52dd4c0daecd5aa6fc32ebb */c/Users/stans/Projects/_scratch/2026-10-30-labelshift-gpu-prep/AMENDMENT-A-2026-10-31.md
+2496 /c/Users/stans/Projects/_scratch/2026-10-30-labelshift-gpu-prep/AMENDMENT-A-2026-10-31.md
+2026-10-31 06:13:29 +0800
+f148717a5c47c8355d8b7f6dce15da0bdb11a05a9ea6f6608606891411c6344f */c/Users/stans/Projects/_scratch/2026-10-30-labelshift-gpu-prep/AMENDMENT-B-2026-10-31.md
+2026-10-31 06:13:40 +0800
+B header time corrected 06:15 -> 06:13 before upload of final
+7b74b6e2e365c8bc4886ec661d0c5fdd4d8267efd4ccbd53263e401dea82c0c3 */c/Users/stans/Projects/_scratch/2026-10-30-labelshift-gpu-prep/AMENDMENT-B-2026-10-31.md
+amendment_choice.txt sha256 b8e5a8335154842f78fbeef783e1f9e8c0fa5b90de2c8db4d7cd459386909f7c written 2026-10-31 09:39:24 +0800
+amendment_choice.txt header time corrected to the measured 09:39, sha256 2179ed573a2d0f33a078e72303a3692aabe6dd41c55d99a4466e457c96e4f10f at 2026-10-31 09:40:02 +0800
+AMENDMENT-C-2026-10-31.md sha256 a718b58fd178db180c4e0143189f77d676ab6f62381861285637e458d739199a written 2026-10-31 09:47:46 +0800, before any held-out eval
+AMENDMENT-C corrected (header 09:47, min rate 1.43), sha256 58287fc037d587bdf0581c21aeda78e8751349994c898eb3afd93350350e31f8 at 2026-10-31 09:47:57 +0800
+AMENDMENT-D-2026-10-31.md sha256 be6ccaf7cdd94b4c5f491583260452e8da2fefcca7371b3fd433b7c7b8273847 written 2026-10-31 10:07:26 +0800, C0 s27 still training, no eval.json
+AMENDMENT-E-2026-10-31.md sha256 5cedd7d01f929ce4a6020c372f109aab3d1dcf8a4f3e0a8ecdf028825570db8d written 2026-10-31 10:53:05 +0800, before any run under it
