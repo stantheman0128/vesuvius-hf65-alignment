@@ -1,0 +1,11 @@
+Amendment J frozen at 2026-11-01 04:50:34 +0800
+33c4c41379ca1223f190e388f54d9085699d53900a7093f90ec6c37ff043e3b6 *AMENDMENT-J-2026-11-01.md
+6f5f779a2c535263d3f0e0236d571cc59353680a579ced8585978aabc632a0dd *j_extra.tar.gz
+675b2a2a3ff4777e51e20aa9b3beee2f0dca97888ac7da6b2980594c630f8a36 *pod_setup_j.sh
+ea4519a989c0985abf794aa6bd1719f7097b838e3e69551ab5460d7df379b4e8 *scripts/decide_j.py
+c435f19e46e5e8e569697d4ff921c3db1be4925e091edbdacb9e013525a9f35b *go_j.sh
+fedd985c2fe8f7dbf4cd6d441f3fcffd47bee21b1a05cf279a800aef5f393676 *vault_sync_j.sh
+55f157d88588e19b81b4a5c31cbbc62e2d69d7e9b8d1059c99f9a084be5b0984 *final_sync_j.sh
+first pod at that moment (2026-10-31 20:50:24 UTC): eval.json files under runs/: 4 (C16y and C32y, seeds 27 and 28); runs with seed 29: 0; C0_s28 (H's session check) at step 5221/12000; no ALL_DONE_H and no prepare_I.log, so no Amendment I result existed; scan2.sh pair files: 12 of 18. Seen: the C16y_s27 eval line a watcher printed at about 00:26 +0800 and scan2.sh's pair 1 check line, nothing else.
+second pod at that moment: not created.
+j_extra.tar.gz was built at 2026-11-01 04:50:35 +0800 by hand with make_j_extra.sh's steps (same file list, SHA256SUMS and tar command), staged in a fresh folder outside this tree. A false line-ending check stopped that script before the next step; the j_extra hash line in pod_setup_j.sh and this file were written at 2026-11-01 04:51:41 +0800, with no file in the tar changed.
