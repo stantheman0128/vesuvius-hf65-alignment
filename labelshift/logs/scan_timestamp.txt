@@ -1,0 +1,107 @@
+Eval offset scan freeze, recorded 2026-11-01 01:36:35 +0800.
+sha256 of the LF copies uploaded to the pod in scan_bundle.tar.gz (8e59b87dd3053f528628556db7d684bb5d0c48b3953f63035d5f45ae54216eea), equal to sha256sum on the pod at 01:36 +0800:
+babdb08562b604ef011734f96374831313ef5d9fe1274a3c461382af69516bc1  SCAN-2026-11-01.md
+7e08b7ea1e47ef081e1b9586e5189e79a7cbf4f793f7c328f04ee7bfbad4860a  scan.sh
+ff33b28c4fc5538601b68065e65102f01eb435af994b6b8dd8262439e5230684  go9b.sh
+ffb0a380a0f71150a37ecffd7e2ad9d323423e93982bfe493d0892f3d6f56d03  scan/pairs.tsv
+bb29f9d3f60d42d549fcf48e074190987e1c3b2fe2c40b41deb42ff9d799c254  scripts/build_eval_labels.py
+409083485ddd98032c949476d1244abe88e9c46325bae0c45b15c18b225cb846  scripts/eval_config_for.py
+e9eb0ff33c454cf07759b354845308771a1173edfc3d02c30fb4b0a9019f133b  scripts/scan_check.py
+57fb12261c198b3e5f27463557e6ab01700d2d14c7e2f64527d2496e9c9d38f0  scripts/count_val_patches.py
+06230f7b3ebfbb4ea4b81ab915e5f052e468ec7d656318e946b33a85f651e809  scripts/check_eval_labels.py
+b1fddae9e5bb5fcb8dd18ed14dbf1c171f48198e122a255a78eaedfca3d97b75  scripts/decide_scan.py
+cbaa8aec2562b69e1b2ac11e1c497332559c514aa5d8c5fc5fa4b3519a9243b5  scan/eval_labels_manifest.json
+State at the freeze: no scan output exists (scan/out is empty and scan.sh has not run). H runs seen: C16y_s27 only (watcher, 00:26 +0800). C32y_s27 is training.
+Local label checks: check_eval_labels.py ALL_OK (74 ok, 0 FAIL), log copied below.
+start 01:32:54
+ok   w00 E0 inklabels sha256 == C0
+ok   w00 E0 supervision_mask sha256 == C0
+ok   w00 E0 validation_mask sha256 == C0
+ok   w00 E4y level-0 validation count 19037581 == E0
+ok   w00 E4y validation_mask box 12567,30470: moved inside True, outside as required True, nonzero inside 7825994
+ok   w00 E4y inklabels box 12567,30470: moved inside True, outside as required True, nonzero inside 1947876
+ok   w00 E4y validation_mask box 15562,30406: moved inside True, outside as required True, nonzero inside 2001610
+ok   w00 E4y inklabels box 15562,30406: moved inside True, outside as required True, nonzero inside 698128
+ok   w00 E4y validation_mask box 17773,4184: moved inside True, outside as required True, nonzero inside 9209977
+ok   w00 E4y inklabels box 17773,4184: moved inside True, outside as required True, nonzero inside 1966546
+ok   w00 E8y level-0 validation count 19037581 == E0
+ok   w00 E8y validation_mask box 12567,30470: moved inside True, outside as required True, nonzero inside 7825994
+ok   w00 E8y inklabels box 12567,30470: moved inside True, outside as required True, nonzero inside 1947876
+ok   w00 E8y validation_mask box 15562,30406: moved inside True, outside as required True, nonzero inside 2001610
+ok   w00 E8y inklabels box 15562,30406: moved inside True, outside as required True, nonzero inside 698128
+ok   w00 E8y validation_mask box 17773,4184: moved inside True, outside as required True, nonzero inside 9209977
+ok   w00 E8y inklabels box 17773,4184: moved inside True, outside as required True, nonzero inside 1966546
+ok   w00 E16y level-0 validation count 19037581 == E0
+ok   w00 E16y validation_mask box 12567,30470: moved inside True, outside as required True, nonzero inside 7825994
+ok   w00 E16y inklabels box 12567,30470: moved inside True, outside as required True, nonzero inside 1947876
+ok   w00 E16y validation_mask box 15562,30406: moved inside True, outside as required True, nonzero inside 2001610
+ok   w00 E16y inklabels box 15562,30406: moved inside True, outside as required True, nonzero inside 698128
+ok   w00 E16y validation_mask box 17773,4184: moved inside True, outside as required True, nonzero inside 9209977
+ok   w00 E16y inklabels box 17773,4184: moved inside True, outside as required True, nonzero inside 1966546
+ok   w00 E32y level-0 validation count 19037581 == E0
+ok   w00 E32y validation_mask box 12567,30470: moved inside True, outside as required True, nonzero inside 7825994
+ok   w00 E32y inklabels box 12567,30470: moved inside True, outside as required True, nonzero inside 1947876
+ok   w00 E32y validation_mask box 15562,30406: moved inside True, outside as required True, nonzero inside 2001610
+ok   w00 E32y inklabels box 15562,30406: moved inside True, outside as required True, nonzero inside 698128
+ok   w00 E32y validation_mask box 17773,4184: moved inside True, outside as required True, nonzero inside 9209977
+ok   w00 E32y inklabels box 17773,4184: moved inside True, outside as required True, nonzero inside 1966546
+ok   w00 EAS validation_mask box 12576,30480: as shipped inside True, zero outside True, nonzero inside 7823936
+ok   w00 EAS inklabels box 12576,30480: as shipped inside True
+ok   w00 EAS validation_mask box 15568,30416: as shipped inside True, zero outside True, nonzero inside 2001168
+ok   w00 EAS inklabels box 15568,30416: as shipped inside True
+ok   w00 EAS validation_mask box 17776,4176: as shipped inside True, zero outside True, nonzero inside 9206768
+ok   w00 EAS inklabels box 17776,4176: as shipped inside True
+ok   w018 E0 inklabels sha256 == C0
+ok   w018 E0 supervision_mask sha256 == C0
+ok   w018 E0 validation_mask sha256 == C0
+ok   w018 E4y level-0 validation count 16312327 == E0
+ok   w018 E4y validation_mask box 5644,89340: moved inside True, outside as required True, nonzero inside 6392906
+ok   w018 E4y inklabels box 5644,89340: moved inside True, outside as required True, nonzero inside 2240553
+ok   w018 E4y validation_mask box 7740,5292: moved inside True, outside as required True, nonzero inside 7133612
+ok   w018 E4y inklabels box 7740,5292: moved inside True, outside as required True, nonzero inside 2098859
+ok   w018 E4y validation_mask box 16316,26140: moved inside True, outside as required True, nonzero inside 2785809
+ok   w018 E4y inklabels box 16316,26140: moved inside True, outside as required True, nonzero inside 1036380
+ok   w018 E8y level-0 validation count 16312327 == E0
+ok   w018 E8y validation_mask box 5644,89340: moved inside True, outside as required True, nonzero inside 6392906
+ok   w018 E8y inklabels box 5644,89340: moved inside True, outside as required True, nonzero inside 2240553
+ok   w018 E8y validation_mask box 7740,5292: moved inside True, outside as required True, nonzero inside 7133612
+ok   w018 E8y inklabels box 7740,5292: moved inside True, outside as required True, nonzero inside 2098859
+ok   w018 E8y validation_mask box 16316,26140: moved inside True, outside as required True, nonzero inside 2785809
+ok   w018 E8y inklabels box 16316,26140: moved inside True, outside as required True, nonzero inside 1036380
+ok   w018 E16y level-0 validation count 16312327 == E0
+ok   w018 E16y validation_mask box 5644,89340: moved inside True, outside as required True, nonzero inside 6392906
+ok   w018 E16y inklabels box 5644,89340: moved inside True, outside as required True, nonzero inside 2240553
+ok   w018 E16y validation_mask box 7740,5292: moved inside True, outside as required True, nonzero inside 7133612
+ok   w018 E16y inklabels box 7740,5292: moved inside True, outside as required True, nonzero inside 2098859
+ok   w018 E16y validation_mask box 16316,26140: moved inside True, outside as required True, nonzero inside 2785809
+ok   w018 E16y inklabels box 16316,26140: moved inside True, outside as required True, nonzero inside 1036380
+ok   w018 E32y level-0 validation count 16312327 == E0
+ok   w018 E32y validation_mask box 5644,89340: moved inside True, outside as required True, nonzero inside 6392906
+ok   w018 E32y inklabels box 5644,89340: moved inside True, outside as required True, nonzero inside 2240553
+ok   w018 E32y validation_mask box 7740,5292: moved inside True, outside as required True, nonzero inside 7133612
+ok   w018 E32y inklabels box 7740,5292: moved inside True, outside as required True, nonzero inside 2098859
+ok   w018 E32y validation_mask box 16316,26140: moved inside True, outside as required True, nonzero inside 2785809
+ok   w018 E32y inklabels box 16316,26140: moved inside True, outside as required True, nonzero inside 1036380
+ok   w018 EAS validation_mask box 5664,89360: as shipped inside True, zero outside True, nonzero inside 6392906
+ok   w018 EAS inklabels box 5664,89360: as shipped inside True
+ok   w018 EAS validation_mask box 7760,5312: as shipped inside True, zero outside True, nonzero inside 7133612
+ok   w018 EAS inklabels box 7760,5312: as shipped inside True
+ok   w018 EAS validation_mask box 16336,26160: as shipped inside True, zero outside True, nonzero inside 2785809
+ok   w018 EAS inklabels box 16336,26160: as shipped inside True
+ALL_OK
+end 01:33:58
+
+Revision 2026-11-01 01:37:37 +0800, before any scan output (scan/out did not exist): pairs reordered by seed and C0 on EAS added for both seeds (18 pairs), because the AS comparison needs C0 on EAS. New sha256, equal on the pod:
+fe9a44b53d0d1d80a79af4fe5558e4b31a8fd78708dad757c04b522da01a206e *SCAN-2026-11-01.md
+3721db8528444aaa7a58f662cf25d801574ef6809124fe23cf53b0eb29922380 *scan/pairs.tsv
+
+Precheck on the pod, finished 2026-11-01 02:07:21 +0800 (still no scan output: scan/out and scan/SCAN_DONE did not exist):
+- count_val_patches.py (villa InkDataset on CPU, nice 19, while H trained) on all 12 scan configs, log logs/scan_precheck_patches.log
+  (sha256 667f6530eb90d3f52f545c6cb31d22139ad894d79f80323e080c586a288c587a). No Traceback or Error lines; the only other lines
+  are aiohttp "Unclosed client session" warnings.
+- E0: 676 patches for seed 27 and seed 28 (w00 365, w018 311), equal to the original evaluation of C0.
+- Moved folders, equal for both seeds: E4y 674 (366, 308), E8y 667 (364, 303), E16y 658 (355, 303), E32y 677 (361, 316),
+  EAS 671 (366, 305). These differ from E0 because the scored area moves with the labels (SCAN-2026-11-01.md, Limits).
+- scan/PRECHECK_OK written by hand at 2026-11-01 02:07:33 +0800 (sha256 217e06248b57fc73f24d1132e3f1a00cb6eceed54c827a96158bbcf1158d451d).
+- H runs whose eval.json existed at this point: C16y_s27 (00:25 +0800) and C32y_s27 (01:39 +0800). Only C16y_s27's score has
+  been seen (watcher, 00:26 +0800); C32y_s27's file was not read.

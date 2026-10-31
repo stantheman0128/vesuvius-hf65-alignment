@@ -1,0 +1,833 @@
+{
+ "regions": {
+  "_doc": "Boxes are level-0 canvas px [y0, y1, x0, x1] of supervised components from logs/components_*.log (scripts/list_components.py: level-4 supervision after a 48 px dilation). build_labels.py maps them into the tifxyz frame with the HF65 correction and pads by margin_px. Held-out: w018 = the three components fully inside the shipped w018_20240304144031_validation_mask_v2 (ids 5, 7, 14; 11.8% of its ink); w00 = ids 10, 12, 14 (20.8% of its ink; w00 ships no validation mask). guard_px of supervision around every held-out box is dropped from training in every arm. Smoke boxes restrict the CPU smoke test to one training and one held-out component per segment so it reads few CT chunks.",
+  "margin_px": 64,
+  "guard_px": 512,
+  "shift_cell_level0_px": 4,
+  "segments": {
+   "w00": {
+    "scroll": "phercparis4",
+    "segment": "w00_20231016151002",
+    "fit_key": "w00",
+    "ink_tif": "w00_20231016151002_inklabels.tif",
+    "sup_tif": "w00_20231016151002_supervision_mask.tif",
+    "volume_path": "s3://vesuvius-challenge-open-data/PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr/",
+    "heldout": {
+     "10": [
+      12640,
+      14832,
+      30544,
+      34784
+     ],
+     "12": [
+      15632,
+      17728,
+      30480,
+      31936
+     ],
+     "14": [
+      17840,
+      22480,
+      4240,
+      8352
+     ]
+    },
+    "smoke_train": {
+     "8": [
+      9792,
+      12160,
+      25616,
+      28016
+     ]
+    },
+    "smoke_heldout": {
+     "12": [
+      15632,
+      17728,
+      30480,
+      31936
+     ]
+    }
+   },
+   "w018": {
+    "scroll": "pherc1667",
+    "bucket_scroll": "1667",
+    "segment": "w018_20240304144031_2um",
+    "fit_key": "c018",
+    "ink_tif": "w018_20240304144031_inklabels.tif",
+    "sup_tif": "w018_20240304144031_supervision_mask.tif",
+    "volume_path": "s3://vesuvius-challenge-open-data/PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr/",
+    "heldout": {
+     "5": [
+      5728,
+      7680,
+      89424,
+      93680
+     ],
+     "7": [
+      7824,
+      9712,
+      5376,
+      10032
+     ],
+     "14": [
+      16400,
+      18240,
+      26224,
+      28576
+     ]
+    },
+    "smoke_train": {
+     "1": [
+      4784,
+      5984,
+      19024,
+      20224
+     ]
+    },
+    "smoke_heldout": {
+     "14": [
+      16400,
+      18240,
+      26224,
+      28576
+     ]
+    }
+   }
+  }
+ },
+ "arms": "E0,E4y,E8y,E16y,E32y,EAS",
+ "villa_src": "/mnt/c/Users/stans/Projects/_scratch/2026-10-30-labelshift-gpu-prep/trees/main37d1897/vesuvius/src",
+ "segments": {
+  "w00": {
+   "canvas_shape": [
+    32249,
+    51380
+   ],
+   "tifxyz_full_shape": [
+    32281,
+    51345
+   ],
+   "model": "w00/readme",
+   "heldout_tifxyz_boxes": [
+    [
+     12567,
+     14891,
+     30470,
+     34837
+    ],
+    [
+     15562,
+     17789,
+     30406,
+     31990
+    ],
+    [
+     17773,
+     22546,
+     4184,
+     8422
+    ]
+   ],
+   "guard_boxes": [
+    [
+     12055,
+     15403,
+     29958,
+     35349
+    ],
+    [
+     15050,
+     18301,
+     29894,
+     32502
+    ],
+    [
+     17261,
+     23058,
+     3672,
+     8934
+    ]
+   ],
+   "placed_boxes": {
+    "E0": [
+     [
+      12567,
+      14891,
+      30470,
+      34837
+     ],
+     [
+      15562,
+      17789,
+      30406,
+      31990
+     ],
+     [
+      17773,
+      22546,
+      4184,
+      8422
+     ]
+    ],
+    "E4y": [
+     [
+      12583,
+      14907,
+      30470,
+      34837
+     ],
+     [
+      15578,
+      17805,
+      30406,
+      31990
+     ],
+     [
+      17789,
+      22562,
+      4184,
+      8422
+     ]
+    ],
+    "E8y": [
+     [
+      12599,
+      14923,
+      30470,
+      34837
+     ],
+     [
+      15594,
+      17821,
+      30406,
+      31990
+     ],
+     [
+      17805,
+      22578,
+      4184,
+      8422
+     ]
+    ],
+    "E16y": [
+     [
+      12631,
+      14955,
+      30470,
+      34837
+     ],
+     [
+      15626,
+      17853,
+      30406,
+      31990
+     ],
+     [
+      17837,
+      22610,
+      4184,
+      8422
+     ]
+    ],
+    "E32y": [
+     [
+      12695,
+      15019,
+      30470,
+      34837
+     ],
+     [
+      15690,
+      17917,
+      30406,
+      31990
+     ],
+     [
+      17901,
+      22674,
+      4184,
+      8422
+     ]
+    ],
+    "EAS": [
+     [
+      12576,
+      14896,
+      30480,
+      34848
+     ],
+     [
+      15568,
+      17792,
+      30416,
+      32000
+     ],
+     [
+      17776,
+      22544,
+      4176,
+      8416
+     ]
+    ]
+   },
+   "nonzero_per_level": {
+    "E0": {
+     "inklabels": [
+      22089410,
+      5521384,
+      1380319,
+      344990,
+      86245,
+      21547
+     ],
+     "supervision_mask": [
+      76722731,
+      19182625,
+      4794518,
+      1199189,
+      299777,
+      74912
+     ],
+     "validation_mask": [
+      19037581,
+      4758104,
+      1189586,
+      297570,
+      74382,
+      18584
+     ]
+    },
+    "E4y": {
+     "inklabels": [
+      22089410,
+      5521384,
+      1380319,
+      344990,
+      86245,
+      21551
+     ],
+     "supervision_mask": [
+      76722731,
+      19182625,
+      4794518,
+      1199189,
+      299777,
+      74912
+     ],
+     "validation_mask": [
+      19037581,
+      4758104,
+      1189586,
+      297570,
+      74382,
+      18598
+     ]
+    },
+    "E8y": {
+     "inklabels": [
+      22089410,
+      5521384,
+      1380319,
+      344990,
+      86245,
+      21547
+     ],
+     "supervision_mask": [
+      76722731,
+      19182625,
+      4794518,
+      1199189,
+      299777,
+      74912
+     ],
+     "validation_mask": [
+      19037581,
+      4758104,
+      1189586,
+      297570,
+      74382,
+      18584
+     ]
+    },
+    "E16y": {
+     "inklabels": [
+      22089410,
+      5521384,
+      1380319,
+      344990,
+      86245,
+      21547
+     ],
+     "supervision_mask": [
+      76722731,
+      19182625,
+      4794518,
+      1199189,
+      299777,
+      74912
+     ],
+     "validation_mask": [
+      19037581,
+      4758104,
+      1189586,
+      297570,
+      74382,
+      18584
+     ]
+    },
+    "E32y": {
+     "inklabels": [
+      22089410,
+      5521384,
+      1380319,
+      344990,
+      86245,
+      21547
+     ],
+     "supervision_mask": [
+      76722731,
+      19182625,
+      4794518,
+      1199189,
+      299777,
+      74912
+     ],
+     "validation_mask": [
+      19037581,
+      4758104,
+      1189586,
+      297570,
+      74382,
+      18584
+     ]
+    },
+    "EAS": {
+     "inklabels": [
+      22085556,
+      5521364,
+      1380140,
+      344917,
+      86230,
+      21550
+     ],
+     "supervision_mask": [
+      76722731,
+      19182625,
+      4794518,
+      1199189,
+      299777,
+      74912
+     ],
+     "validation_mask": [
+      19031872,
+      4757968,
+      1189492,
+      297358,
+      74338,
+      18576
+     ]
+    }
+   },
+   "sha256": {
+    "E0": {
+     "inklabels": "70d94f6955251ff89ebe3a68d047a952bbbd4de6f031d407ec3d046266ae5ecb",
+     "supervision_mask": "ec3c8d2fe68d3a72aa60dcd18bd94e324593c8fa93808c54c77ecf12c64ac279",
+     "validation_mask": "10ed441c32ca29ee03b9aee373fb82b6e6882d76fe661d1558f3dbf510be3f4a"
+    },
+    "E4y": {
+     "inklabels": "30362d482e2389b870595d714bdbab8e54f26bf112cbe8d6ec3657dffb681c71",
+     "supervision_mask": "ec3c8d2fe68d3a72aa60dcd18bd94e324593c8fa93808c54c77ecf12c64ac279",
+     "validation_mask": "e584177fabb9db38997ccf20a8c854b226c60b7ec0818286f296ddcc4956146f"
+    },
+    "E8y": {
+     "inklabels": "348e846658503843ddda93040969bf7afb5bc4dd34f1fd28c9003abacade168e",
+     "supervision_mask": "ec3c8d2fe68d3a72aa60dcd18bd94e324593c8fa93808c54c77ecf12c64ac279",
+     "validation_mask": "789942174f2905f2d8fb76a6a22725888a251dec902ccde05bf072598b9bfe44"
+    },
+    "E16y": {
+     "inklabels": "81dec948d818a33d4ec76239344651599d336edc356967b59130c3eca4f0fec8",
+     "supervision_mask": "ec3c8d2fe68d3a72aa60dcd18bd94e324593c8fa93808c54c77ecf12c64ac279",
+     "validation_mask": "77197b70e3b150bd881854a43f0069911c871557edfed5bb108b4286a34bc32f"
+    },
+    "E32y": {
+     "inklabels": "6c834d7dbaac13865e8313fae8a1a8b373bbf72d7654a4cddad883157bfd4c26",
+     "supervision_mask": "ec3c8d2fe68d3a72aa60dcd18bd94e324593c8fa93808c54c77ecf12c64ac279",
+     "validation_mask": "356740bd5d81dd17f2bef55d6c483da980c49a2c711ef929ddf81dc4999f27bd"
+    },
+    "EAS": {
+     "inklabels": "dd1b01f149106b7293e1c39a0ac4e7b1e2d24977b2a386453a69bd08454b36f8",
+     "supervision_mask": "ec3c8d2fe68d3a72aa60dcd18bd94e324593c8fa93808c54c77ecf12c64ac279",
+     "validation_mask": "30151588f09da95626e4f8b62b6bb899390f482afba2b785fa0972269d789be9"
+    }
+   },
+   "tiles_written": 28,
+   "seconds": 271.8
+  },
+  "w018": {
+   "canvas_shape": [
+    42632,
+    98362
+   ],
+   "tifxyz_full_shape": [
+    42632,
+    98362
+   ],
+   "model": "c018/readme",
+   "heldout_tifxyz_boxes": [
+    [
+     5644,
+     7725,
+     89340,
+     93725
+    ],
+    [
+     7740,
+     9757,
+     5292,
+     10077
+    ],
+    [
+     16316,
+     18285,
+     26140,
+     28621
+    ]
+   ],
+   "guard_boxes": [
+    [
+     5132,
+     8237,
+     88828,
+     94237
+    ],
+    [
+     7228,
+     10269,
+     4780,
+     10589
+    ],
+    [
+     15804,
+     18797,
+     25628,
+     29133
+    ]
+   ],
+   "placed_boxes": {
+    "E0": [
+     [
+      5644,
+      7725,
+      89340,
+      93725
+     ],
+     [
+      7740,
+      9757,
+      5292,
+      10077
+     ],
+     [
+      16316,
+      18285,
+      26140,
+      28621
+     ]
+    ],
+    "E4y": [
+     [
+      5660,
+      7741,
+      89340,
+      93725
+     ],
+     [
+      7756,
+      9773,
+      5292,
+      10077
+     ],
+     [
+      16332,
+      18301,
+      26140,
+      28621
+     ]
+    ],
+    "E8y": [
+     [
+      5676,
+      7757,
+      89340,
+      93725
+     ],
+     [
+      7772,
+      9789,
+      5292,
+      10077
+     ],
+     [
+      16348,
+      18317,
+      26140,
+      28621
+     ]
+    ],
+    "E16y": [
+     [
+      5708,
+      7789,
+      89340,
+      93725
+     ],
+     [
+      7804,
+      9821,
+      5292,
+      10077
+     ],
+     [
+      16380,
+      18349,
+      26140,
+      28621
+     ]
+    ],
+    "E32y": [
+     [
+      5772,
+      7853,
+      89340,
+      93725
+     ],
+     [
+      7868,
+      9885,
+      5292,
+      10077
+     ],
+     [
+      16444,
+      18413,
+      26140,
+      28621
+     ]
+    ],
+    "EAS": [
+     [
+      5664,
+      7744,
+      89360,
+      93744
+     ],
+     [
+      7760,
+      9776,
+      5312,
+      10096
+     ],
+     [
+      16336,
+      18304,
+      26160,
+      28640
+     ]
+    ]
+   },
+   "nonzero_per_level": {
+    "E0": {
+     "inklabels": [
+      45608010,
+      11400683,
+      2852863,
+      713015,
+      178329,
+      44588
+     ],
+     "supervision_mask": [
+      112308855,
+      28076860,
+      7019806,
+      1756120,
+      439075,
+      109810
+     ],
+     "validation_mask": [
+      16312327,
+      4078007,
+      1019691,
+      255138,
+      63762,
+      15944
+     ]
+    },
+    "E4y": {
+     "inklabels": [
+      45608010,
+      11400683,
+      2852863,
+      713015,
+      178329,
+      44593
+     ],
+     "supervision_mask": [
+      112308855,
+      28076860,
+      7019806,
+      1756120,
+      439075,
+      109810
+     ],
+     "validation_mask": [
+      16312327,
+      4078007,
+      1019691,
+      255138,
+      63762,
+      15947
+     ]
+    },
+    "E8y": {
+     "inklabels": [
+      45608010,
+      11400683,
+      2852863,
+      713015,
+      178329,
+      44588
+     ],
+     "supervision_mask": [
+      112308855,
+      28076860,
+      7019806,
+      1756120,
+      439075,
+      109810
+     ],
+     "validation_mask": [
+      16312327,
+      4078007,
+      1019691,
+      255138,
+      63762,
+      15944
+     ]
+    },
+    "E16y": {
+     "inklabels": [
+      45608010,
+      11400683,
+      2852863,
+      713015,
+      178329,
+      44588
+     ],
+     "supervision_mask": [
+      112308855,
+      28076860,
+      7019806,
+      1756120,
+      439075,
+      109810
+     ],
+     "validation_mask": [
+      16312327,
+      4078007,
+      1019691,
+      255138,
+      63762,
+      15944
+     ]
+    },
+    "E32y": {
+     "inklabels": [
+      45608010,
+      11400683,
+      2852863,
+      713015,
+      178329,
+      44588
+     ],
+     "supervision_mask": [
+      112308855,
+      28076860,
+      7019806,
+      1756120,
+      439075,
+      109810
+     ],
+     "validation_mask": [
+      16312327,
+      4078007,
+      1019691,
+      255138,
+      63762,
+      15944
+     ]
+    },
+    "EAS": {
+     "inklabels": [
+      45608010,
+      11400683,
+      2852863,
+      712948,
+      178289,
+      44595
+     ],
+     "supervision_mask": [
+      112308855,
+      28076860,
+      7019806,
+      1756120,
+      439075,
+      109810
+     ],
+     "validation_mask": [
+      16312327,
+      4078007,
+      1019691,
+      254720,
+      63682,
+      15907
+     ]
+    }
+   },
+   "sha256": {
+    "E0": {
+     "inklabels": "359e686357c4fc45f747cb8a8f810f27c2566accf2933873a34a01c9b224f5dd",
+     "supervision_mask": "5d52dfc81e61598c3a357868b771680c73a85d6fea16de1e6ca45d8a6d7e3e26",
+     "validation_mask": "2206d40abeef8a09b99a8dd2a9d124d54487d72bd1ac350d206597c08d4b747b"
+    },
+    "E4y": {
+     "inklabels": "b7c694766d816cb9d9654999a54a8dcda04982b12e4aabcc6d8e1e42f923cdef",
+     "supervision_mask": "5d52dfc81e61598c3a357868b771680c73a85d6fea16de1e6ca45d8a6d7e3e26",
+     "validation_mask": "0a10f577abf6adbe6614a4c9671fcdebc53c4271e59e3021894c1159b82dbe3e"
+    },
+    "E8y": {
+     "inklabels": "5587fefdc6288b2502fa604293e0c5a562ad1c6571054207d98b38bc3b4387d0",
+     "supervision_mask": "5d52dfc81e61598c3a357868b771680c73a85d6fea16de1e6ca45d8a6d7e3e26",
+     "validation_mask": "5108cafac2f2598e4daa05a4cbe5d5e13c5530fcd9ac73728a1e4ed9805d210a"
+    },
+    "E16y": {
+     "inklabels": "a239b8de0bb67cebc52c0350ff167037ab1ac5dffb5741b55f9179bc09f53f00",
+     "supervision_mask": "5d52dfc81e61598c3a357868b771680c73a85d6fea16de1e6ca45d8a6d7e3e26",
+     "validation_mask": "a5c1f0e29413454bff4ff1c76ff629c4ab346137d99098841882533f3064f97e"
+    },
+    "E32y": {
+     "inklabels": "ca1e4d276b19e3667215ac79b10d9acf05aa006bd09d58d7253379a71bdac345",
+     "supervision_mask": "5d52dfc81e61598c3a357868b771680c73a85d6fea16de1e6ca45d8a6d7e3e26",
+     "validation_mask": "98b682f7dc4212e592602989479d44ebbc47423959e58463dc5903e943b7698d"
+    },
+    "EAS": {
+     "inklabels": "df887cfbeca00820d6b4bcf053262918a61e7efe0fd1031f06115d42cf082932",
+     "supervision_mask": "5d52dfc81e61598c3a357868b771680c73a85d6fea16de1e6ca45d8a6d7e3e26",
+     "validation_mask": "325e87727281f26e5e261b82673b77313c202d82e8cb8848b3310d0c64e6b060"
+    }
+   },
+   "tiles_written": 61,
+   "seconds": 458.8
+  }
+ }
+}

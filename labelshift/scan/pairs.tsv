@@ -1,0 +1,20 @@
+# eval offset scan pairs in the frozen run order (SCAN-2026-11-01.md)
+# n	checkpoint run	source (F = /vault/labelshift_F, H = this pod)	eval label folder	config seed
+1	C0_s27	F	E0	27
+2	C0_s27	F	E32y	27
+3	C32y_s27	H	E32y	27
+4	C0_s27	F	E8y	27
+5	C8y_s27	F	E8y	27
+6	C0_s27	F	E16y	27
+7	C16y_s27	H	E16y	27
+8	C0_s27	F	EAS	27
+9	AS_s27	F	EAS	27
+10	C0_s28	F	E32y	28
+11	C32y_s28	H	E32y	28
+12	C0_s28	F	E8y	28
+13	C8y_s28	F	E8y	28
+14	C0_s28	F	E16y	28
+15	C16y_s28	H	E16y	28
+16	C0_s28	F	EAS	28
+17	AS_s28	F	EAS	28
+18	C0_s27	F	E4y	27

@@ -1,0 +1,108 @@
+scan/cfg/E0_s27/config.json 676 {'w00_20231016151002': 365, 'w018_20240304144031_2um': 311}
+scan/cfg/E0_s28/config.json 676 {'w00_20231016151002': 365, 'w018_20240304144031_2um': 311}
+scan/cfg/E4y_s27/config.json 674 {'w00_20231016151002': 366, 'w018_20240304144031_2um': 308}
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a80d78d70>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a98412a50>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a984130e0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763bb148a510>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a80d7b380>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a80d7b4d0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a354f06e0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a354f0830>
+scan/cfg/E8y_s27/config.json 667 {'w00_20231016151002': 364, 'w018_20240304144031_2um': 303}
+scan/cfg/E16y_s27/config.json 658 {'w00_20231016151002': 355, 'w018_20240304144031_2um': 303}
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1df61550>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1c91da90>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a354f3b60>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a354f3e00>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1f21acf0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1c91d940>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1bd5eba0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1bd5ecf0>
+scan/cfg/E32y_s27/config.json 677 {'w00_20231016151002': 361, 'w018_20240304144031_2um': 316}
+scan/cfg/EAS_s27/config.json 671 {'w00_20231016151002': 366, 'w018_20240304144031_2um': 305}
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a80d7acf0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a701fd7f0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a701fd940>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a98410c20>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a98410ad0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a987be7b0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a987be510>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763bb148be00>
+scan/cfg/E4y_s28/config.json 674 {'w00_20231016151002': 366, 'w018_20240304144031_2um': 308}
+scan/cfg/E8y_s28/config.json 667 {'w00_20231016151002': 364, 'w018_20240304144031_2um': 303}
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1c91fb60>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1ba38ad0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a80d78440>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a80d7aa50>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1ec934d0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1ec93380>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1f92a270>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1c91fcb0>
+scan/cfg/E16y_s28/config.json 658 {'w00_20231016151002': 355, 'w018_20240304144031_2um': 303}
+scan/cfg/E32y_s28/config.json 677 {'w00_20231016151002': 361, 'w018_20240304144031_2um': 316}
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a987bc590>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a987bc6e0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a9c892e40>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a9c892cf0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a701fd010>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a701fc6e0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763bb148acf0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1f928050>
+scan/cfg/EAS_s28/config.json 671 {'w00_20231016151002': 366, 'w018_20240304144031_2um': 305}
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a354f1be0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a80d786e0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1f928ad0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a354f2e40>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a701fda90>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1ba382f0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a701fc050>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x763a1ba381a0>
