@@ -1,0 +1,7 @@
+Amendment I frozen at 2026-10-31 23:46:09 +0800
+77dd833476cda56ef00d2f9267f16dc403205c2850a4f7415e5975c1720fe991 *AMENDMENT-I-2026-10-31.md
+pod at that moment: eval.json files under runs/: 0; C16y_s27 at step 5725/12000 (no Amendment H result existed; the H readout files were not opened).
+decide_i.py is not written yet; it will implement the Readout section and its hash is added here before any seed 29 run finishes.
+decide_i.py frozen at 2026-10-31 23:53:30 +0800
+25ef0820ce3cbb2a7d4eafc48c11111afb85f5c89192b0eb31ad6443480d69d2 *scripts/decide_i.py
+pod at that moment: runs with seed 29: 0. Tested on Amendment F's eval.json files with made-up C16y, C32y and seed 29 values: with no seed 29 run its JSON equals decide_h.py's bit for bit; with seed 29 its s, df and intervals equal an independent recompute.
