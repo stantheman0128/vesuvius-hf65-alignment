@@ -1,0 +1,130 @@
+{
+ "level": "5",
+ "shape_HW": [
+  1198,
+  989
+ ],
+ "px": 1184822,
+ "2um_supervision_mask": {
+  "set": 1446,
+  "frac": 0.0012204364875061401,
+  "bbox_yx": [
+   398,
+   465,
+   876,
+   907
+  ]
+ },
+ "supervision_mask": {
+  "set": 1446,
+  "frac": 0.0012204364875061401,
+  "bbox_yx": [
+   398,
+   465,
+   876,
+   907
+  ]
+ },
+ "supervision_mask_v2": {
+  "set": 24804,
+  "frac": 0.020934790204773374,
+  "bbox_yx": [
+   205,
+   886,
+   231,
+   908
+  ]
+ },
+ "validation_mask_v2": {
+  "set": 5962,
+  "frac": 0.0050319794872141135,
+  "bbox_yx": [
+   390,
+   650,
+   625,
+   908
+  ]
+ },
+ "2um_inklabels": {
+  "set": 642,
+  "frac": 0.0005418535442454647,
+  "bbox_yx": [
+   401,
+   460,
+   883,
+   904
+  ]
+ },
+ "inklabels": {
+  "set": 642,
+  "frac": 0.0005418535442454647,
+  "bbox_yx": [
+   401,
+   460,
+   883,
+   904
+  ]
+ },
+ "inklabels_v2": {
+  "set": 6832,
+  "frac": 0.005766267000443949,
+  "bbox_yx": [
+   223,
+   877,
+   233,
+   904
+  ]
+ },
+ "chosen_sup_vs_v1_sup": {
+  "x": 1446,
+  "y": 1446,
+  "and": 1446,
+  "x_not_y": 0,
+  "y_not_x": 0,
+  "equal": true
+ },
+ "chosen_ink_vs_v1_ink": {
+  "x": 642,
+  "y": 642,
+  "and": 642,
+  "x_not_y": 0,
+  "y_not_x": 0,
+  "equal": true
+ },
+ "chosen_sup_vs_v2_sup": {
+  "x": 1446,
+  "y": 24804,
+  "and": 1446,
+  "x_not_y": 0,
+  "y_not_x": 23358,
+  "equal": false
+ },
+ "chosen_ink_vs_v2_ink": {
+  "x": 642,
+  "y": 6832,
+  "and": 642,
+  "x_not_y": 0,
+  "y_not_x": 6190,
+  "equal": false
+ },
+ "v2_sup_vs_v2_val": {
+  "x": 24804,
+  "y": 5962,
+  "and": 5962,
+  "x_not_y": 18842,
+  "y_not_x": 0,
+  "equal": false
+ },
+ "label_coverage": {
+  "chosen_ink_in_chosen_sup": 642,
+  "chosen_ink_total": 642,
+  "v2_ink_total": 6832,
+  "v2_ink_in_chosen_sup": 642,
+  "v2_ink_in_v2_sup": 6832,
+  "v2_ink_in_v2_sup_not_val": 5475,
+  "v2_ink_in_v2_val": 1357,
+  "v2_ink_in_v2_sup_or_val": 6832,
+  "chosen_ink_in_v2_sup": 642,
+  "v2_sup_not_val": 18842
+ }
+}

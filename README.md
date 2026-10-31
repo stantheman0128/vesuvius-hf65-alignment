@@ -72,6 +72,10 @@ python -I measure/summarize.py w00 w01 w05 c018
 
 [`labelshift/`](labelshift/) trains villa's `full_3d` ink trainer on w00 and w018 with corrected labels, labels as shipped, and corrected labels moved 32 px, and scores each on held-out boxes. The pre-registered gate failed in all three attempts, so the comparison is exploratory. Segment w018 did not learn. On w00 neither offset gave a measurable drop in held-out AUC. The numbers, their limits and how to rerun are in [`labelshift/README.md`](labelshift/README.md).
 
+## Label version in the 1667 `_2um` folders
+
+[`label-version/`](label-version/) checks which labels villa's loader picks in the six PHerc1667 `_2um` training folders with `dino_guided_teacher.json`: the older v1 set, while five of the folders also hold v2 labels. On w029 that leaves 82 training patches, against 656 with its v2 labels and their own validation split. Background is in [villa PR #2140](https://github.com/ScrollPrize/villa/pull/2140).
+
 ## Not checked
 
 Areas outside the supervision masks (except the held-out region in the independent check, which lies outside the w01 mask), where the Paris4 intercepts come from, villa's own loader end to end (the index convention was reimplemented), and whether the labels sit exactly on the canvas pixels (assumed). The other training segments are measured in [`audit/`](audit/).

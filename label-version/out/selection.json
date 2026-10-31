@@ -1,0 +1,32 @@
+{
+ "w013_20240304141531_2um": {
+  "inklabels": "w013_20240304141531_2um_inklabels.zarr",
+  "supervision_mask": "w013_20240304141531_2um_supervision_mask.zarr",
+  "validation_mask": null
+ },
+ "w018_20240304144031_2um": {
+  "inklabels": "w018_20240304144031_2um_inklabels.zarr",
+  "supervision_mask": "w018_20240304144031_2um_supervision_mask.zarr",
+  "validation_mask": null
+ },
+ "w023_20240304161941_2um": {
+  "inklabels": "w023_20240304161941_2um_inklabels.zarr",
+  "supervision_mask": "w023_20240304161941_2um_supervision_mask.zarr",
+  "validation_mask": null
+ },
+ "w028_20251208130119156_2um": {
+  "inklabels": "w028_20251208130119156_2um_inklabels.zarr",
+  "supervision_mask": "w028_20251208130119156_2um_supervision_mask.zarr",
+  "validation_mask": null
+ },
+ "w029_20251212185248662_2um": {
+  "inklabels": "w029_20251212185248662_2um_inklabels.zarr",
+  "supervision_mask": "w029_20251212185248662_2um_supervision_mask.zarr",
+  "validation_mask": null
+ },
+ "w031_2025122323_2um": {
+  "inklabels": "w031_2025122323_2um_inklabels.zarr",
+  "supervision_mask": "w031_2025122323_2um_supervision_mask.zarr",
+  "validation_mask": null
+ }
+}

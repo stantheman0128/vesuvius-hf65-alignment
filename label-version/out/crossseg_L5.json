@@ -1,0 +1,124 @@
+[
+ {
+  "seg": "w013",
+  "HW": [
+   1331,
+   2505
+  ],
+  "chosen_sup": 52340,
+  "chosen_sup_frac": 0.015698130410853724,
+  "chosen_ink": 15628,
+  "chosen_ink_frac": 0.004687244594207528,
+  "chosen_sup_equals_v1_sup": true
+ },
+ {
+  "seg": "w018",
+  "HW": [
+   1333,
+   3074
+  ],
+  "chosen_sup": 125426,
+  "chosen_sup_frac": 0.03060931140397331,
+  "chosen_ink": 44630,
+  "chosen_ink_frac": 0.010891629869080804,
+  "chosen_sup_equals_v1_sup": true,
+  "v2_sup": 245952,
+  "v2_sup_frac": 0.06002281312032628,
+  "v2_ink": 55552,
+  "chosen_sup_over_v2_sup": 0.5099612932604736,
+  "chosen_ink_over_v2_ink": 0.8033914170506913,
+  "chosen_sup_not_in_v2_sup": 0,
+  "v2_val": 30160,
+  "chosen_sup_in_v2_val": 15907,
+  "v2_ink_in_chosen_sup": 44667,
+  "v2_ink_train_part": 48841
+ },
+ {
+  "seg": "w023",
+  "HW": [
+   1312,
+   3207
+  ],
+  "chosen_sup": 19989,
+  "chosen_sup_frac": 0.004750707294257227,
+  "chosen_ink": 7760,
+  "chosen_ink_frac": 0.0018442887890057571,
+  "chosen_sup_equals_v1_sup": true,
+  "v2_sup": 93276,
+  "v2_sup_frac": 0.02216854137671405,
+  "v2_ink": 22082,
+  "chosen_sup_over_v2_sup": 0.21429949826321884,
+  "chosen_ink_over_v2_ink": 0.3514174440720949,
+  "chosen_sup_not_in_v2_sup": 2630,
+  "v2_val": 9202,
+  "chosen_sup_in_v2_val": 0,
+  "v2_ink_in_chosen_sup": 6191,
+  "v2_ink_train_part": 19953
+ },
+ {
+  "seg": "w028",
+  "HW": [
+   1183,
+   956
+  ],
+  "chosen_sup": 3768,
+  "chosen_sup_frac": 0.0033317181691819605,
+  "chosen_ink": 1581,
+  "chosen_ink_frac": 0.0013979422572921124,
+  "chosen_sup_equals_v1_sup": true,
+  "v2_sup": 19485,
+  "v2_sup_frac": 0.017228908844615313,
+  "v2_ink": 5261,
+  "chosen_sup_over_v2_sup": 0.19337952270977676,
+  "chosen_ink_over_v2_ink": 0.30051321041627066,
+  "chosen_sup_not_in_v2_sup": 0,
+  "v2_val": 6305,
+  "chosen_sup_in_v2_val": 0,
+  "v2_ink_in_chosen_sup": 1581,
+  "v2_ink_train_part": 3565
+ },
+ {
+  "seg": "w029",
+  "HW": [
+   1198,
+   989
+  ],
+  "chosen_sup": 1446,
+  "chosen_sup_frac": 0.0012204364875061401,
+  "chosen_ink": 642,
+  "chosen_ink_frac": 0.0005418535442454647,
+  "chosen_sup_equals_v1_sup": true,
+  "v2_sup": 24804,
+  "v2_sup_frac": 0.020934790204773374,
+  "v2_ink": 6832,
+  "chosen_sup_over_v2_sup": 0.0582970488630866,
+  "chosen_ink_over_v2_ink": 0.0939695550351288,
+  "chosen_sup_not_in_v2_sup": 0,
+  "v2_val": 5962,
+  "chosen_sup_in_v2_val": 1446,
+  "v2_ink_in_chosen_sup": 642,
+  "v2_ink_train_part": 5475
+ },
+ {
+  "seg": "w031",
+  "HW": [
+   1220,
+   991
+  ],
+  "chosen_sup": 21834,
+  "chosen_sup_frac": 0.018059254602901524,
+  "chosen_ink": 7908,
+  "chosen_ink_frac": 0.006540834725645564,
+  "chosen_sup_equals_v1_sup": true,
+  "v2_sup": 50056,
+  "v2_sup_frac": 0.04140212734280657,
+  "v2_ink": 13384,
+  "chosen_sup_over_v2_sup": 0.4361914655585744,
+  "chosen_ink_over_v2_ink": 0.590854751942618,
+  "chosen_sup_not_in_v2_sup": 0,
+  "v2_val": 9129,
+  "chosen_sup_in_v2_val": 2906,
+  "v2_ink_in_chosen_sup": 8527,
+  "v2_ink_train_part": 9670
+ }
+]
