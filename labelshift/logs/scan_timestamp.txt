@@ -105,3 +105,16 @@ Precheck on the pod, finished 2026-11-01 02:07:21 +0800 (still no scan output: s
 - scan/PRECHECK_OK written by hand at 2026-11-01 02:07:33 +0800 (sha256 217e06248b57fc73f24d1132e3f1a00cb6eceed54c827a96158bbcf1158d451d).
 - H runs whose eval.json existed at this point: C16y_s27 (00:25 +0800) and C32y_s27 (01:39 +0800). Only C16y_s27's score has
   been seen (watcher, 00:26 +0800); C32y_s27's file was not read.
+
+Revision 2026-11-01 02:40 +0800, before any scan output (scan/out did not exist), logistics only: the scan starts while H
+trains instead of after ALL_DONE_H. Stan asked at about 02:30 +0800 why the scan waits for H. Pairs, configs, checkpoints,
+eval command, pair 1 check and readout are unchanged. New and changed files, sha256 equal on the pod at 18:39:14 UTC:
+a01065531c688e1f9779866e6c32c95b2a83ecf6d3427883e3f18ab869ebe427 *SCAN-2026-11-01.md (revision paragraph added under "When and what it costs")
+f982c048690a27343f19a35f9ade8d47aeb7d94dd7675a1e779496c4d11e1f7d *scan2.sh (scan.sh plus skip-if-scored, pair 1 gate, lock, FINAL switch)
+1bd774ff7bfb09ee192a461ce0b2a077d8e3dc819b42582637b5935aeb4b5255 *scan_wait_h.sh (calls scan2.sh once C32y_s28 has trained)
+84ea70ad1c04236e648379d85986dfb683e559e153a80fc4d0f611ad959e5048 *go9c.sh (go9b.sh with CAP_MIN=35 FINAL=1 bash scan2.sh)
+State before the switch: GPU 8996 of 32607 MiB used (H's trainer only), RAM 73 GiB available, load average about 190 on 24
+CPUs. C16y_s28 averaged 2.89 it/s over its first 9613 steps, which overlapped the precheck, against 2.80 it/s for C32y_s27.
+Switch on the pod, 18:39:31 UTC (02:39:31 +0800): go9b.sh (PID 19290, still waiting for ALL_DONE_H) stopped with kill; go9c.sh
+started, appending to go9.log; scan2.sh started with nice 10, log scan.log, cap 150 min; scan_wait_h.sh started. Pair 1
+started at 18:39:32 UTC. H runs whose eval.json existed then: C16y_s27 and C32y_s27; C16y_s28 was at step 9613 of 12000.
