@@ -73,6 +73,10 @@ All three trained and scored C0 seed 27 only.
 
 L2's C0 seed 27 run is the C0 seed 27 run of the comparison above (same files, copied into `results/F/runs/C0_s27`).
 
+## Amendment H (runs in progress)
+
+Amendment H adds two arms, C16y and C32y, which move C0 by 64 and 128 level-0 px in y, with seeds 27 and 28 on the settings above. It reuses the F runs of C0, AS and C8y and judges w00 only, with the seed noise pooled over all five arms. Its rules and `scripts/decide_h.py` were frozen at 22:08 +0800 on 2026-10-31 (`logs/amendment_h_timestamp.txt`), before any of its runs started. The results will be added here when the runs finish.
+
 ## Limits
 
 - Exploratory. Amendment F was written after two G0 failures and Amendment G after three, with C0 seed 27 already known.
@@ -83,10 +87,10 @@ L2's C0 seed 27 run is the C0 seed 27 run of the comparison above (same files, c
 
 ## Files
 
-- `PREREG.md`, `AMENDMENT-A-2026-10-31.md` to `AMENDMENT-G-2026-10-31.md`, `F_RESTART_NOTE.md`: the pre-registration and every change to it, as written at the time.
+- `PREREG.md`, `AMENDMENT-A-2026-10-31.md` to `AMENDMENT-H-2026-10-31.md`, `F_RESTART_NOTE.md`: the pre-registration and every change to it, as written at the time.
 - `logs/*timestamp*.txt`, `logs/amendment_choice.txt`: save times and sha256 of the frozen files. Where a file was corrected after its first save, the timestamp file lists both hashes and the later one is the file here. `logs/amendment_timestamp.txt` names the files by their absolute paths on the machine where they were written.
 - `logs/check_tif_vs_zarr*.log`, `logs/components_*.log`: the checks and component boxes `PREREG.md` section 2 cites.
-- `pod_run.sh`, `go5.sh`, `go6.sh`, `go7.sh`, `regions.json`, `labels/manifest_full.json`, `scripts/`: everything the pod ran. `scripts/hf65/` is a copy of `correct/apply_fit.py` and three files of `measure/` from this repository at a7b7468.
+- `pod_run.sh`, `go5.sh`, `go6.sh`, `go7.sh`, `go8.sh`, `regions.json`, `labels/manifest_full.json`, `scripts/`: everything the pod ran. `scripts/hf65/` is a copy of `correct/apply_fit.py` and three files of `measure/` from this repository at a7b7468.
 - `results/<attempt>/`: each run's `config.json`, `eval.json` and the trainer's `validation_metrics.jsonl`, plus the readouts and run logs.
 
 Not included: model checkpoints, trainer and evaluation stdout and stderr logs (progress bars, up to 1.5 MB each), the label arms (1.1 GB, rebuilt by `prepare`), downloaded data and the volume cache, configs written for arms that never trained in attempt 0, the 5 minutes of AS seed 27 that ran before the pod stopped, and the local CPU smoke test and WSL prep scripts.
@@ -94,7 +98,7 @@ Not included: model checkpoints, trainer and evaluation stdout and stderr logs (
 Check the frozen files against the timestamp files:
 
 ```
-sha256sum PREREG.md AMENDMENT-*.md logs/amendment_choice.txt scripts/decide_f.py scripts/decide_g.py
+sha256sum PREREG.md AMENDMENT-*.md logs/amendment_choice.txt scripts/decide_f.py scripts/decide_g.py scripts/decide_h.py
 ```
 
 `scripts/decide_f.py` has no timestamp file of its own. Its hash is recorded only as the prefix `82ca0c24` in `AMENDMENT-G-2026-10-31.md`, which was frozen at 14:49 +0800 on 2026-10-31, when C0 seed 27 was the only finished run (`logs/amendment_g_timestamp.txt`). The repository's `.gitattributes` turns off line ending conversion for this folder, so the hashes also match after a checkout on Windows.
@@ -136,4 +140,4 @@ export STEPS=6000 ARMS=C0 SEEDS=27 MAXSTEPS_MODE=anneal WORKERS=16
 bash pod_run.sh prepare && FORCE=1 bash pod_run.sh run
 ```
 
-`go5.sh`, `go6.sh` and `go7.sh` are the drivers as they ran: L1 then L2, the Amendment F choice, and the restart. `go6.sh` installs an Amendment F copy of `pod_run.sh` (`pod_run.sh.F`). The `pod_run.sh` here has the `G0_WAIVED` switch, so it is that version. Its defaults (teacher schedule, gate on) are the attempt 0 behaviour. Rerunning `scripts/mkconfig.py` with the attempt 0 settings and with the Amendment F settings gave `results/attempt0/runs/C0_s27/config.json` and `results/F/runs/AS_s28/config.json` again; the only differences were paths that Git Bash on Windows rewrote.
+`go5.sh`, `go6.sh` and `go7.sh` are the drivers as they ran: L1 then L2, the Amendment F choice, and the restart. `go8.sh` runs Amendment H. `go6.sh` installs an Amendment F copy of `pod_run.sh` (`pod_run.sh.F`). The `pod_run.sh` here has the `G0_WAIVED` switch, so it is that version. It also has Amendment H's `BUILD_ARMS` switch, whose default is the old list of eight arms. Its defaults (teacher schedule, gate on) are the attempt 0 behaviour. Rerunning `scripts/mkconfig.py` with the attempt 0 settings and with the Amendment F settings gave `results/attempt0/runs/C0_s27/config.json` and `results/F/runs/AS_s28/config.json` again; the only differences were paths that Git Bash on Windows rewrote.

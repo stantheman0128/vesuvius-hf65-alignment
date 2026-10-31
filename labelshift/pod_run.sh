@@ -14,7 +14,8 @@
 # Env: WORK (default ~/labelshift), STEPS (6000), ARMS ("C0,AS,C8y,C4y,C2y"; append ",C8x,C4x,C2x" for
 # the optional x curve), SEEDS ("27 28"), WORKERS (8), CAP_HOURS (45), FORCE=1 skips the cap check,
 # MAXSTEPS_MODE (teacher; anneal ends the cosine schedule at STEPS, Amendment E), G0_WAIVED=1 skips the
-# G0 gate (Amendment F).
+# G0 gate (Amendment F), BUILD_ARMS (the eight PREREG arms) sets what build_labels.py builds (Amendment H
+# adds C16y,C32y).
 set -euo pipefail
 
 HERE=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
@@ -69,7 +70,7 @@ prepare() {
         $Q/meta.json $Q/x.tif $Q/y.tif $Q/z.tif $Q/w018_20240304144031_inklabels.tif $Q/w018_20240304144031_supervision_mask.tif
     if [ ! -f "$LABELS/manifest.json" ]; then
         log "building label arms (about 20 min on 8 cores)"
-        $PY "$HERE/scripts/build_labels.py" "$RAW" "$HERE/regions.json" "$SRC" "$LABELS" --arms "AS,C0,C2y,C4y,C8y,C2x,C4x,C8x"
+        $PY "$HERE/scripts/build_labels.py" "$RAW" "$HERE/regions.json" "$SRC" "$LABELS" --arms "${BUILD_ARMS:-AS,C0,C2y,C4y,C8y,C2x,C4x,C8x}"
     fi
     # same content as the local build: nonzero pixel counts per arm, array and level must match
     $PY - "$LABELS/manifest.json" "$HERE/labels/manifest_full.json" <<'EOF'

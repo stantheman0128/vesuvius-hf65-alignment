@@ -1,0 +1,6 @@
+Amendment H frozen at 2026-10-31 22:08:34 +0800
+9005f27b72f0c1300dd924fd3fb2815529139dc8ae8ec07f7b8680dd7ad1bbdc *AMENDMENT-H-2026-10-31.md
+79634f0027c2b0f0250148cd0ec97866be598c6e736f9ca78d83b02858217060 *scripts/decide_h.py
+pod: stopped since about 21:02 +0800 and not restarted since; no Amendment H run exists. decide_h.py was tested only on
+Amendment F's eval.json files with made-up C16y and C32y values.
+bundles: pod_bundle.tar.gz b60e7917f213f6ed264e7fd074e52c527bd996b520349a50c3b8cf4ab3d3fde2, h_extra.tar.gz 1c354589cfbc5e71a965400c220d5b5149ac05f30f190b53836536a81cf5a13b
