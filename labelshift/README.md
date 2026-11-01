@@ -171,11 +171,31 @@ Both verdicts are the same as in H and I. The data rule out a C16y cost above 0.
 
 Checks: `scripts/ij_crosscheck.py` agrees with `results_J.json`; the largest difference is 1e-17. The second pod's `prepare` rebuilt the label arms and checked the eight earlier ones against `labels/manifest_full.json`: every array and level has the same nonzero pixel count (`results/J/prepare_J.log`). J has no session check of its own, so H's session check on the first pod is the only measure of how far a new session moves a score.
 
+## Ceiling check
+
+Limits notes that a stronger model could be more sensitive to label position. `scripts/ceiling.py` estimates how much more without a GPU, by scoring an idealized model that reproduces moved labels exactly. On the label canvas it moves C0 down by 32, 64 and 128 level-0 px, the moves of C8y, C16y and C32y, and keeps every fourth pixel in each axis to match level 2. It then scores the moved labels as a prediction of C0 inside the held-out boxes, padded by 64 px, wherever the supervision mask is set. A softer idealized model is the same prediction after a Gaussian blur of 0.5 to 4 level-2 px. Costs below are shares of headroom (AUC minus 0.5), the scale of the last column in the tables above. An idealized model starts with a headroom of 0.5. Output: `results/ceiling/ceiling.json` and `results/ceiling/ceiling.log`.
+
+| w00 | C8y | C16y | C32y |
+|---|---|---|---|
+| ink still covered by the moved labels | 92% | 84% | 69% |
+| idealized, no blur | 10% | 21% | 41% |
+| idealized, blur 0.5 px | 6% | 16% | 37% |
+| idealized, blur 1 px | 3% | 13% | 34% |
+| idealized, blur 2 px | 1% | 8% | 29% |
+| idealized, blur 4 px | 1% | 4% | 21% |
+| trained runs, d as share of headroom (95% interval) | -1% (-10% to 7%) | 6% (-5% to 17%) | 21% (10% to 32%) |
+
+The trained runs' row uses Amendment G's reading for C8y (headroom 0.2405) and Amendment J's for C16y and C32y (headroom 0.2418). w018 gives nearly the same idealized values, 19% for C16y with no blur.
+
+Before the first run, the script's docstring set a rule: if the unblurred idealized model loses at most 0.166 of its headroom at C16y, the upper end the w00 data allow, a stronger model cannot move the C16y conclusion past what is already ruled out. It loses 0.206, so by that rule a stronger model could. The rule has no timestamp file of its own. The first run had blurs of 2 and 4 px only (`results/ceiling/ceiling_run1.json`), and 0.5 and 1 px were added after it. With those added, the idealized C16y cost is 16% at a blur of half a level-2 pixel and lower at wider blurs, so only an output sharper than that passes the 17% the data rule out. The trained runs' estimates are closest to the 2 and 4 px rows at all three moves, and the unblurred row falls outside their intervals at all three.
+
+The check moves the labels on the canvas rather than in the tifxyz frame after the HF65 correction, and its 2D score stands in for the voxel AUC. Its idealized model copies the moved labels. A real model trained on them could also learn wrong features, which the check does not measure. The blur widths were chosen, not measured from a model. villa's released models in `scrollprize/ink_9um` would not give a held-out test here, because their recipe, `aligned21_hybrid_3d2d.json`, lists both `phercparis4-w00` and `pherc1667-w018` among its training segments.
+
 ## Limits
 
 - Exploratory. Amendment F was written after two G0 failures and Amendment G after three, with C0 seed 27 already known.
 - One segment that learns (w00), two seeds per arm (three for C0, C16y and C32y in Amendment I and four in Amendment J), and fixed held-out boxes. The intervals cover run to run variation in training, not the choice of boxes.
-- A weak model, about 0.74 AUC on w00. A stronger model could be more sensitive to label position, so "no cost detected" holds for this model at this level.
+- A weak model, about 0.74 AUC on w00. A stronger model could be more sensitive to label position, so "no cost detected" holds for this model at this level. The ceiling check above bounds how much more: only an idealized model sharper than a blur of half a level-2 pixel passes the C16y bound.
 - C8y shifts y only. AS's offset on w00 is two-axis and varies with position.
 - C0 seed 27 was trained before a pod restart and the other five runs after it (`F_RESTART_NOTE.md`). Checked: the configs differ only in seed and output folder, both C0 seeds drew the same 2,478 patches (`sampling_audit` in the trainer log), and every install used the same pinned `scripts/pod_requirements.txt`. The package freeze before the restart was not recorded, so matching versions are inferred. The freeze after the restart is `results/F/pod_venv_freeze_after_restart.txt`. Amendment H's session check later retrained C0 seed 28 in a new session and got F's `eval.json` back exactly, apart from the run time.
 
@@ -193,6 +213,7 @@ Checks: `scripts/ij_crosscheck.py` agrees with `results_J.json`; the largest dif
 - `results/scan/`: the scan's readout, pair 1's check (`check.txt`), `scan.log`, `go9.log` and the `eval_heldout.py` output of each of the 18 pairs (`out/<checkpoint>__<folder>.json`).
 - `scripts/h_crosscheck.py`: an independent recompute of the Amendment H reading, written apart from `decide_h.py` and run off the pod (`python -I scripts/h_crosscheck.py results/F/runs results/H/runs results/H/results_H.json`).
 - `scripts/ij_crosscheck.py`: an independent recompute of the Amendment I and J readings, written apart from `decide_i.py` and `decide_j.py` (`python -I scripts/ij_crosscheck.py results/F/runs results/H/runs results/I/runs - results/I/results_I.json`, and with `results/J/runs results/J/results_J.json` in place of the last two arguments for J).
+- `scripts/ceiling.py`, `results/ceiling/`: the ceiling check, run off the pod on the downloaded label TIFFs. `ceiling.json` and `ceiling.log` are its output, and `ceiling_run1.json` is the first run's, from the same code with blurs of 2 and 4 px only.
 
 Not included: model checkpoints, trainer and evaluation stdout and stderr logs (progress bars, up to 1.5 MB each), the scan's stdout and stderr logs for each pair, the label arms (1.1 GB, rebuilt by `prepare`), the scan's label folders (rebuilt by `scripts/build_eval_labels.py`), downloaded data and the volume cache, configs written for arms that never trained in attempt 0, the 5 minutes of AS seed 27 that ran before the pod stopped, and the local CPU smoke test and WSL prep scripts.
 
@@ -228,6 +249,12 @@ It writes `out/results_I.md` and `out/results_I.json`, which match the files in 
 
 ```
 python -I scripts/decide_j.py results/F/runs hi results/J/runs out/results_J.md
+```
+
+The ceiling check reads the label TIFFs that `pod_run.sh prepare` downloads to `data/raw` and runs in the pod's venv. It takes under a minute and about 13 GB of RAM, and prints the numbers in `results/ceiling/ceiling.log`:
+
+```
+venv/bin/python -I scripts/ceiling.py data/raw regions.json ceiling.json
 ```
 
 Train again: a Linux pod with one NVIDIA GPU with bf16 and driver 580 or newer, at least 8 vCPUs, 32 GB RAM and 60 GB disk. `prepare` installs uv and Python 3.14.6, checks out villa 37d1897fb, downloads the public tifxyz and label TIFFs, rebuilds the label arms and checks them against `labels/manifest_full.json`. The scripts expect to sit in `~/labelshift`.

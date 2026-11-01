@@ -70,7 +70,7 @@ python -I measure/summarize.py w00 w01 w05 c018
 
 ## Label offset and ink training
 
-[`labelshift/`](labelshift/) trains villa's `full_3d` ink trainer on w00 and w018 with corrected labels, labels as shipped, and corrected labels moved 32, 64 or 128 px, and scores each on held-out boxes. The pre-registered gate failed in all three attempts, so the comparison is exploratory. Segment w018 did not learn. On w00 the labels as shipped and the 32 and 64 px moves gave no measurable drop in held-out AUC, and the 128 px move was the only one with a detectable cost (Amendments H, I and J). The numbers, their limits and how to rerun are in [`labelshift/README.md`](labelshift/README.md).
+[`labelshift/`](labelshift/) trains villa's `full_3d` ink trainer on w00 and w018 with corrected labels, labels as shipped, and corrected labels moved 32, 64 or 128 px, and scores each on held-out boxes. The pre-registered gate failed in all three attempts, so the comparison is exploratory. Segment w018 did not learn. On w00 the labels as shipped and the 32 and 64 px moves gave no measurable drop in held-out AUC, and the 128 px move was the only one with a detectable cost (Amendments H, I and J). A ceiling check without a GPU finds that an idealized model would lose more at 64 px than these runs rule out only if its output were sharper than about half a voxel at the training level. The numbers, their limits and how to rerun are in [`labelshift/README.md`](labelshift/README.md).
 
 ## Label version in the 1667 `_2um` folders
 
