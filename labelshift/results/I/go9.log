@@ -1,0 +1,10 @@
+[2026-10-31T15:54:40+00:00] go9 start (Amendment I), waiting for ALL_DONE_H
+[2026-10-31T17:37:41+00:00] go9b start (Amendment I with the eval offset scan first), waiting for ALL_DONE_H
+[2026-10-31T18:39:31+00:00] go9c start (Amendment I after the rest of the eval offset scan), waiting for ALL_DONE_H
+[2026-10-31T21:37:33+00:00] ALL_DONE_H seen
+[2026-10-31T21:37:33+00:00] eval offset scan, pairs not scored yet (scan2.sh, log appended to scan.log)
+[2026-10-31T21:38:33+00:00] scan2.sh returned 0
+[2026-10-31T21:38:33+00:00] prepare (configs for seed 29)
+[2026-10-31T21:38:38+00:00] run
+[2026-11-01T01:12:29+00:00] pod_run.sh run exited with status 0
+[2026-11-01T01:12:29+00:00] go9 end; - C16y vs C0: d = C0 minus C16y = 0.0091, 95% interval -0.0188 to 0.0370; no cost detected; the data rule out a cost above 0.0370 AUC (n = 3 and 3) (upper end is 16% of the headroom) - C32y vs C0: d = C0 minus C32y = 0.0366, 95% interval 0.0087 to 0.0645; cost detected (n = 3 and 3) (upper end is 27% of the headroom) 

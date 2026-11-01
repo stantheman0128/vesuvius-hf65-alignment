@@ -1,0 +1,8 @@
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 5090, 595.99.02, 32607 MiB
+villa 37d1897fb3e7a02ecba21de6efb6912d73cee5af Thu Oct 29 22:21:28 2026 -0400
+torch 2.12.1+cu130 cuda 13.0 True NVIDIA GeForce RTX 5090 bf16 True
+12 files, 0 downloaded, 0 bytes, 0 s
+label arms match the local build
+386M	/root/labelshift/data/raw
+1.3G	/root/labelshift/labels/full
