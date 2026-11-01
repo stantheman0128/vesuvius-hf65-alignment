@@ -150,12 +150,31 @@ Both verdicts are the same as in H. With the larger seed noise the data rule out
 
 Checks: `decide_i.py` run again off the pod gives the same `results_I.md` and `results_I.json`, and so does `decide_j.py` with no seed 30 run. `scripts/ij_crosscheck.py`, written apart from both, agrees with `results_I.json`; the largest difference is about 1e-16.
 
-Amendment J's seed 30 runs are still training on the second pod. If all three finish by 11:30 +0800, their four-seed reading becomes the primary one and is added below.
+## Amendment J
+
+The second pod wrote the seed 30 `eval.json` files of C0, C32y and C16y at 08:19:09, 09:38:12 and 10:56:32 +0800 on 2026-11-01 (file times on the pod, kept in `results/J/runs`), all before the 11:30 cutoff, so the four-seed reading below is the primary one, with Amendment I's three-seed reading next to it. `decide_j.py` ran off the pod after both pods' results were pulled, as Amendment J says. Held-out AUC of the new runs (`results/J/results_J.md`):
+
+| run | w00 | w018 | pooled |
+|---|---|---|---|
+| C0 s30 | 0.7604 | 0.5058 | 0.6591 |
+| C16y s30 | 0.7315 | 0.5234 | 0.6462 |
+| C32y s30 | 0.6651 | 0.5178 | 0.6092 |
+
+On w00, seed 30 scored 0.7604, 0.7315 and 0.6651 for C0, C16y and C32y, against means over seeds 27 to 29 of 0.7356, 0.7265 and 0.6990. The pooled seed noise is s = 0.0168 (df 11, t = 2.201), against 0.0148 in Amendment I and 0.0056 in Amendment H. Mean w00 AUC over the four seeds: C0 0.7418, C16y 0.7278, C32y 0.6905. C0's w00 lower bound is 0.7233, above chance.
+
+| arm | d | 95% interval | verdict | upper end as share of headroom |
+|---|---|---|---|---|
+| C16y | 0.0140 | -0.0121 to 0.0402 | no cost detected | 17% |
+| C32y | 0.0513 | 0.0251 to 0.0774 | cost detected | 32% |
+
+Both verdicts are the same as in H and I. The data rule out a C16y cost above 0.0402 AUC, 17% of C0's headroom of 0.2418; the bound was 0.0140 with H's two seeds and 0.0370 with I's three. C32y's estimate rose from 0.0359 in H and 0.0366 in I to 0.0513, since seed 30 gave both the highest C0 run and the lowest C32y run so far, and its interval lies above zero. The dose response, reported only, is -0.0137 AUC per 32 px.
+
+Checks: `scripts/ij_crosscheck.py` agrees with `results_J.json`; the largest difference is 1e-17. The second pod's `prepare` rebuilt the label arms and checked the eight earlier ones against `labels/manifest_full.json`: every array and level has the same nonzero pixel count (`results/J/prepare_J.log`). J has no session check of its own, so H's session check on the first pod is the only measure of how far a new session moves a score.
 
 ## Limits
 
 - Exploratory. Amendment F was written after two G0 failures and Amendment G after three, with C0 seed 27 already known.
-- One segment that learns (w00), two seeds per arm (three for C0, C16y and C32y from Amendment I on), and fixed held-out boxes. The intervals cover run to run variation in training, not the choice of boxes.
+- One segment that learns (w00), two seeds per arm (three for C0, C16y and C32y in Amendment I and four in Amendment J), and fixed held-out boxes. The intervals cover run to run variation in training, not the choice of boxes.
 - A weak model, about 0.74 AUC on w00. A stronger model could be more sensitive to label position, so "no cost detected" holds for this model at this level.
 - C8y shifts y only. AS's offset on w00 is two-axis and varies with position.
 - C0 seed 27 was trained before a pod restart and the other five runs after it (`F_RESTART_NOTE.md`). Checked: the configs differ only in seed and output folder, both C0 seeds drew the same 2,478 patches (`sampling_audit` in the trainer log), and every install used the same pinned `scripts/pod_requirements.txt`. The package freeze before the restart was not recorded, so matching versions are inferred. The freeze after the restart is `results/F/pod_venv_freeze_after_restart.txt`. Amendment H's session check later retrained C0 seed 28 in a new session and got F's `eval.json` back exactly, apart from the run time.
@@ -170,9 +189,10 @@ Amendment J's seed 30 runs are still training on the second pod. If all three fi
 - `results/<attempt>/`: each run's `config.json`, `eval.json` and the trainer's `validation_metrics.jsonl`, plus the readouts and run logs.
 - `results/H/`: Amendment H's four new runs and the C0 seed 28 session check, laid out as in `results/F/`, with `results_H.md`, `results_H.json` and the logs of `go8.sh`.
 - `results/I/`: Amendment I's three seed 29 runs, laid out as in `results/H/`, with `results_I.md`, `results_I.json` and the logs of `go9c.sh` (`go9.log`, `prepare_I.log`, `run_I.log`, `decide_i.log`).
+- `results/J/`: Amendment J's three seed 30 runs from the second pod, laid out as in `results/H/`, with `results_J.md` and `results_J.json` (written off the pod by `decide_j.py`, output in `decide_j.log`) and the logs of `go_j.sh`. `logs/j_launch.txt` records the second pod's hardware, uploads and start.
 - `results/scan/`: the scan's readout, pair 1's check (`check.txt`), `scan.log`, `go9.log` and the `eval_heldout.py` output of each of the 18 pairs (`out/<checkpoint>__<folder>.json`).
 - `scripts/h_crosscheck.py`: an independent recompute of the Amendment H reading, written apart from `decide_h.py` and run off the pod (`python -I scripts/h_crosscheck.py results/F/runs results/H/runs results/H/results_H.json`).
-- `scripts/ij_crosscheck.py`: an independent recompute of the Amendment I and J readings, written apart from `decide_i.py` and `decide_j.py` (`python -I scripts/ij_crosscheck.py results/F/runs results/H/runs results/I/runs - results/I/results_I.json`).
+- `scripts/ij_crosscheck.py`: an independent recompute of the Amendment I and J readings, written apart from `decide_i.py` and `decide_j.py` (`python -I scripts/ij_crosscheck.py results/F/runs results/H/runs results/I/runs - results/I/results_I.json`, and with `results/J/runs results/J/results_J.json` in place of the last two arguments for J).
 
 Not included: model checkpoints, trainer and evaluation stdout and stderr logs (progress bars, up to 1.5 MB each), the scan's stdout and stderr logs for each pair, the label arms (1.1 GB, rebuilt by `prepare`), the scan's label folders (rebuilt by `scripts/build_eval_labels.py`), downloaded data and the volume cache, configs written for arms that never trained in attempt 0, the 5 minutes of AS seed 27 that ran before the pod stopped, and the local CPU smoke test and WSL prep scripts.
 
@@ -204,7 +224,11 @@ mkdir -p hi && cp -r results/H/runs/. results/I/runs/. hi/
 python -I scripts/decide_i.py results/F/runs hi out/results_I.md
 ```
 
-It writes `out/results_I.md` and `out/results_I.json`, which match the files in `results/I/`.
+It writes `out/results_I.md` and `out/results_I.json`, which match the files in `results/I/`. Amendment J's reading adds the second pod's runs as a third folder:
+
+```
+python -I scripts/decide_j.py results/F/runs hi results/J/runs out/results_J.md
+```
 
 Train again: a Linux pod with one NVIDIA GPU with bf16 and driver 580 or newer, at least 8 vCPUs, 32 GB RAM and 60 GB disk. `prepare` installs uv and Python 3.14.6, checks out villa 37d1897fb, downloads the public tifxyz and label TIFFs, rebuilds the label arms and checks them against `labels/manifest_full.json`. The scripts expect to sit in `~/labelshift`.
 

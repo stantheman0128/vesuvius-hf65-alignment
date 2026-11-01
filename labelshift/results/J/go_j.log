@@ -1,0 +1,5 @@
+[2026-10-31T22:34:33+00:00] go_j start (Amendment J, fresh pod, nothing to wait for)
+[2026-10-31T22:34:33+00:00] prepare (venv, data, label arms, configs for seed 30)
+[2026-10-31T23:02:53+00:00] run
+[2026-11-01T02:56:33+00:00] pod_run.sh run exited with status 0
+[2026-11-01T02:56:33+00:00] go_j end; eval.json present for: C0_s30 C16y_s30 C32y_s30 

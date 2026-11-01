@@ -1,0 +1,10 @@
+Amendment J launch record (written after the freeze; the frozen files are unchanged)
+second pod: 77d67e8f-8825-4038-80c4-9b933fb5f187, created by Stan in the GPUtw console, 2026-10-31 22:32 UTC (list-instances)
+checked 2026-11-01 06:34:22 +0800: NVIDIA GeForce RTX 5090, driver 595.91.07, 32607 MiB (first pod: RTX 5090, driver 595.99.02)
+  CPU AMD Ryzen Threadripper PRO 5945WX 12-Cores, 24 CPUs, 117 GB RAM, 1.3 TB disk (same CPU and RAM as the first pod)
+  ~/labelshift absent (fresh), /vault mounted
+bundles uploaded and checked on the pod (4 x OK) 06:34, pod_setup_j.sh run: 3 bundle OKs, 7 SHA256SUMS OKs
+go_j start 2026-10-31T22:34:33+00:00 (pod clock; the local clock read about 10 s later than the pod at 06:35:4x)
+prepare_J.log: torch 2.12.1+cu130 cuda 13.0 True NVIDIA GeForce RTX 5090 bf16 True
+local autostop_j.sh started 2026-11-01 06:35:45 +0800, deadline 2026-11-01 12:00:00 +0800 (as in AMENDMENT-J)
+GPUtw list-instances 06:37: neither pod has a platform-side stop time; both stops come from the local watchers
