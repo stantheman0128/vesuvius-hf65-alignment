@@ -1,0 +1,19 @@
+{
+  "_doc": "Experiment A, w01 only. Boxes are level-0 canvas px [y0, y1, x0, x1] of supervised components from logs/components_w01.log (scripts/list_components.py: level-4 supervision after a 48 px dilation). The held-out ids 5, 17, 19 (15.0% of the segment's ink at level 4) were chosen by scripts/pick_heldout.py, frozen before the component list existed (logs/heldout_rule_timestamp.txt), output in logs/pick_heldout_w01.log and logs/heldout_w01.json. build_labels.py maps them into the tifxyz frame with the HF65 w01 correction and pads by margin_px; guard_px of supervision around every held-out box is dropped from training in both arms. The smoke boxes are only read by build_labels.py --smoke (a CPU smoke test that A does not need): the smallest training component (id 25) and the smallest held-out component (id 5).",
+  "margin_px": 64,
+  "guard_px": 512,
+  "shift_cell_level0_px": 4,
+  "segments": {
+    "w01": {
+      "scroll": "phercparis4",
+      "segment": "w01_20230702185753_r15",
+      "fit_key": "w01",
+      "ink_tif": "w01_20230702185753_r15_inklabels.tif",
+      "sup_tif": "w01_20230702185753_r15_supervision_mask.tif",
+      "volume_path": "s3://vesuvius-challenge-open-data/PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr/",
+      "heldout": {"5": [13296, 15616, 15712, 17440], "17": [35856, 38512, 29456, 33168], "19": [38448, 41616, 34128, 37600]},
+      "smoke_train": {"25": [55296, 56928, 37136, 38528]},
+      "smoke_heldout": {"5": [13296, 15616, 15712, 17440]}
+    }
+  }
+}

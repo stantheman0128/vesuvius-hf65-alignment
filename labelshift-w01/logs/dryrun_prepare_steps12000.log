@@ -1,0 +1,18 @@
+[18:09:19] CPU_DRYRUN: no GPU or driver check, no venv install, no villa clone
+villa 37d1897fb3e7a02ecba21de6efb6912d73cee5af (archive)
+python 3.14.6
+6 files, 0 downloaded, 0 bytes, 0 s
+phercparis4/w01_20230702185753_r15/meta.json: OK
+phercparis4/w01_20230702185753_r15/w01_20230702185753_r15_inklabels.tif: OK
+phercparis4/w01_20230702185753_r15/w01_20230702185753_r15_supervision_mask.tif: OK
+phercparis4/w01_20230702185753_r15/x.tif: OK
+phercparis4/w01_20230702185753_r15/y.tif: OK
+phercparis4/w01_20230702185753_r15/z.tif: OK
+/home/stan/labelshift-w01-dryrun/labels/full/manifest.json: label arms match the reference build
+/home/stan/labelshift-w01-dryrun/labels/full_eval/manifest.json: label arms match the reference build
+[18:09:40] eval label folders checked (E0 equals C0 byte for byte, EAS equals the shipped labels in its boxes)
+477M	/home/stan/labelshift-w01-dryrun/data/raw
+154M	/home/stan/labelshift-w01-dryrun/labels/full
+154M	/home/stan/labelshift-w01-dryrun/labels/full_eval
+21.47_s_wall_11079424_kB_maxrss_of_largest_child
+prepare STEPS=12000 exit 0

@@ -1,0 +1,2 @@
+a7b7468191ff6abc99f00d3e5d350dd546236a44 Fri Oct 30 18:52:56 2026 +0800 Add a tested correction for the HF65 offsets and the MAN5 label frame
+copied from this repository, ../../.. relative to this file, at the commit above (correct/apply_fit.py, measure/common.py, measure/lib.py, measure/sources.py), unmodified

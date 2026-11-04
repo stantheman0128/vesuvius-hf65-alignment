@@ -1,0 +1,606 @@
+{
+ "rule": "Pick the three held-out components of w01 by a fixed rule (PREREG.md section 2).\n\nusage: python -I pick_heldout.py COMPONENTS_LOG SUP_ZARR_DIR FIT_KEY OUT_JSON\n\nCOMPONENTS_LOG is the output of list_components.py for the shipped w01 labels: one JSON line per\nsupervised component (level-4 supervision after a 48 px dilation), with its level-0 canvas box\n[y0, y1) x [x0, x1) and its share of the segment's ink. SUP_ZARR_DIR is the shipped\nsupervision_mask.zarr (level 4 is read, the level list_components.py uses).\n\nOctober's rule for w00 was \"three labelled components holding roughly 10 to 20% of the ink, mapped\ninto the tifxyz frame and padded by 64 px; supervision within 512 px of a box is removed from\ntraining\". It does not say which three. This script fixes that choice, written before any w01\ncomponent list was looked at:\n\n  eligible component: its box mapped by fwd and padded by margin_px lies fully inside the tifxyz\n      grid; the box padded by margin_px in the canvas frame (where the shipped labels and the AS arm\n      put it) lies inside the guard box (mapped box padded by margin_px + guard_px), so neither the\n      AS copy of a held-out component nor the as-shipped eval boxes reach training supervision; and\n      it holds at least 2% of the segment's ink.\n  candidate triple: three eligible components whose mapped, padded boxes do not overlap and whose\n      ink shares sum to between 10% and 20%.\n  choice: the candidate triple that removes the least training supervision, counted as supervised\n      level-4 pixels inside the union of the three guard boxes minus those inside the union of the\n      three held-out boxes, both in the canvas frame (the correction is a translation plus a scale\n      of under 0.5%, so the canvas frame stands in for the tifxyz frame here). Ties: ink share\n      closest to 15%, then the smallest ids.\n\nWrites OUT_JSON with the chosen ids and boxes, every eligible component and the ten best triples.\n",
+ "components": [
+  {
+   "id": 1,
+   "box": [
+    8816,
+    10720,
+    41392,
+    43888
+   ],
+   "ink_share": 0.032,
+   "offset_at_centre": [
+    53.2,
+    -153.5
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 2,
+   "box": [
+    10800,
+    15184,
+    31984,
+    37424
+   ],
+   "ink_share": 0.11,
+   "offset_at_centre": [
+    66.9,
+    -122.7
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 3,
+   "box": [
+    12768,
+    15920,
+    20880,
+    25600
+   ],
+   "ink_share": 0.069,
+   "offset_at_centre": [
+    72.7,
+    -78.3
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 4,
+   "box": [
+    13184,
+    15552,
+    27008,
+    29968
+   ],
+   "ink_share": 0.049,
+   "offset_at_centre": [
+    72.8,
+    -98.6
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 5,
+   "box": [
+    13296,
+    15616,
+    15712,
+    17440
+   ],
+   "ink_share": 0.03,
+   "offset_at_centre": [
+    73.1,
+    -52.4
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 6,
+   "box": [
+    16176,
+    18512,
+    22848,
+    24816
+   ],
+   "ink_share": 0.024,
+   "offset_at_centre": [
+    85.4,
+    -80.6
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 7,
+   "box": [
+    16336,
+    18208,
+    19568,
+    21440
+   ],
+   "ink_share": 0.019,
+   "offset_at_centre": [
+    85.1,
+    -67.7
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": false,
+   "eligible": false
+  },
+  {
+   "id": 8,
+   "box": [
+    18448,
+    21184,
+    26832,
+    29168
+   ],
+   "ink_share": 0.031,
+   "offset_at_centre": [
+    96.0,
+    -96.7
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 9,
+   "box": [
+    18624,
+    21120,
+    22448,
+    24496
+   ],
+   "ink_share": 0.027,
+   "offset_at_centre": [
+    96.2,
+    -79.2
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 10,
+   "box": [
+    18848,
+    21696,
+    38544,
+    40976
+   ],
+   "ink_share": 0.035,
+   "offset_at_centre": [
+    97.9,
+    -142.3
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 11,
+   "box": [
+    21840,
+    24320,
+    30560,
+    33040
+   ],
+   "ink_share": 0.037,
+   "offset_at_centre": [
+    109.9,
+    -111.4
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 12,
+   "box": [
+    24592,
+    29824,
+    31360,
+    33520
+   ],
+   "ink_share": 0.064,
+   "offset_at_centre": [
+    127.5,
+    -113.9
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 13,
+   "box": [
+    27200,
+    29104,
+    26208,
+    28464
+   ],
+   "ink_share": 0.032,
+   "offset_at_centre": [
+    131.5,
+    -94.1
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 14,
+   "box": [
+    27408,
+    32416,
+    14928,
+    17328
+   ],
+   "ink_share": 0.051,
+   "offset_at_centre": [
+    139.0,
+    -50.7
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 15,
+   "box": [
+    30304,
+    32048,
+    31232,
+    32736
+   ],
+   "ink_share": 0.02,
+   "offset_at_centre": [
+    144.4,
+    -112.1
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 16,
+   "box": [
+    32240,
+    35488,
+    19520,
+    21184
+   ],
+   "ink_share": 0.034,
+   "offset_at_centre": [
+    155.9,
+    -67.1
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 17,
+   "box": [
+    35856,
+    38512,
+    29456,
+    33168
+   ],
+   "ink_share": 0.059,
+   "offset_at_centre": [
+    170.0,
+    -109.5
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 18,
+   "box": [
+    38080,
+    40496,
+    26416,
+    28960
+   ],
+   "ink_share": 0.038,
+   "offset_at_centre": [
+    179.0,
+    -95.5
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 19,
+   "box": [
+    38448,
+    41616,
+    34128,
+    37600
+   ],
+   "ink_share": 0.061,
+   "offset_at_centre": [
+    182.2,
+    -127.2
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 20,
+   "box": [
+    41200,
+    43264,
+    28272,
+    31632
+   ],
+   "ink_share": 0.046,
+   "offset_at_centre": [
+    191.5,
+    -104.3
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 21,
+   "box": [
+    46944,
+    49312,
+    29600,
+    31152
+   ],
+   "ink_share": 0.021,
+   "offset_at_centre": [
+    216.7,
+    -105.9
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 22,
+   "box": [
+    50016,
+    52032,
+    21632,
+    23376
+   ],
+   "ink_share": 0.023,
+   "offset_at_centre": [
+    229.0,
+    -75.4
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 23,
+   "box": [
+    52560,
+    55008,
+    21552,
+    24208
+   ],
+   "ink_share": 0.027,
+   "offset_at_centre": [
+    240.8,
+    -76.9
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  },
+  {
+   "id": 24,
+   "box": [
+    53232,
+    55248,
+    13840,
+    15152
+   ],
+   "ink_share": 0.016,
+   "offset_at_centre": [
+    242.7,
+    -44.4
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": false,
+   "eligible": false
+  },
+  {
+   "id": 25,
+   "box": [
+    55296,
+    56928,
+    37136,
+    38528
+   ],
+   "ink_share": 0.016,
+   "offset_at_centre": [
+    250.7,
+    -134.8
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": false,
+   "eligible": false
+  },
+  {
+   "id": 26,
+   "box": [
+    55776,
+    57728,
+    17696,
+    20208
+   ],
+   "ink_share": 0.026,
+   "offset_at_centre": [
+    253.4,
+    -61.6
+   ],
+   "in_grid": true,
+   "as_box_inside_guard": true,
+   "share_ok": true,
+   "eligible": true
+  }
+ ],
+ "n_candidates": 1232,
+ "best10": [
+  {
+   "ids": [
+    5,
+    17,
+    19
+   ],
+   "ink_share": 0.15,
+   "lost_level4_px": 0,
+   "lost_level0_px": 0
+  },
+  {
+   "ids": [
+    8,
+    17,
+    19
+   ],
+   "ink_share": 0.151,
+   "lost_level4_px": 0,
+   "lost_level0_px": 0
+  },
+  {
+   "ids": [
+    1,
+    17,
+    19
+   ],
+   "ink_share": 0.152,
+   "lost_level4_px": 0,
+   "lost_level0_px": 0
+  },
+  {
+   "ids": [
+    13,
+    17,
+    19
+   ],
+   "ink_share": 0.152,
+   "lost_level4_px": 0,
+   "lost_level0_px": 0
+  },
+  {
+   "ids": [
+    14,
+    17,
+    18
+   ],
+   "ink_share": 0.148,
+   "lost_level4_px": 0,
+   "lost_level0_px": 0
+  },
+  {
+   "ids": [
+    10,
+    14,
+    19
+   ],
+   "ink_share": 0.147,
+   "lost_level4_px": 0,
+   "lost_level0_px": 0
+  },
+  {
+   "ids": [
+    17,
+    19,
+    23
+   ],
+   "ink_share": 0.147,
+   "lost_level4_px": 0,
+   "lost_level0_px": 0
+  },
+  {
+   "ids": [
+    2,
+    21,
+    22
+   ],
+   "ink_share": 0.154,
+   "lost_level4_px": 0,
+   "lost_level0_px": 0
+  },
+  {
+   "ids": [
+    4,
+    14,
+    20
+   ],
+   "ink_share": 0.146,
+   "lost_level4_px": 0,
+   "lost_level0_px": 0
+  },
+  {
+   "ids": [
+    4,
+    17,
+    18
+   ],
+   "ink_share": 0.146,
+   "lost_level4_px": 0,
+   "lost_level0_px": 0
+  }
+ ],
+ "supervised_level4_px": 517010,
+ "chosen": {
+  "ids": [
+   5,
+   17,
+   19
+  ],
+  "ink_share": 0.15,
+  "boxes": {
+   "5": [
+    13296,
+    15616,
+    15712,
+    17440
+   ],
+   "17": [
+    35856,
+    38512,
+    29456,
+    33168
+   ],
+   "19": [
+    38448,
+    41616,
+    34128,
+    37600
+   ]
+  },
+  "lost_share_of_supervision": 0.0
+ }
+}

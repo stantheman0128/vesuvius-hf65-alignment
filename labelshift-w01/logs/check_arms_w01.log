@@ -1,0 +1,27 @@
+ok   w01 held-out boxes recomputed == manifest [[13300, 15759, 15598, 17449], [35956, 38752, 29289, 33116], [38559, 41869, 33943, 37531]]
+ok   w01 guard boxes recomputed == manifest
+w01: fit offset over the supervised canvas: dy +49.3 to +257.3 px, dx -158.0 to -42.0 px; |d| up to 288.0 px
+ok   w01 AS inklabels: level 0 differs from the definition at 0 px
+ok   w01 AS supervision_mask: level 0 differs from the definition at 0 px
+ok   w01 AS validation_mask: level 0 differs from the definition at 0 px
+ok   w01 C0 inklabels: level 0 differs from the definition at 0 px
+ok   w01 C0 supervision_mask: level 0 differs from the definition at 0 px
+ok   w01 C0 validation_mask: level 0 differs from the definition at 0 px
+ok   w01 AS inklabels: levels 1 to 5 differ from level 0 [::2^l] at 0 px
+ok   w01 AS supervision_mask: levels 1 to 5 differ from level 0 [::2^l] at 0 px
+ok   w01 AS validation_mask: levels 1 to 5 differ from level 0 [::2^l] at 0 px
+ok   w01 C0 inklabels: levels 1 to 5 differ from level 0 [::2^l] at 0 px
+ok   w01 C0 supervision_mask: levels 1 to 5 differ from level 0 [::2^l] at 0 px
+ok   w01 C0 validation_mask: levels 1 to 5 differ from level 0 [::2^l] at 0 px
+ok   w01 AS inklabels: nonzero per level [34373332, 8592117, 2148150, 537039, 134323, 33601] == manifest
+ok   w01 AS supervision_mask: nonzero per level [114335744, 28583936, 7145984, 1786430, 446616, 111659] == manifest
+ok   w01 AS validation_mask: nonzero per level [18030085, 4506657, 1126333, 281759, 70435, 17606] == manifest
+ok   w01 C0 inklabels: nonzero per level [34356961, 8583850, 2146591, 536776, 134172, 33511] == manifest
+ok   w01 C0 supervision_mask: nonzero per level [114376420, 28596070, 7148925, 1787081, 446813, 111718] == manifest
+ok   w01 C0 validation_mask: nonzero per level [18030085, 4506657, 1126333, 281759, 70435, 17606] == manifest
+ok   w01: every arm, array and level is nonzero
+w01: training area (outside GUARD), level 0: 124991940 cells supervised in AS or C0; supervision differs at 21271716 (17.0%); where both are supervised the ink label differs at 23125309 cells
+w01: 699 s
+ALL_OK
+699.28_s_wall_11085628_kB_maxrss
+exit 0

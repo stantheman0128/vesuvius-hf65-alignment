@@ -1,0 +1,10 @@
+ok   w01 E0 inklabels sha256 == C0
+ok   w01 E0 supervision_mask sha256 == C0
+ok   w01 E0 validation_mask sha256 == C0
+ok   w01 EAS validation_mask box 13232,15648: as shipped inside True, zero outside True, nonzero inside 3222592
+ok   w01 EAS inklabels box 13232,15648: as shipped inside True
+ok   w01 EAS validation_mask box 35792,29392: as shipped inside True, zero outside True, nonzero inside 7705600
+ok   w01 EAS inklabels box 35792,29392: as shipped inside True
+ok   w01 EAS validation_mask box 38384,34064: as shipped inside True, zero outside True, nonzero inside 7095344
+ok   w01 EAS inklabels box 38384,34064: as shipped inside True
+ALL_OK

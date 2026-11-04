@@ -1,0 +1,22 @@
+[18:02:27] CPU_DRYRUN: no GPU or driver check, no venv install, no villa clone
+villa 37d1897fb3e7a02ecba21de6efb6912d73cee5af (archive)
+python 3.14.6
+6 files, 6 downloaded, 499623060 bytes, 47 s
+phercparis4/w01_20230702185753_r15/meta.json: OK
+phercparis4/w01_20230702185753_r15/w01_20230702185753_r15_inklabels.tif: OK
+phercparis4/w01_20230702185753_r15/w01_20230702185753_r15_supervision_mask.tif: OK
+phercparis4/w01_20230702185753_r15/x.tif: OK
+phercparis4/w01_20230702185753_r15/y.tif: OK
+phercparis4/w01_20230702185753_r15/z.tif: OK
+[18:03:14] building label arms AS, C0
+{"segment": "w01", "tiles": 52, "seconds": 177.7, "level0_nonzero": {"AS": {"inklabels": 34373332, "supervision_mask": 114335744, "validation_mask": 18030085}, "C0": {"inklabels": 34356961, "supervision_mask": 114376420, "validation_mask": 18030085}}}
+/home/stan/labelshift-w01-dryrun/labels/full/manifest.json: label arms match the reference build
+[18:06:15] building eval label folders E0, EAS
+{"segment": "w01", "tiles": 52, "seconds": 161.1, "level0_nonzero": {"E0": {"inklabels": 34356961, "supervision_mask": 114376420, "validation_mask": 18030085}, "EAS": {"inklabels": 34354429, "supervision_mask": 114376420, "validation_mask": 18023536}}}
+/home/stan/labelshift-w01-dryrun/labels/full_eval/manifest.json: label arms match the reference build
+[18:09:18] eval label folders checked (E0 equals C0 byte for byte, EAS equals the shipped labels in its boxes)
+477M	/home/stan/labelshift-w01-dryrun/data/raw
+154M	/home/stan/labelshift-w01-dryrun/labels/full
+154M	/home/stan/labelshift-w01-dryrun/labels/full_eval
+412.41_s_wall_11763868_kB_maxrss_of_largest_child
+prepare STEPS=6000 exit 0

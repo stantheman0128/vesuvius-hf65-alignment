@@ -1,0 +1,27 @@
+-rwxrwxrwx 1 stan stan 44750 Nov  4  2026 w01_bundle.tar.gz
+labelshift-w01/desk_launch.sh
+labelshift-w01/pod_run.sh
+labelshift-w01/PREREG.md
+labelshift-w01/regions.json
+labelshift-w01/labels/manifest_full.json
+labelshift-w01/labels/manifest_eval.json
+labelshift-w01/logs/raw_sha256.txt
+labelshift-w01/scripts/fetch_files.py
+labelshift-w01/scripts/build_labels.py
+labelshift-w01/scripts/build_eval_labels.py
+labelshift-w01/scripts/labellib.py
+labelshift-w01/scripts/check_eval_labels.py
+labelshift-w01/scripts/mkconfig.py
+labelshift-w01/scripts/eval_config_for.py
+labelshift-w01/scripts/launch.py
+labelshift-w01/scripts/eval_heldout.py
+labelshift-w01/scripts/check_gpu_config.py
+labelshift-w01/scripts/count_val_patches.py
+labelshift-w01/scripts/decide_w01.py
+labelshift-w01/scripts/pod_requirements.txt
+labelshift-w01/scripts/hf65/
+labelshift-w01/scripts/hf65/apply_fit.py
+labelshift-w01/scripts/hf65/common.py
+labelshift-w01/scripts/hf65/lib.py
+labelshift-w01/scripts/hf65/SOURCE.txt
+labelshift-w01/scripts/hf65/sources.py

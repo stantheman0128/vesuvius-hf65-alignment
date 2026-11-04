@@ -1,0 +1,111 @@
+=== inklabels, zarr_l2to5
+tif w01_20230702185753_r15_inklabels.tif (65419, 56889) uint8 values [  0 255]
+level 0: 0/3416 listed chunks present, 0 px compared, 0 differ from tif[::1, ::1], 0 nonzero px outside slice 32
+level 1: 0/1188 listed chunks present, 0 px compared, 0 differ from tif[::2, ::2], 0 nonzero px outside slice 32
+level 2: 474/474 listed chunks present, 7766016 px compared, 0 differ from tif[::4, ::4], 0 nonzero px outside slice 32
+level 3: 192/192 listed chunks present, 3145728 px compared, 0 differ from tif[::8, ::8], 0 nonzero px outside slice 32
+level 4: 96/96 listed chunks present, 1572864 px compared, 0 differ from tif[::16, ::16], 0 nonzero px outside slice 32
+level 5: 50/50 listed chunks present, 819200 px compared, 0 differ from tif[::32, ::32], 0 nonzero px outside slice 32
+=== inklabels, zarr
+tif w01_20230702185753_r15_inklabels.tif (65419, 56889) uint8 values [  0 255]
+level 0: 3416/3416 listed chunks present, 55967744 px compared, 0 differ from tif[::1, ::1], 0 nonzero px outside slice 32
+level 1: 1188/1188 listed chunks present, 19464192 px compared, 0 differ from tif[::2, ::2], 0 nonzero px outside slice 32
+level 2: 441/474 listed chunks present, 7225344 px compared, 0 differ from tif[::4, ::4], 0 nonzero px outside slice 32
+Traceback (most recent call last):
+  File "/mnt/c/Users/stans/Projects/_scratch/2026-10-22-layout-constraints/publish/hf65-offset-2026-10-30/labelshift-w01/scripts/check_tif_vs_zarr.py", line 28, in <module>
+    a = zarr.open_array(os.path.join(zdir, lvl), mode="r")
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/api/synchronous.py", line 1454, in open_array
+    sync(
+    ~~~~^
+        async_api.open_array(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        )
+        ^
+    )
+    ^
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/core/sync.py", line 155, in sync
+    raise return_result
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/core/sync.py", line 116, in _runner
+    return await coro
+           ^^^^^^^^^^
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/api/asynchronous.py", line 1362, in open_array
+    store_path = await make_store_path(store, path=path, mode=mode, storage_options=storage_options)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/storage/_common.py", line 481, in make_store_path
+    store = await make_store(store_like, mode=mode, storage_options=storage_options)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/storage/_common.py", line 405, in make_store
+    return await make_store(Path(parsed.path), mode=mode, storage_options=storage_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/storage/_common.py", line 397, in make_store
+    return await LocalStore.open(root=store_like, mode=mode, read_only=_read_only)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/storage/_local.py", line 266, in open
+    await store._open()
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/storage/_local.py", line 274, in _open
+    await asyncio.to_thread(_ensure_root, self.root, create=not self.read_only)
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/threads.py", line 26, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/storage/_local.py", line 143, in _ensure_root
+    raise FileNotFoundError(f"{root} does not exist")
+FileNotFoundError: /home/stan/labelshift-w01/data/zarr/phercparis4/w01_20230702185753_r15/w01_20230702185753_r15_inklabels.zarr/3 does not exist
+=== supervision_mask, zarr_l2to5
+tif w01_20230702185753_r15_supervision_mask.tif (65419, 56889) uint8 values [  0 255]
+level 0: 0/9032 listed chunks present, 0 px compared, 0 differ from tif[::1, ::1], 0 nonzero px outside slice 32
+level 1: 0/2530 listed chunks present, 0 px compared, 0 differ from tif[::2, ::2], 0 nonzero px outside slice 32
+level 2: 780/780 listed chunks present, 12779520 px compared, 0 differ from tif[::4, ::4], 0 nonzero px outside slice 32
+level 3: 267/267 listed chunks present, 4374528 px compared, 0 differ from tif[::8, ::8], 0 nonzero px outside slice 32
+level 4: 111/111 listed chunks present, 1818624 px compared, 0 differ from tif[::16, ::16], 0 nonzero px outside slice 32
+level 5: 52/52 listed chunks present, 851968 px compared, 0 differ from tif[::32, ::32], 0 nonzero px outside slice 32
+=== supervision_mask, zarr
+tif w01_20230702185753_r15_supervision_mask.tif (65419, 56889) uint8 values [  0 255]
+Traceback (most recent call last):
+  File "/mnt/c/Users/stans/Projects/_scratch/2026-10-22-layout-constraints/publish/hf65-offset-2026-10-30/labelshift-w01/scripts/check_tif_vs_zarr.py", line 28, in <module>
+    a = zarr.open_array(os.path.join(zdir, lvl), mode="r")
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/api/synchronous.py", line 1454, in open_array
+    sync(
+    ~~~~^
+        async_api.open_array(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        )
+        ^
+    )
+    ^
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/core/sync.py", line 155, in sync
+    raise return_result
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/core/sync.py", line 116, in _runner
+    return await coro
+           ^^^^^^^^^^
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/api/asynchronous.py", line 1362, in open_array
+    store_path = await make_store_path(store, path=path, mode=mode, storage_options=storage_options)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/storage/_common.py", line 481, in make_store_path
+    store = await make_store(store_like, mode=mode, storage_options=storage_options)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/storage/_common.py", line 405, in make_store
+    return await make_store(Path(parsed.path), mode=mode, storage_options=storage_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/storage/_common.py", line 397, in make_store
+    return await LocalStore.open(root=store_like, mode=mode, read_only=_read_only)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/storage/_local.py", line 266, in open
+    await store._open()
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/storage/_local.py", line 274, in _open
+    await asyncio.to_thread(_ensure_root, self.root, create=not self.read_only)
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/asyncio/threads.py", line 26, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/home/stan/.local/share/uv/python/cpython-3.14.6-linux-x86_64-gnu/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/home/stan/venvs/fix2277/lib/python3.14/site-packages/zarr/storage/_local.py", line 143, in _ensure_root
+    raise FileNotFoundError(f"{root} does not exist")
+FileNotFoundError: /home/stan/labelshift-w01/data/zarr/phercparis4/w01_20230702185753_r15/w01_20230702185753_r15_supervision_mask.zarr/0 does not exist

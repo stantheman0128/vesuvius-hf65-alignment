@@ -1,0 +1,3 @@
+{"segment": "w01", "tiles": 52, "seconds": 158.4, "level0_nonzero": {"AS": {"inklabels": 34373332, "supervision_mask": 114335744, "validation_mask": 18030085}, "C0": {"inklabels": 34356961, "supervision_mask": 114376420, "validation_mask": 18030085}}}
+163.31_s_wall_11764568_kB_maxrss
+exit 0

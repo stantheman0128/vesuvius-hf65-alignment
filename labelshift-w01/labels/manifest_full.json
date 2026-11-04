@@ -1,0 +1,190 @@
+{
+ "regions": {
+  "_doc": "Experiment A, w01 only. Boxes are level-0 canvas px [y0, y1, x0, x1] of supervised components from logs/components_w01.log (scripts/list_components.py: level-4 supervision after a 48 px dilation). The held-out ids 5, 17, 19 (15.0% of the segment's ink at level 4) were chosen by scripts/pick_heldout.py, frozen before the component list existed (logs/heldout_rule_timestamp.txt), output in logs/pick_heldout_w01.log and logs/heldout_w01.json. build_labels.py maps them into the tifxyz frame with the HF65 w01 correction and pads by margin_px; guard_px of supervision around every held-out box is dropped from training in both arms. The smoke boxes are only read by build_labels.py --smoke (a CPU smoke test that A does not need): the smallest training component (id 25) and the smallest held-out component (id 5).",
+  "margin_px": 64,
+  "guard_px": 512,
+  "shift_cell_level0_px": 4,
+  "segments": {
+   "w01": {
+    "scroll": "phercparis4",
+    "segment": "w01_20230702185753_r15",
+    "fit_key": "w01",
+    "ink_tif": "w01_20230702185753_r15_inklabels.tif",
+    "sup_tif": "w01_20230702185753_r15_supervision_mask.tif",
+    "volume_path": "s3://vesuvius-challenge-open-data/PHercParis4/volumes/20260411134726-2.400um-0.2m-78keV-masked.zarr/",
+    "heldout": {
+     "5": [
+      13296,
+      15616,
+      15712,
+      17440
+     ],
+     "17": [
+      35856,
+      38512,
+      29456,
+      33168
+     ],
+     "19": [
+      38448,
+      41616,
+      34128,
+      37600
+     ]
+    },
+    "smoke_train": {
+     "25": [
+      55296,
+      56928,
+      37136,
+      38528
+     ]
+    },
+    "smoke_heldout": {
+     "5": [
+      13296,
+      15616,
+      15712,
+      17440
+     ]
+    }
+   }
+  }
+ },
+ "arms": "AS,C0",
+ "smoke": false,
+ "villa_src": "/mnt/c/Users/stans/Projects/_scratch/2026-10-30-labelshift-gpu-prep/trees/main37d1897/vesuvius/src",
+ "segments": {
+  "w01": {
+   "canvas_shape": [
+    65419,
+    56889
+   ],
+   "tifxyz_full_shape": [
+    65698,
+    56669
+   ],
+   "model": "w01/readme",
+   "model_dy": [
+    11.51,
+    0.004263,
+    0.0
+   ],
+   "model_dx": [
+    11.82,
+    0.0,
+    -0.003876
+   ],
+   "heldout_tifxyz_boxes": [
+    [
+     13300,
+     15759,
+     15598,
+     17449
+    ],
+    [
+     35956,
+     38752,
+     29289,
+     33116
+    ],
+    [
+     38559,
+     41869,
+     33943,
+     37531
+    ]
+   ],
+   "guard_boxes": [
+    [
+     12788,
+     16271,
+     15086,
+     17961
+    ],
+    [
+     35444,
+     39264,
+     28777,
+     33628
+    ],
+    [
+     38047,
+     42381,
+     33431,
+     38043
+    ]
+   ],
+   "smoke_train_boxes": null,
+   "smoke_heldout_boxes": null,
+   "nonzero_per_level": {
+    "AS": {
+     "inklabels": [
+      34373332,
+      8592117,
+      2148150,
+      537039,
+      134323,
+      33601
+     ],
+     "supervision_mask": [
+      114335744,
+      28583936,
+      7145984,
+      1786430,
+      446616,
+      111659
+     ],
+     "validation_mask": [
+      18030085,
+      4506657,
+      1126333,
+      281759,
+      70435,
+      17606
+     ]
+    },
+    "C0": {
+     "inklabels": [
+      34356961,
+      8583850,
+      2146591,
+      536776,
+      134172,
+      33511
+     ],
+     "supervision_mask": [
+      114376420,
+      28596070,
+      7148925,
+      1787081,
+      446813,
+      111718
+     ],
+     "validation_mask": [
+      18030085,
+      4506657,
+      1126333,
+      281759,
+      70435,
+      17606
+     ]
+    }
+   },
+   "sha256": {
+    "AS": {
+     "inklabels": "21a5aac4bb453d7c1d869d403650dcccffebd982c45e486a83d860f811b9059b",
+     "supervision_mask": "dfa2da0dd762983451960e1691285cbcecee972caff7e9c5cf7139010e1c752a",
+     "validation_mask": "82044324b6d20de6de84a07223649903ae8e075154cab73a76c3ed9f079f6279"
+    },
+    "C0": {
+     "inklabels": "b5cb2909d053a2f8ffcb8ad8e2063a4028b1dfaee295013a569d61e67c07ec44",
+     "supervision_mask": "0cd66d24f44f6cb5dcd6436b61256c3731d45d1b1208119dfc3a718e9e55cf13",
+     "validation_mask": "82044324b6d20de6de84a07223649903ae8e075154cab73a76c3ed9f079f6279"
+    }
+   },
+   "tiles_written": 52,
+   "seconds": 158.4
+  }
+ }
+}

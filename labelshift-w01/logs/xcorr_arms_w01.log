@@ -1,0 +1,25 @@
+component  1: measured shift (+54, -153) px, fit offset at centre (+53.2, -153.5), difference +0.8, +0.5; overlap at best shift 0.992 of AS ink
+component  2: measured shift (+63, -126) px, fit offset at centre (+66.9, -122.7), difference -3.9, -3.3; overlap at best shift 0.985 of AS ink
+component  3: measured shift (+73, -77) px, fit offset at centre (+72.7, -78.3), difference +0.3, +1.3; overlap at best shift 0.986 of AS ink
+component  4: measured shift (+71, -98) px, fit offset at centre (+72.8, -98.6), difference -1.8, +0.6; overlap at best shift 0.993 of AS ink
+component  6: measured shift (+85, -80) px, fit offset at centre (+85.4, -80.6), difference -0.4, +0.6; overlap at best shift 0.992 of AS ink
+component  7: measured shift (+84, -68) px, fit offset at centre (+85.1, -67.7), difference -1.1, -0.3; overlap at best shift 0.995 of AS ink
+component  8: measured shift (+97, -96) px, fit offset at centre (+96.0, -96.7), difference +1.0, +0.7; overlap at best shift 0.989 of AS ink
+component  9: measured shift (+96, -78) px, fit offset at centre (+96.2, -79.2), difference -0.2, +1.2; overlap at best shift 0.992 of AS ink
+component 10: measured shift (+96, -141) px, fit offset at centre (+97.9, -142.3), difference -1.9, +1.3; overlap at best shift 0.992 of AS ink
+component 11: measured shift (+108, -111) px, fit offset at centre (+109.9, -111.4), difference -1.9, +0.4; overlap at best shift 0.992 of AS ink
+component 12: measured shift (+129, -114) px, fit offset at centre (+127.5, -113.9), difference +1.5, -0.1; overlap at best shift 0.986 of AS ink
+component 13: measured shift (+132, -95) px, fit offset at centre (+131.5, -94.1), difference +0.5, -0.9; overlap at best shift 0.992 of AS ink
+component 14: measured shift (+141, -49) px, fit offset at centre (+139.0, -50.7), difference +2.0, +1.7; overlap at best shift 0.987 of AS ink
+component 15: measured shift (+145, -112) px, fit offset at centre (+144.4, -112.1), difference +0.6, +0.1; overlap at best shift 0.992 of AS ink
+component 16: measured shift (+155, -67) px, fit offset at centre (+155.9, -67.1), difference -0.9, +0.1; overlap at best shift 0.991 of AS ink
+component 18: measured shift (+181, -95) px, fit offset at centre (+179.0, -95.5), difference +2.0, +0.5; overlap at best shift 0.993 of AS ink
+component 20: measured shift (+190, -103) px, fit offset at centre (+191.5, -104.3), difference -1.5, +1.3; overlap at best shift 0.991 of AS ink
+component 21: measured shift (+217, -106) px, fit offset at centre (+216.7, -105.9), difference +0.3, -0.1; overlap at best shift 0.994 of AS ink
+component 22: measured shift (+228, -75) px, fit offset at centre (+229.0, -75.4), difference -1.0, +0.4; overlap at best shift 0.992 of AS ink
+component 23: measured shift (+240, -78) px, fit offset at centre (+240.8, -76.9), difference -0.8, -1.1; overlap at best shift 0.991 of AS ink
+component 24: measured shift (+244, -45) px, fit offset at centre (+242.7, -44.4), difference +1.3, -0.6; overlap at best shift 0.995 of AS ink
+component 25: measured shift (+251, -135) px, fit offset at centre (+250.7, -134.8), difference +0.3, -0.2; overlap at best shift 0.991 of AS ink
+component 26: measured shift (+252, -60) px, fit offset at centre (+253.4, -61.6), difference -1.4, +1.6; overlap at best shift 0.991 of AS ink
+23 training components; largest |measured - predicted| 3.9 px
+exit 0

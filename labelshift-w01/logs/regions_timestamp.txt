@@ -1,0 +1,6 @@
+regions.json for w01 written before any label build or training (no /home/stan/labelshift-w01/labels yet: absent)
+recorded: 2026-11-04 17:54:25 +0800; file mtime: 2026-11-04 17:54:16 +0800
+e8c1ad1bc2ed1b45f1c45233bacc4609c50a5158576b0f9969d861e6c090c00e  regions.json
+e611d74cd01d658c1b0c84fefe4266318daf622c663ad26e6abd71c0c7eccb61  logs/heldout_w01.json
+44c8d148320d0b345303644aab073bb9a25c2ba073fe967e67c10629d3065d02  logs/components_w01.log
+e24374fa9def1e87c0ddb75b9c6b417c5bc29eb1a2e2904f5f74bc17ddf285e4  scripts/pick_heldout.py
