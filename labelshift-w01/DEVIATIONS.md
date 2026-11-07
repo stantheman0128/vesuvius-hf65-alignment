@@ -32,3 +32,11 @@ What changed:
   how long a read waits. A read either returns the same bytes as before or stops the run.
 
 Sections 3 to 7 of PREREG.md are unchanged.
+
+## 2026-11-06: machine restarted between runs
+
+The machine restarted at 11:10 +0800, while `desk_launch.sh` was waiting for the evening slot after the
+seed 29 pair. No training or evaluation was running, and the seed 30 run folders held only their
+`config.json`. `desk_supervise.sh` was started again at 11:24. The launcher skipped the six finished runs,
+wrote the gate line a second time (it rereads C0 seed 27's result on every start) and waited for 19:00 as
+before. Nothing in PREREG.md or the scripts changed.

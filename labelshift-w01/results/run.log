@@ -1,0 +1,27 @@
+[19:16:13] train C0_s27
+[01:13:40] eval C0_s27 on C0 labels ~/labelshift-w01/runs/C0_s27/out/ckpt_012000.pth
+[01:14:53] eval C0_s27 on labels as shipped ~/labelshift-w01/runs/C0_s27/out/ckpt_012000.pth
+[01:16:24] train AS_s27
+[02:51:36] train AS_s27
+[08:38:33] eval AS_s27 on C0 labels ~/labelshift-w01/runs/AS_s27/out/ckpt_012000.pth
+[08:39:42] eval AS_s27 on labels as shipped ~/labelshift-w01/runs/AS_s27/out/ckpt_012000.pth
+gate: C0 seed 27 w01 AUC 0.8380 (gate 0.60)
+[08:40:43] train C0_s28
+[14:33:04] eval C0_s28 on C0 labels ~/labelshift-w01/runs/C0_s28/out/ckpt_012000.pth
+[14:34:18] eval C0_s28 on labels as shipped ~/labelshift-w01/runs/C0_s28/out/ckpt_012000.pth
+[14:35:30] train AS_s28
+[20:25:15] eval AS_s28 on C0 labels ~/labelshift-w01/runs/AS_s28/out/ckpt_012000.pth
+[20:26:17] eval AS_s28 on labels as shipped ~/labelshift-w01/runs/AS_s28/out/ckpt_012000.pth
+[20:27:15] train C0_s29
+[02:13:58] eval C0_s29 on C0 labels ~/labelshift-w01/runs/C0_s29/out/ckpt_012000.pth
+[02:15:13] eval C0_s29 on labels as shipped ~/labelshift-w01/runs/C0_s29/out/ckpt_012000.pth
+[02:16:22] train AS_s29
+[07:54:30] eval AS_s29 on C0 labels ~/labelshift-w01/runs/AS_s29/out/ckpt_012000.pth
+[07:55:30] eval AS_s29 on labels as shipped ~/labelshift-w01/runs/AS_s29/out/ckpt_012000.pth
+gate: C0 seed 27 w01 AUC 0.8380 (gate 0.60)
+[19:15:55] train C0_s30
+[01:56:36] eval C0_s30 on C0 labels ~/labelshift-w01/runs/C0_s30/out/ckpt_012000.pth
+[01:57:53] eval C0_s30 on labels as shipped ~/labelshift-w01/runs/C0_s30/out/ckpt_012000.pth
+[01:59:05] train AS_s30
+[08:16:47] eval AS_s30 on C0 labels ~/labelshift-w01/runs/AS_s30/out/ckpt_012000.pth
+[08:17:49] eval AS_s30 on labels as shipped ~/labelshift-w01/runs/AS_s30/out/ckpt_012000.pth

@@ -1,0 +1,46 @@
+[2026-11-04 18:27:50 +0800] desk_launch start: STEPS=12000 WORKERS=8
+[2026-11-04 18:27:50 +0800] villa 37d1897fb3e7a02ecba21de6efb6912d73cee5af
+[2026-11-04 18:27:50 +0800] estimate: 616 min per run (STEPS x 2.6 s + 40 min of eval, +10%); seed 27 pair 20 h; all 8 runs plus prepare 83 h of machine time, spread over the hours outside the busy windows
+[2026-11-04 18:27:50 +0800] next step needs 60 min and would overlap busy hours; waiting until Wed 2026-11-04 19:00
+[2026-11-04 19:01:56 +0800] another GPU job is running: 351 bash -c cd ~/labelshift && bash desk_tonight2.sh > tonight2.log 2>&1;352 bash desk_tonight2.sh;3104 bash desk_tonight2.sh;; checking again in 10 min
+[2026-11-04 19:11:57 +0800] prepare
+[2026-11-04 19:16:13 +0800] prepare done
+[2026-11-04 19:16:13 +0800] C0 s27 start (estimate 616 min)
+[2026-11-05 01:16:24 +0800] C0 s27 done in 21610 s
+[2026-11-05 01:16:24 +0800] AS s27 start (estimate 378 min)
+[2026-11-05 02:25:32 +0800] STOP: AS s27 failed: [01:13:40] eval C0_s27 on C0 labels ~/labelshift-w01/runs/C0_s27/out/ckpt_012000.pth [01:14:53] eval C0_s27 on labels as shipped ~/labelshift-w01/runs/C0_s27/out/ckpt_012000.pth [01:16:24] train AS_s27 
+[2026-11-05 02:51:23 +0800] manual: AS s27 died on an S3 connect timeout at step 2314; moved its training to ~/labelshift-w01/failed/AS_s27_20261105-025123; next start goes through desk_supervise.sh
+[2026-11-05 02:51:36 +0800] supervise: start desk_launch.sh (AWS_RETRY_MODE=legacy AWS_MAX_ATTEMPTS=14, restart 0 of 2)
+[2026-11-05 02:51:36 +0800] desk_launch start: STEPS=12000 WORKERS=8
+[2026-11-05 02:51:36 +0800] villa 37d1897fb3e7a02ecba21de6efb6912d73cee5af
+[2026-11-05 02:51:36 +0800] estimate: 378 min per run (STEPS x 2.6 s + 40 min of eval, +10%); seed 27 pair 12 h; all 8 runs plus prepare 51 h of machine time, spread over the hours outside the busy windows
+[2026-11-05 02:51:36 +0800] C0 s27 already finished
+[2026-11-05 02:51:36 +0800] AS s27 start (estimate 378 min)
+[2026-11-05 08:40:43 +0800] AS s27 done in 20946 s
+[2026-11-05 08:40:43 +0800] gate: gate: C0 seed 27 w01 AUC 0.8380 (gate 0.60) (rc 0)
+[2026-11-05 08:40:43 +0800] C0 s28 start (estimate 378 min)
+[2026-11-05 14:35:29 +0800] C0 s28 done in 21285 s
+[2026-11-05 14:35:30 +0800] AS s28 start (estimate 378 min)
+[2026-11-05 20:27:15 +0800] AS s28 done in 21104 s
+[2026-11-05 20:27:15 +0800] C0 s29 start (estimate 378 min)
+[2026-11-06 02:16:22 +0800] C0 s29 done in 20946 s
+[2026-11-06 02:16:22 +0800] AS s29 start (estimate 378 min)
+[2026-11-06 07:56:27 +0800] AS s29 done in 20404 s
+[2026-11-06 07:56:27 +0800] next step needs 378 min and would overlap busy hours; waiting until Fri 2026-11-06 19:00
+[2026-11-06 11:24:17 +0800] supervise: start desk_launch.sh (AWS_RETRY_MODE=legacy AWS_MAX_ATTEMPTS=14, restart 0 of 2)
+[2026-11-06 11:24:17 +0800] desk_launch start: STEPS=12000 WORKERS=8
+[2026-11-06 11:24:17 +0800] villa 37d1897fb3e7a02ecba21de6efb6912d73cee5af
+[2026-11-06 11:24:17 +0800] estimate: 378 min per run (STEPS x 2.6 s + 40 min of eval, +10%); seed 27 pair 12 h; all 8 runs plus prepare 51 h of machine time, spread over the hours outside the busy windows
+[2026-11-06 11:24:17 +0800] C0 s27 already finished
+[2026-11-06 11:24:17 +0800] AS s27 already finished
+[2026-11-06 11:24:17 +0800] gate: gate: C0 seed 27 w01 AUC 0.8380 (gate 0.60) (rc 0)
+[2026-11-06 11:24:17 +0800] C0 s28 already finished
+[2026-11-06 11:24:17 +0800] AS s28 already finished
+[2026-11-06 11:24:17 +0800] C0 s29 already finished
+[2026-11-06 11:24:17 +0800] AS s29 already finished
+[2026-11-06 11:24:17 +0800] next step needs 378 min and would overlap busy hours; waiting until Fri 2026-11-06 19:00
+[2026-11-06 19:15:55 +0800] C0 s30 start (estimate 378 min)
+[2026-11-07 01:59:04 +0800] C0 s30 done in 24188 s
+[2026-11-07 01:59:04 +0800] AS s30 start (estimate 423 min)
+[2026-11-07 08:18:47 +0800] AS s30 done in 22781 s
+[2026-11-07 08:18:47 +0800] A done: Outcome: cost measured: d = mean(C0) - mean(AS) = 0.0937, 95% interval 0.0641 to 0.1233 (s = 0.0171, df 6, t = 2.447, n = 4 and 4).
