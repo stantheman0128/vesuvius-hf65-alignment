@@ -33,6 +33,12 @@ The seed noise sits close to October's four-seed figure on w00 (s = 0.0168, `../
 
 On w00, where the shipped offset is -1.6 to +17.4 px in y and -10.0 to +14.5 px in x, the labels as shipped gave no measurable cost (Amendment F, two seeds). A synthetic 128 px move of the corrected w00 labels cost 0.0513 AUC (C32y, Amendment J, four seeds). On w01 the shipped offset runs from +49.3 to +257.3 px in y and from -158.0 to -42.0 px in x, up to 288 px in length (`logs/check_arms_w01.log`). These comparisons are context and are not part of the decision rule.
 
+## Figure
+
+Added on 2026-11-09. [`figure/beforeafter_s29.png`](figure/beforeafter_s29.png) shows the three held-out boxes with the seed 29 checkpoints of both arms. The C0 model draws strokes that follow the letters in all three boxes. In the same places the AS model's map is faint and blurred. How the figure was made and what it checks is in [`figure/README.md`](figure/README.md).
+
+![Held-out boxes 5, 17 and 19 of w01: CT, C0 labels, AS labels, AS model and C0 model ink probability](figure/beforeafter_s29.png)
+
 ## Limits
 
 From `PREREG.md` section 9: one segment, trained on its own; three held-out components of that segment, which are a small sample of w01's ink, so the AUC difference speaks for those three areas; training at volume_scale 2 for 12000 steps (section 4), not at level 0 or with the teacher's 60k-step schedule; and a correction checked in nine w01 regions, six used by its fit and three not.
@@ -47,5 +53,6 @@ Trainer code: villa at 37d1897fb (2026-10-29), as in October. Eight runs on one 
 - `results/runs/<arm>_s<seed>/`: `config.json`; `eval.json` (primary); `eval_AS.json` (secondary); `out/validation_metrics.jsonl`, the trainer's own validation log.
 - `results/failed/AS_s27_20261105-025123/out/validation_metrics.jsonl`: the attempt that stopped on the network error.
 - `results/desk_launch.log` and `results/run.log`: the launcher's logs.
+- `figure/`: the before/after figure for seed 29 with its scripts and provenance, added on 2026-11-09.
 
 Home directories in paths are written as `~`. Checkpoints are not in the repository.

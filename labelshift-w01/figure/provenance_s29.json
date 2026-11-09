@@ -1,0 +1,432 @@
+{
+ "script": "~/figA/render_beforeafter.py",
+ "argv": [
+  "~/figA/render_beforeafter.py",
+  "~/labelshift/villa/vesuvius/src",
+  "~/figA_out/s29",
+  "--seed",
+  "29",
+  "--work",
+  "."
+ ],
+ "plan_only": false,
+ "seed": 29,
+ "villa_src": "~/labelshift/villa/vesuvius/src",
+ "villa_commit": "37d1897fb3e7a02ecba21de6efb6912d73cee5af",
+ "checkpoints": {
+  "AS": {
+   "path": "~/labelshift-w01/runs/AS_s29/out/ckpt_012000.pth",
+   "bytes": 1228582487,
+   "mtime": "2026-11-06T07:53:53+0800",
+   "weights": "ema_model",
+   "top_level_keys": [
+    "config",
+    "ema_model",
+    "ema_optimizer_step",
+    "lr_scheduler",
+    "model",
+    "optimizer",
+    "step",
+    "wandb_run_id"
+   ],
+   "step": 11999
+  },
+  "C0": {
+   "path": "~/labelshift-w01/runs/C0_s29/out/ckpt_012000.pth",
+   "bytes": 1228582487,
+   "mtime": "2026-11-06T02:13:20+0800",
+   "weights": "ema_model",
+   "top_level_keys": [
+    "config",
+    "ema_model",
+    "ema_optimizer_step",
+    "lr_scheduler",
+    "model",
+    "optimizer",
+    "step",
+    "wandb_run_id"
+   ],
+   "step": 11999
+  }
+ },
+ "weights_key": {
+  "AS": "ema_model",
+  "C0": "ema_model"
+ },
+ "device": "NVIDIA GeForce RTX 3070 Ti",
+ "eval_config": "~/labelshift-w01/runs/eval_C0_s29/config.json",
+ "eval_config_copy": "~/figA_out/s29/eval_config_C0_s29.json",
+ "patch_cache_copied": [
+  "flat_ink_patches_dm-labeled_pf-labeled-default-v6-po-0.5-mlc-0.02-pfs-4_ps-128x128x128_labels-auto.json"
+ ],
+ "mixed_precision": "bf16",
+ "mode": "full_3d",
+ "regions": "~/labelshift-w01/regions.json",
+ "manifest": "~/labelshift-w01/labels/full/manifest.json",
+ "margin_px": 64,
+ "hf65_model": "w01/readme",
+ "tifxyz_full_shape": [
+  65698,
+  56669
+ ],
+ "canvas_shape": [
+  65419,
+  56889
+ ],
+ "label_tif_read": {
+  "inklabels": "tifffile+zarr window",
+  "supervision": "tifffile+zarr window"
+ },
+ "flat_factor": 4,
+ "patch_size": [
+  128,
+  128,
+  128
+ ],
+ "label_half_thickness_voxels": 0.75,
+ "normal_steps": [
+  0
+ ],
+ "reduce": "mean",
+ "pad_flat_px": 32,
+ "boxes": {
+  "5": {
+   "canvas_box": [
+    13296,
+    15616,
+    15712,
+    17440
+   ],
+   "scored_box_tifxyz": [
+    13300,
+    15759,
+    15598,
+    17449
+   ],
+   "shipped_box_tifxyz": [
+    13232,
+    15680,
+    15648,
+    17504
+   ],
+   "flat_window": [
+    3276,
+    3972,
+    3867,
+    4408
+   ],
+   "scored_rect_flat": [
+    49,
+    664,
+    32,
+    496
+   ],
+   "shipped_rect_flat": [
+    32,
+    644,
+    45,
+    509
+   ]
+  },
+  "17": {
+   "canvas_box": [
+    35856,
+    38512,
+    29456,
+    33168
+   ],
+   "scored_box_tifxyz": [
+    35956,
+    38752,
+    29289,
+    33116
+   ],
+   "shipped_box_tifxyz": [
+    35792,
+    38576,
+    29392,
+    33232
+   ],
+   "flat_window": [
+    8916,
+    9720,
+    7290,
+    8340
+   ],
+   "scored_rect_flat": [
+    73,
+    772,
+    32,
+    989
+   ],
+   "shipped_rect_flat": [
+    32,
+    728,
+    58,
+    1018
+   ]
+  },
+  "19": {
+   "canvas_box": [
+    38448,
+    41616,
+    34128,
+    37600
+   ],
+   "scored_box_tifxyz": [
+    38559,
+    41869,
+    33943,
+    37531
+   ],
+   "shipped_box_tifxyz": [
+    38384,
+    41680,
+    34064,
+    37664
+   ],
+   "flat_window": [
+    9564,
+    10500,
+    8453,
+    9448
+   ],
+   "scored_rect_flat": [
+    75,
+    904,
+    32,
+    930
+   ],
+   "shipped_rect_flat": [
+    32,
+    856,
+    63,
+    963
+   ]
+  }
+ },
+ "label_checks": {
+  "5": {
+   "c0_labels_vs_C0_zarr_agree": 1.0,
+   "validation_mask_vs_C0_sup_in_scored_box_agree": 1.0,
+   "validation_px": 201586,
+   "as_labels_vs_EAS_zarr_in_shipped_box_agree": 1.0
+  },
+  "17": {
+   "c0_labels_vs_C0_zarr_agree": 1.0,
+   "validation_mask_vs_C0_sup_in_scored_box_agree": 1.0,
+   "validation_px": 481166,
+   "as_labels_vs_EAS_zarr_in_shipped_box_agree": 1.0
+  },
+  "19": {
+   "c0_labels_vs_C0_zarr_agree": 1.0,
+   "validation_mask_vs_C0_sup_in_scored_box_agree": 1.0,
+   "validation_px": 443581,
+   "as_labels_vs_EAS_zarr_in_shipped_box_agree": 1.0
+  }
+ },
+ "plan": {
+  "patches": 685,
+  "validation_patches_total": 334,
+  "validation_patches_in_windows": 334,
+  "validation_patches_off_lattice": 0,
+  "corner_stride_scan_px": 16,
+  "scan_scale": 4,
+  "scale_y": 3.9990215264187867,
+  "scale_x": 3.9990215264187867,
+  "surface_z": 9473
+ },
+ "sanity_2d": {
+  "5": {
+   "label_roundtrip_ink_px": 243317,
+   "label_roundtrip_hit_fraction": 1.0,
+   "auc2d_AS_vs_C0_labels_in_validation_mask": 0.7650135308472865,
+   "validation_px_with_prediction_AS": 201586,
+   "auc2d_C0_vs_C0_labels_in_validation_mask": 0.8551165486081741,
+   "validation_px_with_prediction_C0": 201586
+  },
+  "17": {
+   "label_roundtrip_ink_px": 476305,
+   "label_roundtrip_hit_fraction": 1.0,
+   "auc2d_AS_vs_C0_labels_in_validation_mask": 0.8119382261776982,
+   "validation_px_with_prediction_AS": 481166,
+   "auc2d_C0_vs_C0_labels_in_validation_mask": 0.8729679566428096,
+   "validation_px_with_prediction_C0": 481166
+  },
+  "19": {
+   "label_roundtrip_ink_px": 510090,
+   "label_roundtrip_hit_fraction": 1.0,
+   "auc2d_AS_vs_C0_labels_in_validation_mask": 0.7884106007559166,
+   "validation_px_with_prediction_AS": 443581,
+   "auc2d_C0_vs_C0_labels_in_validation_mask": 0.8300608230022063,
+   "validation_px_with_prediction_C0": 443581
+  }
+ },
+ "failed_patches": 0,
+ "failed_examples": [],
+ "inadmissible_patches": 232,
+ "inadmissible_examples": [
+  [
+   9409,
+   3199,
+   3775,
+   9537,
+   3327,
+   3903
+  ],
+  [
+   9409,
+   3199,
+   3839,
+   9537,
+   3327,
+   3967
+  ],
+  [
+   9409,
+   3199,
+   3903,
+   9537,
+   3327,
+   4031
+  ],
+  [
+   9409,
+   3199,
+   3967,
+   9537,
+   3327,
+   4095
+  ],
+  [
+   9409,
+   3199,
+   4031,
+   9537,
+   3327,
+   4159
+  ],
+  [
+   9409,
+   3199,
+   4095,
+   9537,
+   3327,
+   4223
+  ],
+  [
+   9409,
+   3199,
+   4159,
+   9537,
+   3327,
+   4287
+  ],
+  [
+   9409,
+   3199,
+   4223,
+   9537,
+   3327,
+   4351
+  ],
+  [
+   9409,
+   3199,
+   4287,
+   9537,
+   3327,
+   4415
+  ],
+  [
+   9409,
+   3199,
+   4351,
+   9537,
+   3327,
+   4479
+  ],
+  [
+   9409,
+   3263,
+   3775,
+   9537,
+   3391,
+   3903
+  ],
+  [
+   9409,
+   3263,
+   3839,
+   9537,
+   3391,
+   3967
+  ],
+  [
+   9409,
+   3263,
+   4351,
+   9537,
+   3391,
+   4479
+  ],
+  [
+   9409,
+   3327,
+   3775,
+   9537,
+   3455,
+   3903
+  ],
+  [
+   9409,
+   3327,
+   4351,
+   9537,
+   3455,
+   4479
+  ],
+  [
+   9409,
+   3519,
+   4351,
+   9537,
+   3647,
+   4479
+  ],
+  [
+   9409,
+   3583,
+   4351,
+   9537,
+   3711,
+   4479
+  ],
+  [
+   9409,
+   3647,
+   3775,
+   9537,
+   3775,
+   3903
+  ],
+  [
+   9409,
+   3647,
+   4351,
+   9537,
+   3775,
+   4479
+  ],
+  [
+   9409,
+   3711,
+   3775,
+   9537,
+   3839,
+   3903
+  ]
+ ],
+ "seconds": 152.2,
+ "note": "auc2d_* is a readout sanity check on the flat grid, not A's scored 3D-voxel metric (RESULTS.md)"
+}
