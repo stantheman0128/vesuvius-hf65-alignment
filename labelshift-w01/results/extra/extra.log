@@ -1,0 +1,13 @@
+[2026-11-11 01:08:18 +0800] extra_seeds start: queue C0:31 AS:31 C0:32 AS:32, STEPS 12000, WORKERS 8, AWS_MAX_ATTEMPTS 14
+[2026-11-11 01:08:18 +0800] prepare: configs for seeds 31 32, inputs checked again
+[2026-11-11 01:08:31 +0800] prepare done
+[2026-11-11 01:08:31 +0800] C0 s31 start; stopped at Wed 2026-11-11 08:55 if not done
+[2026-11-11 04:43:48 +0800] C0 s31 done in 12916 s: AUC on C0 labels 0.8215, on labels as shipped 0.6272
+[2026-11-11 04:43:48 +0800] a run needs up to 423 min and would reach the busy window at Wed 2026-11-11 09:00; waiting until Wed 2026-11-11 20:00
+[2026-11-11 20:35:58 +0800] AS s31 start; stopped at Fri 2026-11-13 08:55 if not done
+[2026-11-12 01:28:26 +0800] AS s31 done in 17547 s: AUC on C0 labels 0.7573, on labels as shipped 0.6090
+[2026-11-12 01:28:26 +0800] C0 s32 start; stopped at Fri 2026-11-13 08:55 if not done
+[2026-11-12 07:22:47 +0800] C0 s32 done in 21260 s: AUC on C0 labels 0.8374, on labels as shipped 0.6359
+[2026-11-12 07:22:47 +0800] AS s32 start; stopped at Fri 2026-11-13 08:55 if not done
+[2026-11-12 13:13:18 +0800] AS s32 done in 21030 s: AUC on C0 labels 0.7679, on labels as shipped 0.6138
+[2026-11-12 13:13:18 +0800] queue done

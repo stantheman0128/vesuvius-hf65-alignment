@@ -23,7 +23,7 @@ The lower end of the interval is above zero, so section 7 gives "cost measured".
 
 Primary means: C0 0.8370, AS 0.7434. Every C0 run scored above every AS run. With the same seed, C0 was ahead by 0.0707 to 0.1249. The difference is 28% of C0's headroom above chance (0.3370).
 
-Each score comes from the EMA weights at step 12000. The primary reading covers all 334 held-out patches and the secondary reading all 343. `scripts/decide_w01.py` wrote the table and the outcome line to `results/results.md`. A separate recomputation from the `eval.json` and `eval_AS.json` files gives the same numbers to four decimals.
+Each score comes from the EMA weights at step 12000. The primary reading covers 333 distinct held-out patches plus one repeat that stands in for patch 63, which has no admissible crop; the secondary reading covers all 343. (Corrected on 2026-11-12; the first version said all 334. See `ADDENDUM.md`.) `scripts/decide_w01.py` wrote the table and the outcome line to `results/results.md`. A separate recomputation from the `eval.json` and `eval_AS.json` files gives the same numbers to four decimals.
 
 The secondary reading is listed without a verdict (section 6). Scored against the labels as shipped inside the held-out boxes, C0 still came out ahead: 0.6320 against 0.5991, d = 0.0329, interval 0.0061 to 0.0596.
 
@@ -38,6 +38,10 @@ On w00, where the shipped offset is -1.6 to +17.4 px in y and -10.0 to +14.5 px 
 Added on 2026-11-09. [`figure/beforeafter_s29.png`](figure/beforeafter_s29.png) shows the three held-out boxes with the seed 29 checkpoints of both arms. The C0 model draws strokes that follow the letters in all three boxes. In the same places the AS model's map is faint and blurred. How the figure was made and what it checks is in [`figure/README.md`](figure/README.md).
 
 ![Held-out boxes 5, 17 and 19 of w01: CT, C0 labels, AS labels, AS model and C0 model ink probability](figure/beforeafter_s29.png)
+
+## Seeds 31 and 32
+
+Added on 2026-11-12. After this result was published, both arms were trained again with seeds 31 and 32. All six C0 runs scored above all six AS runs, and over six seeds d = 0.0847, 95% interval 0.0644 to 0.1051. These runs were not pre-registered, so the outcome above still rests on seeds 27 to 30. [`ADDENDUM.md`](ADDENDUM.md) has the details and the patch 63 correction.
 
 ## Limits
 
@@ -54,5 +58,6 @@ Trainer code: villa at 37d1897fb (2026-10-29), as in October. Eight runs on one 
 - `results/failed/AS_s27_20261105-025123/out/validation_metrics.jsonl`: the attempt that stopped on the network error.
 - `results/desk_launch.log` and `results/run.log`: the launcher's logs.
 - `figure/`: the before/after figure for seed 29 with its scripts and provenance, added on 2026-11-09.
+- `ADDENDUM.md`, `results/extra/`, `results/addendum.md` and `extra_seeds.sh`: seeds 31 and 32, added on 2026-11-12.
 
 Home directories in paths are written as `~`. Checkpoints are not in the repository.
