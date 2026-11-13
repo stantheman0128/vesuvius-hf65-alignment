@@ -100,6 +100,8 @@ Corrected on 2026-11-13. This section used to say that a constant row's (dy_a, d
 - The transfer kernel stretches the label onto the TIFXYZ extent before it subtracts the offset (`label_index` in `vc_reader/src/cpp/projection/transfer.hpp`). The Paris4 slopes are that same size mismatch, so inside the tool each Paris4 row also comes down to one constant per axis. Over the whole canvas that constant stays within 0.5 px of the row's linear model on all eight rows.
 - I checked this on the real w01 and w00 files with `transfer single`, the segment's own tifxyz as source and target, and one constant. Inside the supervised area 99.9% of the output pixels equal the label resampled by `apply_fit.py`, on both segments. With no offset it is 97.8% on w01 and 97.2% on w00.
 
+The flag values for all 26 rows, in both frames, are in `transfer_tool/offsets_transfer_frame.csv`. `transfer_tool/README.md` has the derivation and the two pixel checks.
+
 ## Validation table
 
 | segment | group | region | sample | before dy, dx | model at centre | after residual dy, dx | after NCC | method B dy, dx |

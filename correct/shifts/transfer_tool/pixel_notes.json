@@ -1,0 +1,4 @@
+{
+ "w01": "partly: the w01 run used the affine3 refit constant 11.3181 11.1463, not this row's model; tool output vs that model on the tool grid 99.985% equal, ink IoU 0.9994; vs the model on the loader grid 99.905% equal, ink IoU 0.9963",
+ "w00": "yes: DY DX run vs this row on the tool grid 99.980% equal, ink IoU 0.9991, on the loader grid 99.875% equal, ink IoU 0.9945; loader_DY loader_DX run vs this row on the loader grid 99.986% equal, ink IoU 0.9994; no-offset control on the loader grid 97.216% equal, ink IoU 0.8851"
+}

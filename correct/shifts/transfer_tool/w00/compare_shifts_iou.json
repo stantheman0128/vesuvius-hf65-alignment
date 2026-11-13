@@ -1,0 +1,212 @@
+{
+  "far corner (max row+col)": {
+    "offset": {
+      "iou_peak_shift": [
+        0.8544105016846874,
+        0.9838347404077262
+      ],
+      "iou_at_peak": 0.9990033442472329,
+      "iou_at_zero_shift": 0.993272747358812
+    },
+    "control": {
+      "iou_peak_shift": [
+        -20.205282013112537,
+        11.98998489424311
+      ],
+      "iou_at_peak": 0.9987030715394307,
+      "iou_at_zero_shift": null
+    },
+    "loader": {
+      "iou_peak_shift": [
+        0.000999773631794023,
+        0.09065539323643015
+      ],
+      "iou_at_peak": 0.9993415212607052,
+      "iou_at_zero_shift": 0.9993415212607052
+    },
+    "AF_tool": {
+      "iou_peak_shift": [
+        0.8723747190390616,
+        0.810271868326491
+      ],
+      "iou_at_peak": 0.9980397042620373,
+      "iou_at_zero_shift": 0.994218621471031
+    },
+    "SHIP": {
+      "iou_peak_shift": [
+        -3.973209735864102,
+        -9.715370426264696
+      ],
+      "iou_at_peak": 0.9982652842140863,
+      "iou_at_zero_shift": null
+    }
+  },
+  "top-left (min row+col)": {
+    "offset": {
+      "iou_peak_shift": [
+        0.8248820935804184,
+        0.08101212666761488
+      ],
+      "iou_at_peak": 0.9977167072515101,
+      "iou_at_zero_shift": 0.9946216300986631
+    },
+    "control": {
+      "iou_peak_shift": [
+        -20.835849614386476,
+        11.0873442580286
+      ],
+      "iou_at_peak": 0.9977714620642544,
+      "iou_at_zero_shift": null
+    },
+    "loader": {
+      "iou_peak_shift": [
+        0.015183464112058818,
+        -0.2259357161865961
+      ],
+      "iou_at_peak": 0.9987173104024438,
+      "iou_at_zero_shift": 0.9987173104024438
+    },
+    "AF_tool": {
+      "iou_peak_shift": [
+        0.7209142932644673,
+        0.5691142123574763
+      ],
+      "iou_at_peak": 0.9958394569396426,
+      "iou_at_zero_shift": 0.9941137984933175
+    },
+    "SHIP": {
+      "iou_peak_shift": [
+        -12.98481653588794,
+        7.774064283813404
+      ],
+      "iou_at_peak": 0.9987173104024438,
+      "iou_at_zero_shift": null
+    }
+  },
+  "top-right (max col-row)": {
+    "offset": {
+      "iou_peak_shift": [
+        0.8942882376480092,
+        0.7932209959439656
+      ],
+      "iou_at_peak": 0.9980790874250942,
+      "iou_at_zero_shift": 0.9937853194313315
+    },
+    "control": {
+      "iou_peak_shift": [
+        -20.57114281375649,
+        11.793963032699375
+      ],
+      "iou_at_peak": 0.9967860106840875,
+      "iou_at_zero_shift": null
+    },
+    "loader": {
+      "iou_peak_shift": [
+        0.000284692615939381,
+        0.17527399993832068
+      ],
+      "iou_at_peak": 0.9989751569826428,
+      "iou_at_zero_shift": 0.9989751569826428
+    },
+    "AF_tool": {
+      "iou_peak_shift": [
+        0.8608769965267973,
+        0.5407515997888235
+      ],
+      "iou_at_peak": 0.9971904024834101,
+      "iou_at_zero_shift": 0.9946045026913336
+    },
+    "SHIP": {
+      "iou_peak_shift": [
+        -15.64122276955455,
+        -12.661711196974371
+      ],
+      "iou_at_peak": 0.9962597535496525,
+      "iou_at_zero_shift": null
+    }
+  },
+  "bottom-left (max row-col)": {
+    "offset": {
+      "iou_peak_shift": [
+        0.9520209820633772,
+        0.2201311197404503
+      ],
+      "iou_at_peak": 0.9975096947616446,
+      "iou_at_zero_shift": 0.9952760545178797
+    },
+    "control": {
+      "iou_peak_shift": [
+        -20.889655853982408,
+        11.25898274278377
+      ],
+      "iou_at_peak": 0.9971990203272053,
+      "iou_at_zero_shift": null
+    },
+    "loader": {
+      "iou_peak_shift": [
+        0.006089205205230791,
+        -0.4962167335649798
+      ],
+      "iou_at_peak": 0.9964751958224544,
+      "iou_at_zero_shift": 0.9964751958224544
+    },
+    "AF_tool": {
+      "iou_peak_shift": [
+        0.9509817277470094,
+        0.48659622403519015
+      ],
+      "iou_at_peak": 0.9962208446027367,
+      "iou_at_zero_shift": 0.9941048816127813
+    },
+    "SHIP": {
+      "iou_peak_shift": [
+        -3.3712084006819234,
+        9.500000000000009
+      ],
+      "iou_at_peak": 0.9953906406909018,
+      "iou_at_zero_shift": null
+    }
+  },
+  "centre": {
+    "offset": {
+      "iou_peak_shift": [
+        0.3370601585215516,
+        0.9503280436350614
+      ],
+      "iou_at_peak": 0.9977216344471572,
+      "iou_at_zero_shift": 0.9941758013179015
+    },
+    "control": {
+      "iou_peak_shift": [
+        -20.706509518152693,
+        11.953017867856282
+      ],
+      "iou_at_peak": 0.9978612578564762,
+      "iou_at_zero_shift": null
+    },
+    "loader": {
+      "iou_peak_shift": [
+        -0.0006229971529349072,
+        0.00670720160553524
+      ],
+      "iou_at_peak": 0.9999173869085788,
+      "iou_at_zero_shift": 0.9999173869085788
+    },
+    "AF_tool": {
+      "iou_peak_shift": [
+        0.33241954286673947,
+        0.9508738443372048
+      ],
+      "iou_at_peak": 0.9977373252865203,
+      "iou_at_zero_shift": 0.9941835821598455
+    },
+    "SHIP": {
+      "iou_peak_shift": [
+        -7.321295632774298,
+        -5.596567856694793
+      ],
+      "iou_at_peak": 0.9957564152725576,
+      "iou_at_zero_shift": null
+    }
+  }
+}

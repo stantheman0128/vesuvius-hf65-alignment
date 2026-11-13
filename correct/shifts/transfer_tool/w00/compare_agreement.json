@@ -1,0 +1,89 @@
+{
+  "model": {
+    "name": "w00/readme",
+    "dy": [
+      -20.7,
+      0.000993,
+      0.0
+    ],
+    "dx": [
+      11.09,
+      0.0,
+      -0.000663
+    ]
+  },
+  "region_pixels": 95963921,
+  "pairs": {
+    "offset~AF": {
+      "compared": 95963921,
+      "equal": 95844032,
+      "ink_inter": 21851077,
+      "ink_union": 21970966,
+      "ink_a": 21903921,
+      "ink_b": 21918122,
+      "fraction_equal": 0.9987506867294428,
+      "ink_iou": 0.9945432986423992
+    },
+    "control~AF": {
+      "compared": 95963921,
+      "equal": 93292012,
+      "ink_inter": 20581645,
+      "ink_union": 23253554,
+      "ink_a": 21917077,
+      "ink_b": 21918122,
+      "fraction_equal": 0.9721571506024644,
+      "ink_iou": 0.8850967469316733
+    },
+    "offset~AF_tool": {
+      "compared": 95963921,
+      "equal": 95945170,
+      "ink_inter": 21893737,
+      "ink_union": 21912488,
+      "ink_a": 21903921,
+      "ink_b": 21902304,
+      "fraction_equal": 0.9998046036489068,
+      "ink_iou": 0.9991442779112988
+    },
+    "loader~AF": {
+      "compared": 95963921,
+      "equal": 95950518,
+      "ink_inter": 21912081,
+      "ink_union": 21925484,
+      "ink_a": 21919443,
+      "ink_b": 21918122,
+      "fraction_equal": 0.9998603329265797,
+      "ink_iou": 0.9993887022060721
+    },
+    "loader~AF_tool": {
+      "compared": 95963921,
+      "equal": 95840900,
+      "ink_inter": 21849363,
+      "ink_union": 21972384,
+      "ink_a": 21919443,
+      "ink_b": 21902304,
+      "fraction_equal": 0.9987180494636104,
+      "ink_iou": 0.9944011082274914
+    },
+    "SHIP~AF": {
+      "compared": 95963921,
+      "equal": 94630803,
+      "ink_inter": 21226406,
+      "ink_union": 22559524,
+      "ink_a": 21867808,
+      "ink_b": 21918122,
+      "fraction_equal": 0.9861081332847998,
+      "ink_iou": 0.9409066432430045
+    }
+  },
+  "validity_in_region": {
+    "offset": {
+      "255": 95963921
+    },
+    "control": {
+      "255": 95963921
+    },
+    "loader": {
+      "255": 95963921
+    }
+  }
+}

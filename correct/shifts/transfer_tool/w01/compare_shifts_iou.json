@@ -1,0 +1,172 @@
+{
+  "far corner (max row+col)": {
+    "offset": {
+      "iou_peak_shift": [
+        0.15135006983900995,
+        0.23145112438843382
+      ],
+      "iou_at_peak": 0.9961633411262547,
+      "iou_at_zero_shift": 0.9961633411262547
+    },
+    "control": {
+      "iou_peak_shift": [
+        11.616224788535483,
+        11.32315561838638
+      ],
+      "iou_at_peak": 0.9944757161299,
+      "iou_at_zero_shift": null
+    },
+    "AF_tool": {
+      "iou_peak_shift": [
+        0.04875987949381664,
+        0.2476850260851621
+      ],
+      "iou_at_peak": 0.9968846827743153,
+      "iou_at_zero_shift": 0.9968846827743153
+    },
+    "SHIP": {
+      "iou_peak_shift": [
+        251.37917235364736,
+        -134.52129051092672
+      ],
+      "iou_at_peak": 0.9819442381942382,
+      "iou_at_zero_shift": null
+    }
+  },
+  "top-left (min row+col)": {
+    "offset": {
+      "iou_peak_shift": [
+        0.6202928529488869,
+        0.8856404829972174
+      ],
+      "iou_at_peak": 0.996974019276021,
+      "iou_at_zero_shift": 0.9927029614552242
+    },
+    "control": {
+      "iou_peak_shift": [
+        11.834807315743621,
+        11.906694916302746
+      ],
+      "iou_at_peak": 0.9978536235064132,
+      "iou_at_zero_shift": null
+    },
+    "AF_tool": {
+      "iou_peak_shift": [
+        0.7374377340483992,
+        0.8737189769164321
+      ],
+      "iou_at_peak": 0.9971989359987103,
+      "iou_at_zero_shift": 0.9925014984934609
+    },
+    "SHIP": {
+      "iou_peak_shift": [
+        75.12118462551139,
+        -50.69280182618095
+      ],
+      "iou_at_peak": 0.9940197533683489,
+      "iou_at_zero_shift": null
+    }
+  },
+  "top-right (max col-row)": {
+    "offset": {
+      "iou_peak_shift": [
+        0.3595562671777467,
+        0.17147254419631427
+      ],
+      "iou_at_peak": 0.9969942067112592,
+      "iou_at_zero_shift": 0.9969942067112592
+    },
+    "control": {
+      "iou_peak_shift": [
+        11.816519289297364,
+        11.259944733956264
+      ],
+      "iou_at_peak": 0.9970151506258961,
+      "iou_at_zero_shift": null
+    },
+    "AF_tool": {
+      "iou_peak_shift": [
+        0.4009580542261665,
+        0.2993077422373601
+      ],
+      "iou_at_peak": 0.9962343330349149,
+      "iou_at_zero_shift": 0.9962343330349149
+    },
+    "SHIP": {
+      "iou_peak_shift": [
+        53.40319960014669,
+        -156.86260511763595
+      ],
+      "iou_at_peak": 0.9896665867114416,
+      "iou_at_zero_shift": null
+    }
+  },
+  "bottom-left (max row-col)": {
+    "offset": {
+      "iou_peak_shift": [
+        0.1128625875950783,
+        0.9425279309462367
+      ],
+      "iou_at_peak": 0.9987959103449009,
+      "iou_at_zero_shift": 0.9946458579615032
+    },
+    "control": {
+      "iou_peak_shift": [
+        11.487513797415803,
+        11.981944925905527
+      ],
+      "iou_at_peak": 0.9979591150382954,
+      "iou_at_zero_shift": null
+    },
+    "AF_tool": {
+      "iou_peak_shift": [
+        0.10081249166155955,
+        0.8239092876035414
+      ],
+      "iou_at_peak": 0.9980560109628234,
+      "iou_at_zero_shift": 0.9955475237300364
+    },
+    "SHIP": {
+      "iou_peak_shift": [
+        243.73890774182308,
+        -45.25086847910559
+      ],
+      "iou_at_peak": 0.9895375284306293,
+      "iou_at_zero_shift": null
+    }
+  },
+  "centre": {
+    "offset": {
+      "iou_peak_shift": [
+        0.7052039073584004,
+        0.6192328265155527
+      ],
+      "iou_at_peak": 0.9968318845068715,
+      "iou_at_zero_shift": 0.9952081249726396
+    },
+    "control": {
+      "iou_peak_shift": [
+        11.90410454942334,
+        11.742384196177428
+      ],
+      "iou_at_peak": 0.9981380358090317,
+      "iou_at_zero_shift": null
+    },
+    "AF_tool": {
+      "iou_peak_shift": [
+        0.6790823698315533,
+        0.6298644512617154
+      ],
+      "iou_at_peak": 0.9967480441134885,
+      "iou_at_zero_shift": 0.9952991093226474
+    },
+    "SHIP": {
+      "iou_peak_shift": [
+        167.15968017640324,
+        -104.95535060547117
+      ],
+      "iou_at_peak": 0.9948633929618387,
+      "iou_at_zero_shift": null
+    }
+  }
+}
