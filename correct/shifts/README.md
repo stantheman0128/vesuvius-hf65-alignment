@@ -92,7 +92,13 @@ For the six second_shift segments the cause analysis on villa#2370 gives the int
 
 ## Related tool in villa
 
-`vesuvius/src/vesuvius/tifxyz_label_transfer`, added in villa#1943 on 2026-10-01, already handles a constant canvas offset. The quality assurance section of its README measures the offset from CT and applies it only through `--label-canvas-offset DY DX`, with pherc0139-w039 as the example case. Its `docs/theory.md` says label pixel (i, j) refers to source canvas position (i + dy, j + dx), the same sign as this file, so a constant row's (dy_a, dx_a) can go straight into that flag. The Paris4 rows are linear and cannot be expressed as one constant offset. The ink_detection full_3d loader that villa#2370 is about applies no offset.
+`vesuvius/src/vesuvius/tifxyz_label_transfer`, added in villa#1943 on 2026-10-01, already handles a constant canvas offset. The quality assurance section of its README measures the offset from CT and applies it only through `--label-canvas-offset DY DX`, with pherc0139-w039 as the example case. Its `docs/theory.md` says label pixel (i, j) refers to source canvas position (i + dy, j + dx), the same sign as this file. The ink_detection full_3d loader that villa#2370 is about applies no offset.
+
+Corrected on 2026-11-13. This section used to say that a constant row's (dy_a, dx_a) can go straight into that flag, and that the Paris4 rows cannot be expressed as one constant offset. The first statement is half a pixel off in the tool's own frame, and the second is wrong for this tool.
+
+- The tool puts output pixel i at stored grid position (i + 0.5) * S / O, where S is the stored grid size and O the output size. The full_3d loader pairs full-resolution cell i with stored position i * s. So for output that the loader will read, a constant row's (dy_a, dx_a) is the right flag value. In the tool's own frame the value is (dy_a - 0.5, dx_a - 0.5).
+- The transfer kernel stretches the label onto the TIFXYZ extent before it subtracts the offset (`label_index` in `vc_reader/src/cpp/projection/transfer.hpp`). The Paris4 slopes are that same size mismatch, so inside the tool each Paris4 row also comes down to one constant per axis. Over the whole canvas that constant stays within 0.5 px of the row's linear model on all eight rows.
+- I checked this on the real w01 and w00 files with `transfer single`, the segment's own tifxyz as source and target, and one constant. Inside the supervised area 99.9% of the output pixels equal the label resampled by `apply_fit.py`, on both segments. With no offset it is 97.8% on w01 and 97.2% on w00.
 
 ## Validation table
 
